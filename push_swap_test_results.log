@@ -1,0 +1,6451 @@
+Test Run Timestamp: Sat Dec 21 01:09:28 AM CET 2024
+----------------------------------------
+Basic Tests
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: rank_values complete. Stack A (ranks): 0 1 2 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: Already sorted!
+OK
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: rank_values complete. Stack A (ranks): 2 1 0 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Sorting <= 5 elements
+DEBUG: Done!
+OK
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: rank_values complete. Stack A (ranks): 1 0 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Sorting <= 5 elements
+DEBUG: Done!
+OK
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: rank_values complete. Stack A (ranks): 4 3 2 1 0 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Sorting <= 5 elements
+DEBUG: Done!
+OK
+----------------------------------------
+Edge Cases
+DEBUG: Starting push_swap
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 42
+DEBUG: parsing line: 42
+DEBUG: token: 42
+DEBUG: rank_values complete. Stack A (ranks): 0 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: Already sorted!
+OK
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 1
+DEBUG: parsing line: 1Error
+
+DEBUG: token: 1
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: rank_values complete. Stack A (ranks): 0 1 3 1 
+DEBUG: Duplicate found
+Error
+Error
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 2147483648
+DEBUG: parsing line: 2147483648
+DEBUG: token: 2147483648
+DEBUG: out of range or memory fail for: 2147483648
+Error
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: -2147483649
+DEBUG: parsing line: -2147483649Error
+
+DEBUG: token: -2147483649
+DEBUG: out of range or memory fail for: -2147483649
+Error
+Error
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: arg line: two
+DEBUG: parsing line: two
+DEBUG: token: two
+DEBUG: invalid int: two
+Error
+----------------------------------------
+Randomized Small Tests
+Test 1 with ARG: 1 4 5 3 8 2 10 9 6 7
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 8
+DEBUG: parsing line: 8
+DEBUG: token: 8
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 10
+DEBUG: parsing line: 10
+DEBUG: token: 10
+DEBUG: arg line: 9
+DEBUG: parsing line: 9
+DEBUG: token: 9
+DEBUG: arg line: 6
+DEBUG: parsing line: 6
+DEBUG: token: 6
+DEBUG: arg line: 7
+DEBUG: parsing line: 7
+DEBUG: token: 7
+DEBUG: rank_values complete. Stack A (ranks): 0 3 4 2 7 1 9 8 5 6 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Sorting with chunk strategy
+DEBUG: Using chunk sort
+DEBUG: Done!
+OK
+----------------------------------------
+Test 2 with ARG: 6 1 3 7 2 10 5 9 8 4
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 6
+DEBUG: parsing line: 6
+DEBUG: token: 6
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 7
+DEBUG: parsing line: 7
+DEBUG: token: 7
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 10
+DEBUG: parsing line: 10
+DEBUG: token: 10
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 9
+DEBUG: parsing line: 9
+DEBUG: token: 9
+DEBUG: arg line: 8
+DEBUG: parsing line: 8
+DEBUG: token: 8
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: rank_values complete. Stack A (ranks): 5 0 2 6 1 9 4 8 7 3 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Sorting with chunk strategy
+DEBUG: Using chunk sort
+DEBUG: Done!
+OK
+----------------------------------------
+Test 3 with ARG: 2 9 5 10 4 8 6 3 7 1
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 9
+DEBUG: parsing line: 9
+DEBUG: token: 9
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 10
+DEBUG: parsing line: 10
+DEBUG: token: 10
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: arg line: 8
+DEBUG: parsing line: 8
+DEBUG: token: 8
+DEBUG: arg line: 6
+DEBUG: parsing line: 6
+DEBUG: token: 6
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 7
+DEBUG: parsing line: 7
+DEBUG: token: 7
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: rank_values complete. Stack A (ranks): 1 8 4 9 3 7 5 2 6 0 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Sorting with chunk strategy
+DEBUG: Using chunk sort
+DEBUG: Done!
+OK
+----------------------------------------
+Test 4 with ARG: 4 6 7 9 5 10 1 2 3 8
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: arg line: 6
+DEBUG: parsing line: 6
+DEBUG: token: 6
+DEBUG: arg line: 7
+DEBUG: parsing line: 7
+DEBUG: token: 7
+DEBUG: arg line: 9
+DEBUG: parsing line: 9
+DEBUG: token: 9
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 10
+DEBUG: parsing line: 10
+DEBUG: token: 10
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 8
+DEBUG: parsing line: 8
+DEBUG: token: 8
+DEBUG: rank_values complete. Stack A (ranks): 3 5 6 8 4 9 0 1 2 7 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Sorting with chunk strategy
+DEBUG: Using chunk sort
+DEBUG: Done!
+OK
+----------------------------------------
+Test 5 with ARG: 5 10 7 9 6 2 1 4 3 8
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 10
+DEBUG: parsing line: 10
+DEBUG: token: 10
+DEBUG: arg line: 7
+DEBUG: parsing line: 7
+DEBUG: token: 7
+DEBUG: arg line: 9
+DEBUG: parsing line: 9
+DEBUG: token: 9
+DEBUG: arg line: 6
+DEBUG: parsing line: 6
+DEBUG: token: 6
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 8
+DEBUG: parsing line: 8
+DEBUG: token: 8
+DEBUG: rank_values complete. Stack A (ranks): 4 9 6 8 5 1 0 3 2 7 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Sorting with chunk strategy
+DEBUG: Using chunk sort
+DEBUG: Done!
+OK
+----------------------------------------
+Performance Tests
+Performance Test 100 Elements with ARG: 17 97 26 27 21 8 44 15 57 52 79 66 12 13 4 83 10 45 100 25 77 41 11 23 56 49 6 48 34 14 31 36 85 75 91 40 33 68 61 46 16 5 1 60 59 42 29 62 99 19 96 72 94 95 71 74 58 88 67 55 89 87 81 53 76 86 93 70 37 38 28 82 84 65 18 35 7 39 63 9 32 43 30 92 80 2 90 98 78 47 24 69 64 22 73 54 3 50 51 20
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 17
+DEBUG: parsing line: 17
+DEBUG: token: 17
+DEBUG: arg line: 97
+DEBUG: parsing line: 97
+DEBUG: token: 97
+DEBUG: arg line: 26
+DEBUG: parsing line: 26
+DEBUG: token: 26
+DEBUG: arg line: 27
+DEBUG: parsing line: 27
+DEBUG: token: 27
+DEBUG: arg line: 21
+DEBUG: parsing line: 21
+DEBUG: token: 21
+DEBUG: arg line: 8
+DEBUG: parsing line: 8
+DEBUG: token: 8
+DEBUG: arg line: 44
+DEBUG: parsing line: 44
+DEBUG: token: 44
+DEBUG: arg line: 15
+DEBUG: parsing line: 15
+DEBUG: token: 15
+DEBUG: arg line: 57
+DEBUG: parsing line: 57
+DEBUG: token: 57
+DEBUG: arg line: 52
+DEBUG: parsing line: 52
+DEBUG: token: 52
+DEBUG: arg line: 79
+DEBUG: parsing line: 79
+DEBUG: token: 79
+DEBUG: arg line: 66
+DEBUG: parsing line: 66
+DEBUG: token: 66
+DEBUG: arg line: 12
+DEBUG: parsing line: 12
+DEBUG: token: 12
+DEBUG: arg line: 13
+DEBUG: parsing line: 13
+DEBUG: token: 13
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: arg line: 83
+DEBUG: parsing line: 83
+DEBUG: token: 83
+DEBUG: arg line: 10
+DEBUG: parsing line: 10
+DEBUG: token: 10
+DEBUG: arg line: 45
+DEBUG: parsing line: 45
+DEBUG: token: 45
+DEBUG: arg line: 100
+DEBUG: parsing line: 100
+DEBUG: token: 100
+DEBUG: arg line: 25
+DEBUG: parsing line: 25
+DEBUG: token: 25
+DEBUG: arg line: 77
+DEBUG: parsing line: 77
+DEBUG: token: 77
+DEBUG: arg line: 41
+DEBUG: parsing line: 41
+DEBUG: token: 41
+DEBUG: arg line: 11
+DEBUG: parsing line: 11
+DEBUG: token: 11
+DEBUG: arg line: 23
+DEBUG: parsing line: 23
+DEBUG: token: 23
+DEBUG: arg line: 56
+DEBUG: parsing line: 56
+DEBUG: token: 56
+DEBUG: arg line: 49
+DEBUG: parsing line: 49
+DEBUG: token: 49
+DEBUG: arg line: 6
+DEBUG: parsing line: 6
+DEBUG: token: 6
+DEBUG: arg line: 48
+DEBUG: parsing line: 48
+DEBUG: token: 48
+DEBUG: arg line: 34
+DEBUG: parsing line: 34
+DEBUG: token: 34
+DEBUG: arg line: 14
+DEBUG: parsing line: 14
+DEBUG: token: 14
+DEBUG: arg line: 31
+DEBUG: parsing line: 31
+DEBUG: token: 31
+DEBUG: arg line: 36
+DEBUG: parsing line: 36
+DEBUG: token: 36
+DEBUG: arg line: 85
+DEBUG: parsing line: 85
+DEBUG: token: 85
+DEBUG: arg line: 75
+DEBUG: parsing line: 75
+DEBUG: token: 75
+DEBUG: arg line: 91
+DEBUG: parsing line: 91
+DEBUG: token: 91
+DEBUG: arg line: 40
+DEBUG: parsing line: 40
+DEBUG: token: 40
+DEBUG: arg line: 33
+DEBUG: parsing line: 33
+DEBUG: token: 33
+DEBUG: arg line: 68
+DEBUG: parsing line: 68
+DEBUG: token: 68
+DEBUG: arg line: 61
+DEBUG: parsing line: 61
+DEBUG: token: 61
+DEBUG: arg line: 46
+DEBUG: parsing line: 46
+DEBUG: token: 46
+DEBUG: arg line: 16
+DEBUG: parsing line: 16
+DEBUG: token: 16
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: arg line: 60
+DEBUG: parsing line: 60
+DEBUG: token: 60
+DEBUG: arg line: 59
+DEBUG: parsing line: 59
+DEBUG: token: 59
+DEBUG: arg line: 42
+DEBUG: parsing line: 42
+DEBUG: token: 42
+DEBUG: arg line: 29
+DEBUG: parsing line: 29
+DEBUG: token: 29
+DEBUG: arg line: 62
+DEBUG: parsing line: 62
+DEBUG: token: 62
+DEBUG: arg line: 99
+DEBUG: parsing line: 99
+DEBUG: token: 99
+DEBUG: arg line: 19
+DEBUG: parsing line: 19
+DEBUG: token: 19
+DEBUG: arg line: 96
+DEBUG: parsing line: 96
+DEBUG: token: 96
+DEBUG: arg line: 72
+DEBUG: parsing line: 72
+DEBUG: token: 72
+DEBUG: arg line: 94
+DEBUG: parsing line: 94
+DEBUG: token: 94
+DEBUG: arg line: 95
+DEBUG: parsing line: 95
+DEBUG: token: 95
+DEBUG: arg line: 71
+DEBUG: parsing line: 71
+DEBUG: token: 71
+DEBUG: arg line: 74
+DEBUG: parsing line: 74
+DEBUG: token: 74
+DEBUG: arg line: 58
+DEBUG: parsing line: 58
+DEBUG: token: 58
+DEBUG: arg line: 88
+DEBUG: parsing line: 88
+DEBUG: token: 88
+DEBUG: arg line: 67
+DEBUG: parsing line: 67
+DEBUG: token: 67
+DEBUG: arg line: 55
+DEBUG: parsing line: 55
+DEBUG: token: 55
+DEBUG: arg line: 89
+DEBUG: parsing line: 89
+DEBUG: token: 89
+DEBUG: arg line: 87
+DEBUG: parsing line: 87
+DEBUG: token: 87
+DEBUG: arg line: 81
+DEBUG: parsing line: 81
+DEBUG: token: 81
+DEBUG: arg line: 53
+DEBUG: parsing line: 53
+DEBUG: token: 53
+DEBUG: arg line: 76
+DEBUG: parsing line: 76
+DEBUG: token: 76
+DEBUG: arg line: 86
+DEBUG: parsing line: 86
+DEBUG: token: 86
+DEBUG: arg line: 93
+DEBUG: parsing line: 93
+DEBUG: token: 93
+DEBUG: arg line: 70
+DEBUG: parsing line: 70
+DEBUG: token: 70
+DEBUG: arg line: 37
+DEBUG: parsing line: 37
+DEBUG: token: 37
+DEBUG: arg line: 38
+DEBUG: parsing line: 38
+DEBUG: token: 38
+DEBUG: arg line: 28
+DEBUG: parsing line: 28
+DEBUG: token: 28
+DEBUG: arg line: 82
+DEBUG: parsing line: 82
+DEBUG: token: 82
+DEBUG: arg line: 84
+DEBUG: parsing line: 84
+DEBUG: token: 84
+DEBUG: arg line: 65
+DEBUG: parsing line: 65
+DEBUG: token: 65
+DEBUG: arg line: 18
+DEBUG: parsing line: 18
+DEBUG: token: 18
+DEBUG: arg line: 35
+DEBUG: parsing line: 35
+DEBUG: token: 35
+DEBUG: arg line: 7
+DEBUG: parsing line: 7
+DEBUG: token: 7
+DEBUG: arg line: 39
+DEBUG: parsing line: 39
+DEBUG: token: 39
+DEBUG: arg line: 63
+DEBUG: parsing line: 63
+DEBUG: token: 63
+DEBUG: arg line: 9
+DEBUG: parsing line: 9
+DEBUG: token: 9
+DEBUG: arg line: 32
+DEBUG: parsing line: 32
+DEBUG: token: 32
+DEBUG: arg line: 43
+DEBUG: parsing line: 43
+DEBUG: token: 43
+DEBUG: arg line: 30
+DEBUG: parsing line: 30
+DEBUG: token: 30
+DEBUG: arg line: 92
+DEBUG: parsing line: 92
+DEBUG: token: 92
+DEBUG: arg line: 80
+DEBUG: parsing line: 80
+DEBUG: token: 80
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 90
+DEBUG: parsing line: 90
+DEBUG: token: 90
+DEBUG: arg line: 98
+DEBUG: parsing line: 98
+DEBUG: token: 98
+DEBUG: arg line: 78
+DEBUG: parsing line: 78
+DEBUG: token: 78
+DEBUG: arg line: 47
+DEBUG: parsing line: 47
+DEBUG: token: 47
+DEBUG: arg line: 24
+DEBUG: parsing line: 24
+DEBUG: token: 24
+DEBUG: arg line: 69
+DEBUG: parsing line: 69
+DEBUG: token: 69
+DEBUG: arg line: 64
+DEBUG: parsing line: 64
+DEBUG: token: 64
+DEBUG: arg line: 22
+DEBUG: parsing line: 22
+DEBUG: token: 22
+DEBUG: arg line: 73
+DEBUG: parsing line: 73
+DEBUG: token: 73
+DEBUG: arg line: 54
+DEBUG: parsing line: 54
+DEBUG: token: 54
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 50
+DEBUG: parsing line: 50
+DEBUG: token: 50
+DEBUG: arg line: 51
+DEBUG: parsing line: 51
+DEBUG: token: 51
+DEBUG: arg line: 20
+DEBUG: parsing line: 20
+DEBUG: token: 20
+DEBUG: rank_values complete. Stack A (ranks): 16 96 25 26 20 7 43 14 56 51 78 65 11 12 3 82 9 44 99 24 76 40 10 22 55 48 5 47 33 13 30 35 84 74 90 39 32 67 60 45 15 4 0 59 58 41 28 61 98 18 95 71 93 94 70 73 57 87 66 54 88 86 80 52 75 85 92 69 36 37 27 81 83 64 17 34 6 38 62 8 31 42 29 91 79 1 89 97 77 46 23 68 63 21 72 53 2 49 50 19 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Sorting with chunk strategy
+DEBUG: Using chunk sort
+DEBUG: Done!
+760
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 17
+DEBUG: parsing line: 17
+DEBUG: token: 17
+DEBUG: arg line: 97
+DEBUG: parsing line: 97
+DEBUG: token: 97
+DEBUG: arg line: 26
+DEBUG: parsing line: 26
+DEBUG: token: 26
+DEBUG: arg line: 27
+DEBUG: parsing line: 27
+DEBUG: token: 27
+DEBUG: arg line: 21
+DEBUG: parsing line: 21
+DEBUG: token: 21
+DEBUG: arg line: 8
+DEBUG: parsing line: 8
+DEBUG: token: 8
+DEBUG: arg line: 44
+DEBUG: parsing line: 44
+DEBUG: token: 44
+DEBUG: arg line: 15
+DEBUG: parsing line: 15
+DEBUG: token: 15
+DEBUG: arg line: 57
+DEBUG: parsing line: 57
+DEBUG: token: 57
+DEBUG: arg line: 52
+DEBUG: parsing line: 52
+DEBUG: token: 52
+DEBUG: arg line: 79
+DEBUG: parsing line: 79
+DEBUG: token: 79
+DEBUG: arg line: 66
+DEBUG: parsing line: 66
+DEBUG: token: 66
+DEBUG: arg line: 12
+DEBUG: parsing line: 12
+DEBUG: token: 12
+DEBUG: arg line: 13
+DEBUG: parsing line: 13
+DEBUG: token: 13
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: arg line: 83
+DEBUG: parsing line: 83
+DEBUG: token: 83
+DEBUG: arg line: 10
+DEBUG: parsing line: 10
+DEBUG: token: 10
+DEBUG: arg line: 45
+DEBUG: parsing line: 45
+DEBUG: token: 45
+DEBUG: arg line: 100
+DEBUG: parsing line: 100
+DEBUG: token: 100
+DEBUG: arg line: 25
+DEBUG: parsing line: 25
+DEBUG: token: 25
+DEBUG: arg line: 77
+DEBUG: parsing line: 77
+DEBUG: token: 77
+DEBUG: arg line: 41
+DEBUG: parsing line: 41
+DEBUG: token: 41
+DEBUG: arg line: 11
+DEBUG: parsing line: 11
+DEBUG: token: 11
+DEBUG: arg line: 23
+DEBUG: parsing line: 23
+DEBUG: token: 23
+DEBUG: arg line: 56
+DEBUG: parsing line: 56
+DEBUG: token: 56
+DEBUG: arg line: 49
+DEBUG: parsing line: 49
+DEBUG: token: 49
+DEBUG: arg line: 6
+DEBUG: parsing line: 6
+DEBUG: token: 6
+DEBUG: arg line: 48
+DEBUG: parsing line: 48
+DEBUG: token: 48
+DEBUG: arg line: 34
+DEBUG: parsing line: 34
+DEBUG: token: 34
+DEBUG: arg line: 14
+DEBUG: parsing line: 14
+DEBUG: token: 14
+DEBUG: arg line: 31
+DEBUG: parsing line: 31
+DEBUG: token: 31
+DEBUG: arg line: 36
+DEBUG: parsing line: 36
+DEBUG: token: 36
+DEBUG: arg line: 85
+DEBUG: parsing line: 85
+DEBUG: token: 85
+DEBUG: arg line: 75
+DEBUG: parsing line: 75
+DEBUG: token: 75
+DEBUG: arg line: 91
+DEBUG: parsing line: 91
+DEBUG: token: 91
+DEBUG: arg line: 40
+DEBUG: parsing line: 40
+DEBUG: token: 40
+DEBUG: arg line: 33
+DEBUG: parsing line: 33
+DEBUG: token: 33
+DEBUG: arg line: 68
+DEBUG: parsing line: 68
+DEBUG: token: 68
+DEBUG: arg line: 61
+DEBUG: parsing line: 61
+DEBUG: token: 61
+DEBUG: arg line: 46
+DEBUG: parsing line: 46
+DEBUG: token: 46
+DEBUG: arg line: 16
+DEBUG: parsing line: 16
+DEBUG: token: 16
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: arg line: 60
+DEBUG: parsing line: 60
+DEBUG: token: 60
+DEBUG: arg line: 59
+DEBUG: parsing line: 59
+DEBUG: token: 59
+DEBUG: arg line: 42
+DEBUG: parsing line: 42
+DEBUG: token: 42
+DEBUG: arg line: 29
+DEBUG: parsing line: 29
+DEBUG: token: 29
+DEBUG: arg line: 62
+DEBUG: parsing line: 62
+DEBUG: token: 62
+DEBUG: arg line: 99
+DEBUG: parsing line: 99
+DEBUG: token: 99
+DEBUG: arg line: 19
+DEBUG: parsing line: 19
+DEBUG: token: 19
+DEBUG: arg line: 96
+DEBUG: parsing line: 96
+DEBUG: token: 96
+DEBUG: arg line: 72
+DEBUG: parsing line: 72
+DEBUG: token: 72
+DEBUG: arg line: 94
+DEBUG: parsing line: 94
+DEBUG: token: 94
+DEBUG: arg line: 95
+DEBUG: parsing line: 95
+DEBUG: token: 95
+DEBUG: arg line: 71
+DEBUG: parsing line: 71
+DEBUG: token: 71
+DEBUG: arg line: 74
+DEBUG: parsing line: 74
+DEBUG: token: 74
+DEBUG: arg line: 58
+DEBUG: parsing line: 58
+DEBUG: token: 58
+DEBUG: arg line: 88
+DEBUG: parsing line: 88
+DEBUG: token: 88
+DEBUG: arg line: 67
+DEBUG: parsing line: 67
+DEBUG: token: 67
+DEBUG: arg line: 55
+DEBUG: parsing line: 55
+DEBUG: token: 55
+DEBUG: arg line: 89
+DEBUG: parsing line: 89
+DEBUG: token: 89
+DEBUG: arg line: 87
+DEBUG: parsing line: 87
+DEBUG: token: 87
+DEBUG: arg line: 81
+DEBUG: parsing line: 81
+DEBUG: token: 81
+DEBUG: arg line: 53
+DEBUG: parsing line: 53
+DEBUG: token: 53
+DEBUG: arg line: 76
+DEBUG: parsing line: 76
+DEBUG: token: 76
+DEBUG: arg line: 86
+DEBUG: parsing line: 86
+DEBUG: token: 86
+DEBUG: arg line: 93
+DEBUG: parsing line: 93
+DEBUG: token: 93
+DEBUG: arg line: 70
+DEBUG: parsing line: 70
+DEBUG: token: 70
+DEBUG: arg line: 37
+DEBUG: parsing line: 37
+DEBUG: token: 37
+DEBUG: arg line: 38
+DEBUG: parsing line: 38
+DEBUG: token: 38
+DEBUG: arg line: 28
+DEBUG: parsing line: 28
+DEBUG: token: 28
+DEBUG: arg line: 82
+DEBUG: parsing line: 82
+DEBUG: token: 82
+DEBUG: arg line: 84
+DEBUG: parsing line: 84
+DEBUG: token: 84
+DEBUG: arg line: 65
+DEBUG: parsing line: 65
+DEBUG: token: 65
+DEBUG: arg line: 18
+DEBUG: parsing line: 18
+DEBUG: token: 18
+DEBUG: arg line: 35
+DEBUG: parsing line: 35
+DEBUG: token: 35
+DEBUG: arg line: 7
+DEBUG: parsing line: 7
+DEBUG: token: 7
+DEBUG: arg line: 39
+DEBUG: parsing line: 39
+DEBUG: token: 39
+DEBUG: arg line: 63
+DEBUG: parsing line: 63
+DEBUG: token: 63
+DEBUG: arg line: 9
+DEBUG: parsing line: 9
+DEBUG: token: 9
+DEBUG: arg line: 32
+DEBUG: parsing line: 32
+DEBUG: token: 32
+DEBUG: arg line: 43
+DEBUG: parsing line: 43
+DEBUG: token: 43
+DEBUG: arg line: 30
+DEBUG: parsing line: 30
+DEBUG: token: 30
+DEBUG: arg line: 92
+DEBUG: parsing line: 92
+DEBUG: token: 92
+DEBUG: arg line: 80
+DEBUG: parsing line: 80
+DEBUG: token: 80
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 90
+DEBUG: parsing line: 90
+DEBUG: token: 90
+DEBUG: arg line: 98
+DEBUG: parsing line: 98
+DEBUG: token: 98
+DEBUG: arg line: 78
+DEBUG: parsing line: 78
+DEBUG: token: 78
+DEBUG: arg line: 47
+DEBUG: parsing line: 47
+DEBUG: token: 47
+DEBUG: arg line: 24
+DEBUG: parsing line: 24
+DEBUG: token: 24
+DEBUG: arg line: 69
+DEBUG: parsing line: 69
+DEBUG: token: 69
+DEBUG: arg line: 64
+DEBUG: parsing line: 64
+DEBUG: token: 64
+DEBUG: arg line: 22
+DEBUG: parsing line: 22
+DEBUG: token: 22
+DEBUG: arg line: 73
+DEBUG: parsing line: 73
+DEBUG: token: 73
+DEBUG: arg line: 54
+DEBUG: parsing line: 54
+DEBUG: token: 54
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 50
+DEBUG: parsing line: 50
+DEBUG: token: 50
+DEBUG: arg line: 51
+DEBUG: parsing line: 51
+DEBUG: token: 51
+DEBUG: arg line: 20
+DEBUG: parsing line: 20
+DEBUG: token: 20
+DEBUG: rank_values complete. Stack A (ranks): 16 96 25 26 20 7 43 14 56 51 78 65 11 12 3 82 9 44 99 24 76 40 10 22 55 48 5 47 33 13 30 35 84 74 90 39 32 67 60 45 15 4 0 59 58 41 28 61 98 18 95 71 93 94 70 73 57 87 66 54 88 86 80 52 75 85 92 69 36 37 27 81 83 64 17 34 6 38 62 8 31 42 29 91 79 1 89 97 77 46 23 68 63 21 72 53 2 49 50 19 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Sorting with chunk strategy
+DEBUG: Using chunk sort
+DEBUG: Done!
+OK
+----------------------------------------
+Performance Test 500 Elements with ARG: 298 399 25 35 179 382 488 316 156 74 306 68 293 279 337 378 390 247 67 48 140 130 451 344 76 356 497 33 26 374 394 292 299 190 458 369 259 484 47 415 443 398 121 254 303 352 285 83 222 423 110 250 493 120 388 420 203 500 258 243 395 321 347 136 34 489 307 164 17 197 208 275 304 37 496 429 469 58 147 416 1 410 106 152 148 289 227 173 433 295 435 479 324 36 437 102 171 457 174 15 499 45 453 42 236 21 71 206 269 432 89 187 242 113 427 229 447 66 459 422 72 235 32 313 253 80 424 249 257 225 78 246 162 465 268 215 481 46 478 201 14 426 94 24 436 467 393 392 454 200 385 3 332 64 169 294 328 468 371 184 90 116 105 421 73 142 228 340 308 296 483 439 271 364 209 128 391 193 23 449 360 138 2 188 82 252 263 339 274 406 123 322 476 417 40 430 218 117 445 146 309 362 180 375 16 88 11 248 221 407 166 100 8 291 343 384 310 492 28 486 150 57 167 75 43 168 104 491 494 207 20 204 77 314 214 69 12 137 498 98 338 353 312 485 448 139 143 418 490 357 212 397 466 438 198 86 52 10 97 401 196 210 440 325 462 389 119 405 217 9 270 30 151 63 273 404 302 5 281 232 335 411 55 93 354 172 186 359 211 92 194 157 368 402 122 480 85 109 127 377 367 237 256 22 153 396 240 442 495 342 326 450 165 185 134 70 241 441 96 330 471 224 464 160 475 175 425 315 145 470 379 149 428 413 84 473 181 345 334 189 192 103 233 320 234 463 38 183 159 177 329 176 7 297 115 482 305 461 376 60 284 81 230 99 372 350 129 386 333 331 158 300 278 318 108 135 87 216 264 361 286 363 282 366 213 178 261 53 452 205 62 323 262 50 126 255 383 358 112 132 365 346 288 131 6 220 27 155 49 51 56 387 44 373 125 455 431 163 474 219 276 4 487 277 18 170 107 477 79 408 260 348 199 101 141 472 29 311 54 444 41 19 182 154 61 446 460 419 133 290 351 434 409 59 414 226 31 223 456 65 111 231 144 114 280 251 95 341 287 195 370 283 400 244 191 355 380 403 317 412 266 301 336 13 265 267 161 381 118 238 327 124 239 272 202 319 245 349 91 39
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 298
+DEBUG: parsing line: 298
+DEBUG: token: 298
+DEBUG: arg line: 399
+DEBUG: parsing line: 399
+DEBUG: token: 399
+DEBUG: arg line: 25
+DEBUG: parsing line: 25
+DEBUG: token: 25
+DEBUG: arg line: 35
+DEBUG: parsing line: 35
+DEBUG: token: 35
+DEBUG: arg line: 179
+DEBUG: parsing line: 179
+DEBUG: token: 179
+DEBUG: arg line: 382
+DEBUG: parsing line: 382
+DEBUG: token: 382
+DEBUG: arg line: 488
+DEBUG: parsing line: 488
+DEBUG: token: 488
+DEBUG: arg line: 316
+DEBUG: parsing line: 316
+DEBUG: token: 316
+DEBUG: arg line: 156
+DEBUG: parsing line: 156
+DEBUG: token: 156
+DEBUG: arg line: 74
+DEBUG: parsing line: 74
+DEBUG: token: 74
+DEBUG: arg line: 306
+DEBUG: parsing line: 306
+DEBUG: token: 306
+DEBUG: arg line: 68
+DEBUG: parsing line: 68
+DEBUG: token: 68
+DEBUG: arg line: 293
+DEBUG: parsing line: 293
+DEBUG: token: 293
+DEBUG: arg line: 279
+DEBUG: parsing line: 279
+DEBUG: token: 279
+DEBUG: arg line: 337
+DEBUG: parsing line: 337
+DEBUG: token: 337
+DEBUG: arg line: 378
+DEBUG: parsing line: 378
+DEBUG: token: 378
+DEBUG: arg line: 390
+DEBUG: parsing line: 390
+DEBUG: token: 390
+DEBUG: arg line: 247
+DEBUG: parsing line: 247
+DEBUG: token: 247
+DEBUG: arg line: 67
+DEBUG: parsing line: 67
+DEBUG: token: 67
+DEBUG: arg line: 48
+DEBUG: parsing line: 48
+DEBUG: token: 48
+DEBUG: arg line: 140
+DEBUG: parsing line: 140
+DEBUG: token: 140
+DEBUG: arg line: 130
+DEBUG: parsing line: 130
+DEBUG: token: 130
+DEBUG: arg line: 451
+DEBUG: parsing line: 451
+DEBUG: token: 451
+DEBUG: arg line: 344
+DEBUG: parsing line: 344
+DEBUG: token: 344
+DEBUG: arg line: 76
+DEBUG: parsing line: 76
+DEBUG: token: 76
+DEBUG: arg line: 356
+DEBUG: parsing line: 356
+DEBUG: token: 356
+DEBUG: arg line: 497
+DEBUG: parsing line: 497
+DEBUG: token: 497
+DEBUG: arg line: 33
+DEBUG: parsing line: 33
+DEBUG: token: 33
+DEBUG: arg line: 26
+DEBUG: parsing line: 26
+DEBUG: token: 26
+DEBUG: arg line: 374
+DEBUG: parsing line: 374
+DEBUG: token: 374
+DEBUG: arg line: 394
+DEBUG: parsing line: 394
+DEBUG: token: 394
+DEBUG: arg line: 292
+DEBUG: parsing line: 292
+DEBUG: token: 292
+DEBUG: arg line: 299
+DEBUG: parsing line: 299
+DEBUG: token: 299
+DEBUG: arg line: 190
+DEBUG: parsing line: 190
+DEBUG: token: 190
+DEBUG: arg line: 458
+DEBUG: parsing line: 458
+DEBUG: token: 458
+DEBUG: arg line: 369
+DEBUG: parsing line: 369
+DEBUG: token: 369
+DEBUG: arg line: 259
+DEBUG: parsing line: 259
+DEBUG: token: 259
+DEBUG: arg line: 484
+DEBUG: parsing line: 484
+DEBUG: token: 484
+DEBUG: arg line: 47
+DEBUG: parsing line: 47
+DEBUG: token: 47
+DEBUG: arg line: 415
+DEBUG: parsing line: 415
+DEBUG: token: 415
+DEBUG: arg line: 443
+DEBUG: parsing line: 443
+DEBUG: token: 443
+DEBUG: arg line: 398
+DEBUG: parsing line: 398
+DEBUG: token: 398
+DEBUG: arg line: 121
+DEBUG: parsing line: 121
+DEBUG: token: 121
+DEBUG: arg line: 254
+DEBUG: parsing line: 254
+DEBUG: token: 254
+DEBUG: arg line: 303
+DEBUG: parsing line: 303
+DEBUG: token: 303
+DEBUG: arg line: 352
+DEBUG: parsing line: 352
+DEBUG: token: 352
+DEBUG: arg line: 285
+DEBUG: parsing line: 285
+DEBUG: token: 285
+DEBUG: arg line: 83
+DEBUG: parsing line: 83
+DEBUG: token: 83
+DEBUG: arg line: 222
+DEBUG: parsing line: 222
+DEBUG: token: 222
+DEBUG: arg line: 423
+DEBUG: parsing line: 423
+DEBUG: token: 423
+DEBUG: arg line: 110
+DEBUG: parsing line: 110
+DEBUG: token: 110
+DEBUG: arg line: 250
+DEBUG: parsing line: 250
+DEBUG: token: 250
+DEBUG: arg line: 493
+DEBUG: parsing line: 493
+DEBUG: token: 493
+DEBUG: arg line: 120
+DEBUG: parsing line: 120
+DEBUG: token: 120
+DEBUG: arg line: 388
+DEBUG: parsing line: 388
+DEBUG: token: 388
+DEBUG: arg line: 420
+DEBUG: parsing line: 420
+DEBUG: token: 420
+DEBUG: arg line: 203
+DEBUG: parsing line: 203
+DEBUG: token: 203
+DEBUG: arg line: 500
+DEBUG: parsing line: 500
+DEBUG: token: 500
+DEBUG: arg line: 258
+DEBUG: parsing line: 258
+DEBUG: token: 258
+DEBUG: arg line: 243
+DEBUG: parsing line: 243
+DEBUG: token: 243
+DEBUG: arg line: 395
+DEBUG: parsing line: 395
+DEBUG: token: 395
+DEBUG: arg line: 321
+DEBUG: parsing line: 321
+DEBUG: token: 321
+DEBUG: arg line: 347
+DEBUG: parsing line: 347
+DEBUG: token: 347
+DEBUG: arg line: 136
+DEBUG: parsing line: 136
+DEBUG: token: 136
+DEBUG: arg line: 34
+DEBUG: parsing line: 34
+DEBUG: token: 34
+DEBUG: arg line: 489
+DEBUG: parsing line: 489
+DEBUG: token: 489
+DEBUG: arg line: 307
+DEBUG: parsing line: 307
+DEBUG: token: 307
+DEBUG: arg line: 164
+DEBUG: parsing line: 164
+DEBUG: token: 164
+DEBUG: arg line: 17
+DEBUG: parsing line: 17
+DEBUG: token: 17
+DEBUG: arg line: 197
+DEBUG: parsing line: 197
+DEBUG: token: 197
+DEBUG: arg line: 208
+DEBUG: parsing line: 208
+DEBUG: token: 208
+DEBUG: arg line: 275
+DEBUG: parsing line: 275
+DEBUG: token: 275
+DEBUG: arg line: 304
+DEBUG: parsing line: 304
+DEBUG: token: 304
+DEBUG: arg line: 37
+DEBUG: parsing line: 37
+DEBUG: token: 37
+DEBUG: arg line: 496
+DEBUG: parsing line: 496
+DEBUG: token: 496
+DEBUG: arg line: 429
+DEBUG: parsing line: 429
+DEBUG: token: 429
+DEBUG: arg line: 469
+DEBUG: parsing line: 469
+DEBUG: token: 469
+DEBUG: arg line: 58
+DEBUG: parsing line: 58
+DEBUG: token: 58
+DEBUG: arg line: 147
+DEBUG: parsing line: 147
+DEBUG: token: 147
+DEBUG: arg line: 416
+DEBUG: parsing line: 416
+DEBUG: token: 416
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: arg line: 410
+DEBUG: parsing line: 410
+DEBUG: token: 410
+DEBUG: arg line: 106
+DEBUG: parsing line: 106
+DEBUG: token: 106
+DEBUG: arg line: 152
+DEBUG: parsing line: 152
+DEBUG: token: 152
+DEBUG: arg line: 148
+DEBUG: parsing line: 148
+DEBUG: token: 148
+DEBUG: arg line: 289
+DEBUG: parsing line: 289
+DEBUG: token: 289
+DEBUG: arg line: 227
+DEBUG: parsing line: 227
+DEBUG: token: 227
+DEBUG: arg line: 173
+DEBUG: parsing line: 173
+DEBUG: token: 173
+DEBUG: arg line: 433
+DEBUG: parsing line: 433
+DEBUG: token: 433
+DEBUG: arg line: 295
+DEBUG: parsing line: 295
+DEBUG: token: 295
+DEBUG: arg line: 435
+DEBUG: parsing line: 435
+DEBUG: token: 435
+DEBUG: arg line: 479
+DEBUG: parsing line: 479
+DEBUG: token: 479
+DEBUG: arg line: 324
+DEBUG: parsing line: 324
+DEBUG: token: 324
+DEBUG: arg line: 36
+DEBUG: parsing line: 36
+DEBUG: token: 36
+DEBUG: arg line: 437
+DEBUG: parsing line: 437
+DEBUG: token: 437
+DEBUG: arg line: 102
+DEBUG: parsing line: 102
+DEBUG: token: 102
+DEBUG: arg line: 171
+DEBUG: parsing line: 171
+DEBUG: token: 171
+DEBUG: arg line: 457
+DEBUG: parsing line: 457
+DEBUG: token: 457
+DEBUG: arg line: 174
+DEBUG: parsing line: 174
+DEBUG: token: 174
+DEBUG: arg line: 15
+DEBUG: parsing line: 15
+DEBUG: token: 15
+DEBUG: arg line: 499
+DEBUG: parsing line: 499
+DEBUG: token: 499
+DEBUG: arg line: 45
+DEBUG: parsing line: 45
+DEBUG: token: 45
+DEBUG: arg line: 453
+DEBUG: parsing line: 453
+DEBUG: token: 453
+DEBUG: arg line: 42
+DEBUG: parsing line: 42
+DEBUG: token: 42
+DEBUG: arg line: 236
+DEBUG: parsing line: 236
+DEBUG: token: 236
+DEBUG: arg line: 21
+DEBUG: parsing line: 21
+DEBUG: token: 21
+DEBUG: arg line: 71
+DEBUG: parsing line: 71
+DEBUG: token: 71
+DEBUG: arg line: 206
+DEBUG: parsing line: 206
+DEBUG: token: 206
+DEBUG: arg line: 269
+DEBUG: parsing line: 269
+DEBUG: token: 269
+DEBUG: arg line: 432
+DEBUG: parsing line: 432
+DEBUG: token: 432
+DEBUG: arg line: 89
+DEBUG: parsing line: 89
+DEBUG: token: 89
+DEBUG: arg line: 187
+DEBUG: parsing line: 187
+DEBUG: token: 187
+DEBUG: arg line: 242
+DEBUG: parsing line: 242
+DEBUG: token: 242
+DEBUG: arg line: 113
+DEBUG: parsing line: 113
+DEBUG: token: 113
+DEBUG: arg line: 427
+DEBUG: parsing line: 427
+DEBUG: token: 427
+DEBUG: arg line: 229
+DEBUG: parsing line: 229
+DEBUG: token: 229
+DEBUG: arg line: 447
+DEBUG: parsing line: 447
+DEBUG: token: 447
+DEBUG: arg line: 66
+DEBUG: parsing line: 66
+DEBUG: token: 66
+DEBUG: arg line: 459
+DEBUG: parsing line: 459
+DEBUG: token: 459
+DEBUG: arg line: 422
+DEBUG: parsing line: 422
+DEBUG: token: 422
+DEBUG: arg line: 72
+DEBUG: parsing line: 72
+DEBUG: token: 72
+DEBUG: arg line: 235
+DEBUG: parsing line: 235
+DEBUG: token: 235
+DEBUG: arg line: 32
+DEBUG: parsing line: 32
+DEBUG: token: 32
+DEBUG: arg line: 313
+DEBUG: parsing line: 313
+DEBUG: token: 313
+DEBUG: arg line: 253
+DEBUG: parsing line: 253
+DEBUG: token: 253
+DEBUG: arg line: 80
+DEBUG: parsing line: 80
+DEBUG: token: 80
+DEBUG: arg line: 424
+DEBUG: parsing line: 424
+DEBUG: token: 424
+DEBUG: arg line: 249
+DEBUG: parsing line: 249
+DEBUG: token: 249
+DEBUG: arg line: 257
+DEBUG: parsing line: 257
+DEBUG: token: 257
+DEBUG: arg line: 225
+DEBUG: parsing line: 225
+DEBUG: token: 225
+DEBUG: arg line: 78
+DEBUG: parsing line: 78
+DEBUG: token: 78
+DEBUG: arg line: 246
+DEBUG: parsing line: 246
+DEBUG: token: 246
+DEBUG: arg line: 162
+DEBUG: parsing line: 162
+DEBUG: token: 162
+DEBUG: arg line: 465
+DEBUG: parsing line: 465
+DEBUG: token: 465
+DEBUG: arg line: 268
+DEBUG: parsing line: 268
+DEBUG: token: 268
+DEBUG: arg line: 215
+DEBUG: parsing line: 215
+DEBUG: token: 215
+DEBUG: arg line: 481
+DEBUG: parsing line: 481
+DEBUG: token: 481
+DEBUG: arg line: 46
+DEBUG: parsing line: 46
+DEBUG: token: 46
+DEBUG: arg line: 478
+DEBUG: parsing line: 478
+DEBUG: token: 478
+DEBUG: arg line: 201
+DEBUG: parsing line: 201
+DEBUG: token: 201
+DEBUG: arg line: 14
+DEBUG: parsing line: 14
+DEBUG: token: 14
+DEBUG: arg line: 426
+DEBUG: parsing line: 426
+DEBUG: token: 426
+DEBUG: arg line: 94
+DEBUG: parsing line: 94
+DEBUG: token: 94
+DEBUG: arg line: 24
+DEBUG: parsing line: 24
+DEBUG: token: 24
+DEBUG: arg line: 436
+DEBUG: parsing line: 436
+DEBUG: token: 436
+DEBUG: arg line: 467
+DEBUG: parsing line: 467
+DEBUG: token: 467
+DEBUG: arg line: 393
+DEBUG: parsing line: 393
+DEBUG: token: 393
+DEBUG: arg line: 392
+DEBUG: parsing line: 392
+DEBUG: token: 392
+DEBUG: arg line: 454
+DEBUG: parsing line: 454
+DEBUG: token: 454
+DEBUG: arg line: 200
+DEBUG: parsing line: 200
+DEBUG: token: 200
+DEBUG: arg line: 385
+DEBUG: parsing line: 385
+DEBUG: token: 385
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 332
+DEBUG: parsing line: 332
+DEBUG: token: 332
+DEBUG: arg line: 64
+DEBUG: parsing line: 64
+DEBUG: token: 64
+DEBUG: arg line: 169
+DEBUG: parsing line: 169
+DEBUG: token: 169
+DEBUG: arg line: 294
+DEBUG: parsing line: 294
+DEBUG: token: 294
+DEBUG: arg line: 328
+DEBUG: parsing line: 328
+DEBUG: token: 328
+DEBUG: arg line: 468
+DEBUG: parsing line: 468
+DEBUG: token: 468
+DEBUG: arg line: 371
+DEBUG: parsing line: 371
+DEBUG: token: 371
+DEBUG: arg line: 184
+DEBUG: parsing line: 184
+DEBUG: token: 184
+DEBUG: arg line: 90
+DEBUG: parsing line: 90
+DEBUG: token: 90
+DEBUG: arg line: 116
+DEBUG: parsing line: 116
+DEBUG: token: 116
+DEBUG: arg line: 105
+DEBUG: parsing line: 105
+DEBUG: token: 105
+DEBUG: arg line: 421
+DEBUG: parsing line: 421
+DEBUG: token: 421
+DEBUG: arg line: 73
+DEBUG: parsing line: 73
+DEBUG: token: 73
+DEBUG: arg line: 142
+DEBUG: parsing line: 142
+DEBUG: token: 142
+DEBUG: arg line: 228
+DEBUG: parsing line: 228
+DEBUG: token: 228
+DEBUG: arg line: 340
+DEBUG: parsing line: 340
+DEBUG: token: 340
+DEBUG: arg line: 308
+DEBUG: parsing line: 308
+DEBUG: token: 308
+DEBUG: arg line: 296
+DEBUG: parsing line: 296
+DEBUG: token: 296
+DEBUG: arg line: 483
+DEBUG: parsing line: 483
+DEBUG: token: 483
+DEBUG: arg line: 439
+DEBUG: parsing line: 439
+DEBUG: token: 439
+DEBUG: arg line: 271
+DEBUG: parsing line: 271
+DEBUG: token: 271
+DEBUG: arg line: 364
+DEBUG: parsing line: 364
+DEBUG: token: 364
+DEBUG: arg line: 209
+DEBUG: parsing line: 209
+DEBUG: token: 209
+DEBUG: arg line: 128
+DEBUG: parsing line: 128
+DEBUG: token: 128
+DEBUG: arg line: 391
+DEBUG: parsing line: 391
+DEBUG: token: 391
+DEBUG: arg line: 193
+DEBUG: parsing line: 193
+DEBUG: token: 193
+DEBUG: arg line: 23
+DEBUG: parsing line: 23
+DEBUG: token: 23
+DEBUG: arg line: 449
+DEBUG: parsing line: 449
+DEBUG: token: 449
+DEBUG: arg line: 360
+DEBUG: parsing line: 360
+DEBUG: token: 360
+DEBUG: arg line: 138
+DEBUG: parsing line: 138
+DEBUG: token: 138
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 188
+DEBUG: parsing line: 188
+DEBUG: token: 188
+DEBUG: arg line: 82
+DEBUG: parsing line: 82
+DEBUG: token: 82
+DEBUG: arg line: 252
+DEBUG: parsing line: 252
+DEBUG: token: 252
+DEBUG: arg line: 263
+DEBUG: parsing line: 263
+DEBUG: token: 263
+DEBUG: arg line: 339
+DEBUG: parsing line: 339
+DEBUG: token: 339
+DEBUG: arg line: 274
+DEBUG: parsing line: 274
+DEBUG: token: 274
+DEBUG: arg line: 406
+DEBUG: parsing line: 406
+DEBUG: token: 406
+DEBUG: arg line: 123
+DEBUG: parsing line: 123
+DEBUG: token: 123
+DEBUG: arg line: 322
+DEBUG: parsing line: 322
+DEBUG: token: 322
+DEBUG: arg line: 476
+DEBUG: parsing line: 476
+DEBUG: token: 476
+DEBUG: arg line: 417
+DEBUG: parsing line: 417
+DEBUG: token: 417
+DEBUG: arg line: 40
+DEBUG: parsing line: 40
+DEBUG: token: 40
+DEBUG: arg line: 430
+DEBUG: parsing line: 430
+DEBUG: token: 430
+DEBUG: arg line: 218
+DEBUG: parsing line: 218
+DEBUG: token: 218
+DEBUG: arg line: 117
+DEBUG: parsing line: 117
+DEBUG: token: 117
+DEBUG: arg line: 445
+DEBUG: parsing line: 445
+DEBUG: token: 445
+DEBUG: arg line: 146
+DEBUG: parsing line: 146
+DEBUG: token: 146
+DEBUG: arg line: 309
+DEBUG: parsing line: 309
+DEBUG: token: 309
+DEBUG: arg line: 362
+DEBUG: parsing line: 362
+DEBUG: token: 362
+DEBUG: arg line: 180
+DEBUG: parsing line: 180
+DEBUG: token: 180
+DEBUG: arg line: 375
+DEBUG: parsing line: 375
+DEBUG: token: 375
+DEBUG: arg line: 16
+DEBUG: parsing line: 16
+DEBUG: token: 16
+DEBUG: arg line: 88
+DEBUG: parsing line: 88
+DEBUG: token: 88
+DEBUG: arg line: 11
+DEBUG: parsing line: 11
+DEBUG: token: 11
+DEBUG: arg line: 248
+DEBUG: parsing line: 248
+DEBUG: token: 248
+DEBUG: arg line: 221
+DEBUG: parsing line: 221
+DEBUG: token: 221
+DEBUG: arg line: 407
+DEBUG: parsing line: 407
+DEBUG: token: 407
+DEBUG: arg line: 166
+DEBUG: parsing line: 166
+DEBUG: token: 166
+DEBUG: arg line: 100
+DEBUG: parsing line: 100
+DEBUG: token: 100
+DEBUG: arg line: 8
+DEBUG: parsing line: 8
+DEBUG: token: 8
+DEBUG: arg line: 291
+DEBUG: parsing line: 291
+DEBUG: token: 291
+DEBUG: arg line: 343
+DEBUG: parsing line: 343
+DEBUG: token: 343
+DEBUG: arg line: 384
+DEBUG: parsing line: 384
+DEBUG: token: 384
+DEBUG: arg line: 310
+DEBUG: parsing line: 310
+DEBUG: token: 310
+DEBUG: arg line: 492
+DEBUG: parsing line: 492
+DEBUG: token: 492
+DEBUG: arg line: 28
+DEBUG: parsing line: 28
+DEBUG: token: 28
+DEBUG: arg line: 486
+DEBUG: parsing line: 486
+DEBUG: token: 486
+DEBUG: arg line: 150
+DEBUG: parsing line: 150
+DEBUG: token: 150
+DEBUG: arg line: 57
+DEBUG: parsing line: 57
+DEBUG: token: 57
+DEBUG: arg line: 167
+DEBUG: parsing line: 167
+DEBUG: token: 167
+DEBUG: arg line: 75
+DEBUG: parsing line: 75
+DEBUG: token: 75
+DEBUG: arg line: 43
+DEBUG: parsing line: 43
+DEBUG: token: 43
+DEBUG: arg line: 168
+DEBUG: parsing line: 168
+DEBUG: token: 168
+DEBUG: arg line: 104
+DEBUG: parsing line: 104
+DEBUG: token: 104
+DEBUG: arg line: 491
+DEBUG: parsing line: 491
+DEBUG: token: 491
+DEBUG: arg line: 494
+DEBUG: parsing line: 494
+DEBUG: token: 494
+DEBUG: arg line: 207
+DEBUG: parsing line: 207
+DEBUG: token: 207
+DEBUG: arg line: 20
+DEBUG: parsing line: 20
+DEBUG: token: 20
+DEBUG: arg line: 204
+DEBUG: parsing line: 204
+DEBUG: token: 204
+DEBUG: arg line: 77
+DEBUG: parsing line: 77
+DEBUG: token: 77
+DEBUG: arg line: 314
+DEBUG: parsing line: 314
+DEBUG: token: 314
+DEBUG: arg line: 214
+DEBUG: parsing line: 214
+DEBUG: token: 214
+DEBUG: arg line: 69
+DEBUG: parsing line: 69
+DEBUG: token: 69
+DEBUG: arg line: 12
+DEBUG: parsing line: 12
+DEBUG: token: 12
+DEBUG: arg line: 137
+DEBUG: parsing line: 137
+DEBUG: token: 137
+DEBUG: arg line: 498
+DEBUG: parsing line: 498
+DEBUG: token: 498
+DEBUG: arg line: 98
+DEBUG: parsing line: 98
+DEBUG: token: 98
+DEBUG: arg line: 338
+DEBUG: parsing line: 338
+DEBUG: token: 338
+DEBUG: arg line: 353
+DEBUG: parsing line: 353
+DEBUG: token: 353
+DEBUG: arg line: 312
+DEBUG: parsing line: 312
+DEBUG: token: 312
+DEBUG: arg line: 485
+DEBUG: parsing line: 485
+DEBUG: token: 485
+DEBUG: arg line: 448
+DEBUG: parsing line: 448
+DEBUG: token: 448
+DEBUG: arg line: 139
+DEBUG: parsing line: 139
+DEBUG: token: 139
+DEBUG: arg line: 143
+DEBUG: parsing line: 143
+DEBUG: token: 143
+DEBUG: arg line: 418
+DEBUG: parsing line: 418
+DEBUG: token: 418
+DEBUG: arg line: 490
+DEBUG: parsing line: 490
+DEBUG: token: 490
+DEBUG: arg line: 357
+DEBUG: parsing line: 357
+DEBUG: token: 357
+DEBUG: arg line: 212
+DEBUG: parsing line: 212
+DEBUG: token: 212
+DEBUG: arg line: 397
+DEBUG: parsing line: 397
+DEBUG: token: 397
+DEBUG: arg line: 466
+DEBUG: parsing line: 466
+DEBUG: token: 466
+DEBUG: arg line: 438
+DEBUG: parsing line: 438
+DEBUG: token: 438
+DEBUG: arg line: 198
+DEBUG: parsing line: 198
+DEBUG: token: 198
+DEBUG: arg line: 86
+DEBUG: parsing line: 86
+DEBUG: token: 86
+DEBUG: arg line: 52
+DEBUG: parsing line: 52
+DEBUG: token: 52
+DEBUG: arg line: 10
+DEBUG: parsing line: 10
+DEBUG: token: 10
+DEBUG: arg line: 97
+DEBUG: parsing line: 97
+DEBUG: token: 97
+DEBUG: arg line: 401
+DEBUG: parsing line: 401
+DEBUG: token: 401
+DEBUG: arg line: 196
+DEBUG: parsing line: 196
+DEBUG: token: 196
+DEBUG: arg line: 210
+DEBUG: parsing line: 210
+DEBUG: token: 210
+DEBUG: arg line: 440
+DEBUG: parsing line: 440
+DEBUG: token: 440
+DEBUG: arg line: 325
+DEBUG: parsing line: 325
+DEBUG: token: 325
+DEBUG: arg line: 462
+DEBUG: parsing line: 462
+DEBUG: token: 462
+DEBUG: arg line: 389
+DEBUG: parsing line: 389
+DEBUG: token: 389
+DEBUG: arg line: 119
+DEBUG: parsing line: 119
+DEBUG: token: 119
+DEBUG: arg line: 405
+DEBUG: parsing line: 405
+DEBUG: token: 405
+DEBUG: arg line: 217
+DEBUG: parsing line: 217
+DEBUG: token: 217
+DEBUG: arg line: 9
+DEBUG: parsing line: 9
+DEBUG: token: 9
+DEBUG: arg line: 270
+DEBUG: parsing line: 270
+DEBUG: token: 270
+DEBUG: arg line: 30
+DEBUG: parsing line: 30
+DEBUG: token: 30
+DEBUG: arg line: 151
+DEBUG: parsing line: 151
+DEBUG: token: 151
+DEBUG: arg line: 63
+DEBUG: parsing line: 63
+DEBUG: token: 63
+DEBUG: arg line: 273
+DEBUG: parsing line: 273
+DEBUG: token: 273
+DEBUG: arg line: 404
+DEBUG: parsing line: 404
+DEBUG: token: 404
+DEBUG: arg line: 302
+DEBUG: parsing line: 302
+DEBUG: token: 302
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 281
+DEBUG: parsing line: 281
+DEBUG: token: 281
+DEBUG: arg line: 232
+DEBUG: parsing line: 232
+DEBUG: token: 232
+DEBUG: arg line: 335
+DEBUG: parsing line: 335
+DEBUG: token: 335
+DEBUG: arg line: 411
+DEBUG: parsing line: 411
+DEBUG: token: 411
+DEBUG: arg line: 55
+DEBUG: parsing line: 55
+DEBUG: token: 55
+DEBUG: arg line: 93
+DEBUG: parsing line: 93
+DEBUG: token: 93
+DEBUG: arg line: 354
+DEBUG: parsing line: 354
+DEBUG: token: 354
+DEBUG: arg line: 172
+DEBUG: parsing line: 172
+DEBUG: token: 172
+DEBUG: arg line: 186
+DEBUG: parsing line: 186
+DEBUG: token: 186
+DEBUG: arg line: 359
+DEBUG: parsing line: 359
+DEBUG: token: 359
+DEBUG: arg line: 211
+DEBUG: parsing line: 211
+DEBUG: token: 211
+DEBUG: arg line: 92
+DEBUG: parsing line: 92
+DEBUG: token: 92
+DEBUG: arg line: 194
+DEBUG: parsing line: 194
+DEBUG: token: 194
+DEBUG: arg line: 157
+DEBUG: parsing line: 157
+DEBUG: token: 157
+DEBUG: arg line: 368
+DEBUG: parsing line: 368
+DEBUG: token: 368
+DEBUG: arg line: 402
+DEBUG: parsing line: 402
+DEBUG: token: 402
+DEBUG: arg line: 122
+DEBUG: parsing line: 122
+DEBUG: token: 122
+DEBUG: arg line: 480
+DEBUG: parsing line: 480
+DEBUG: token: 480
+DEBUG: arg line: 85
+DEBUG: parsing line: 85
+DEBUG: token: 85
+DEBUG: arg line: 109
+DEBUG: parsing line: 109
+DEBUG: token: 109
+DEBUG: arg line: 127
+DEBUG: parsing line: 127
+DEBUG: token: 127
+DEBUG: arg line: 377
+DEBUG: parsing line: 377
+DEBUG: token: 377
+DEBUG: arg line: 367
+DEBUG: parsing line: 367
+DEBUG: token: 367
+DEBUG: arg line: 237
+DEBUG: parsing line: 237
+DEBUG: token: 237
+DEBUG: arg line: 256
+DEBUG: parsing line: 256
+DEBUG: token: 256
+DEBUG: arg line: 22
+DEBUG: parsing line: 22
+DEBUG: token: 22
+DEBUG: arg line: 153
+DEBUG: parsing line: 153
+DEBUG: token: 153
+DEBUG: arg line: 396
+DEBUG: parsing line: 396
+DEBUG: token: 396
+DEBUG: arg line: 240
+DEBUG: parsing line: 240
+DEBUG: token: 240
+DEBUG: arg line: 442
+DEBUG: parsing line: 442
+DEBUG: token: 442
+DEBUG: arg line: 495
+DEBUG: parsing line: 495
+DEBUG: token: 495
+DEBUG: arg line: 342
+DEBUG: parsing line: 342
+DEBUG: token: 342
+DEBUG: arg line: 326
+DEBUG: parsing line: 326
+DEBUG: token: 326
+DEBUG: arg line: 450
+DEBUG: parsing line: 450
+DEBUG: token: 450
+DEBUG: arg line: 165
+DEBUG: parsing line: 165
+DEBUG: token: 165
+DEBUG: arg line: 185
+DEBUG: parsing line: 185
+DEBUG: token: 185
+DEBUG: arg line: 134
+DEBUG: parsing line: 134
+DEBUG: token: 134
+DEBUG: arg line: 70
+DEBUG: parsing line: 70
+DEBUG: token: 70
+DEBUG: arg line: 241
+DEBUG: parsing line: 241
+DEBUG: token: 241
+DEBUG: arg line: 441
+DEBUG: parsing line: 441
+DEBUG: token: 441
+DEBUG: arg line: 96
+DEBUG: parsing line: 96
+DEBUG: token: 96
+DEBUG: arg line: 330
+DEBUG: parsing line: 330
+DEBUG: token: 330
+DEBUG: arg line: 471
+DEBUG: parsing line: 471
+DEBUG: token: 471
+DEBUG: arg line: 224
+DEBUG: parsing line: 224
+DEBUG: token: 224
+DEBUG: arg line: 464
+DEBUG: parsing line: 464
+DEBUG: token: 464
+DEBUG: arg line: 160
+DEBUG: parsing line: 160
+DEBUG: token: 160
+DEBUG: arg line: 475
+DEBUG: parsing line: 475
+DEBUG: token: 475
+DEBUG: arg line: 175
+DEBUG: parsing line: 175
+DEBUG: token: 175
+DEBUG: arg line: 425
+DEBUG: parsing line: 425
+DEBUG: token: 425
+DEBUG: arg line: 315
+DEBUG: parsing line: 315
+DEBUG: token: 315
+DEBUG: arg line: 145
+DEBUG: parsing line: 145
+DEBUG: token: 145
+DEBUG: arg line: 470
+DEBUG: parsing line: 470
+DEBUG: token: 470
+DEBUG: arg line: 379
+DEBUG: parsing line: 379
+DEBUG: token: 379
+DEBUG: arg line: 149
+DEBUG: parsing line: 149
+DEBUG: token: 149
+DEBUG: arg line: 428
+DEBUG: parsing line: 428
+DEBUG: token: 428
+DEBUG: arg line: 413
+DEBUG: parsing line: 413
+DEBUG: token: 413
+DEBUG: arg line: 84
+DEBUG: parsing line: 84
+DEBUG: token: 84
+DEBUG: arg line: 473
+DEBUG: parsing line: 473
+DEBUG: token: 473
+DEBUG: arg line: 181
+DEBUG: parsing line: 181
+DEBUG: token: 181
+DEBUG: arg line: 345
+DEBUG: parsing line: 345
+DEBUG: token: 345
+DEBUG: arg line: 334
+DEBUG: parsing line: 334
+DEBUG: token: 334
+DEBUG: arg line: 189
+DEBUG: parsing line: 189
+DEBUG: token: 189
+DEBUG: arg line: 192
+DEBUG: parsing line: 192
+DEBUG: token: 192
+DEBUG: arg line: 103
+DEBUG: parsing line: 103
+DEBUG: token: 103
+DEBUG: arg line: 233
+DEBUG: parsing line: 233
+DEBUG: token: 233
+DEBUG: arg line: 320
+DEBUG: parsing line: 320
+DEBUG: token: 320
+DEBUG: arg line: 234
+DEBUG: parsing line: 234
+DEBUG: token: 234
+DEBUG: arg line: 463
+DEBUG: parsing line: 463
+DEBUG: token: 463
+DEBUG: arg line: 38
+DEBUG: parsing line: 38
+DEBUG: token: 38
+DEBUG: arg line: 183
+DEBUG: parsing line: 183
+DEBUG: token: 183
+DEBUG: arg line: 159
+DEBUG: parsing line: 159
+DEBUG: token: 159
+DEBUG: arg line: 177
+DEBUG: parsing line: 177
+DEBUG: token: 177
+DEBUG: arg line: 329
+DEBUG: parsing line: 329
+DEBUG: token: 329
+DEBUG: arg line: 176
+DEBUG: parsing line: 176
+DEBUG: token: 176
+DEBUG: arg line: 7
+DEBUG: parsing line: 7
+DEBUG: token: 7
+DEBUG: arg line: 297
+DEBUG: parsing line: 297
+DEBUG: token: 297
+DEBUG: arg line: 115
+DEBUG: parsing line: 115
+DEBUG: token: 115
+DEBUG: arg line: 482
+DEBUG: parsing line: 482
+DEBUG: token: 482
+DEBUG: arg line: 305
+DEBUG: parsing line: 305
+DEBUG: token: 305
+DEBUG: arg line: 461
+DEBUG: parsing line: 461
+DEBUG: token: 461
+DEBUG: arg line: 376
+DEBUG: parsing line: 376
+DEBUG: token: 376
+DEBUG: arg line: 60
+DEBUG: parsing line: 60
+DEBUG: token: 60
+DEBUG: arg line: 284
+DEBUG: parsing line: 284
+DEBUG: token: 284
+DEBUG: arg line: 81
+DEBUG: parsing line: 81
+DEBUG: token: 81
+DEBUG: arg line: 230
+DEBUG: parsing line: 230
+DEBUG: token: 230
+DEBUG: arg line: 99
+DEBUG: parsing line: 99
+DEBUG: token: 99
+DEBUG: arg line: 372
+DEBUG: parsing line: 372
+DEBUG: token: 372
+DEBUG: arg line: 350
+DEBUG: parsing line: 350
+DEBUG: token: 350
+DEBUG: arg line: 129
+DEBUG: parsing line: 129
+DEBUG: token: 129
+DEBUG: arg line: 386
+DEBUG: parsing line: 386
+DEBUG: token: 386
+DEBUG: arg line: 333
+DEBUG: parsing line: 333
+DEBUG: token: 333
+DEBUG: arg line: 331
+DEBUG: parsing line: 331
+DEBUG: token: 331
+DEBUG: arg line: 158
+DEBUG: parsing line: 158
+DEBUG: token: 158
+DEBUG: arg line: 300
+DEBUG: parsing line: 300
+DEBUG: token: 300
+DEBUG: arg line: 278
+DEBUG: parsing line: 278
+DEBUG: token: 278
+DEBUG: arg line: 318
+DEBUG: parsing line: 318
+DEBUG: token: 318
+DEBUG: arg line: 108
+DEBUG: parsing line: 108
+DEBUG: token: 108
+DEBUG: arg line: 135
+DEBUG: parsing line: 135
+DEBUG: token: 135
+DEBUG: arg line: 87
+DEBUG: parsing line: 87
+DEBUG: token: 87
+DEBUG: arg line: 216
+DEBUG: parsing line: 216
+DEBUG: token: 216
+DEBUG: arg line: 264
+DEBUG: parsing line: 264
+DEBUG: token: 264
+DEBUG: arg line: 361
+DEBUG: parsing line: 361
+DEBUG: token: 361
+DEBUG: arg line: 286
+DEBUG: parsing line: 286
+DEBUG: token: 286
+DEBUG: arg line: 363
+DEBUG: parsing line: 363
+DEBUG: token: 363
+DEBUG: arg line: 282
+DEBUG: parsing line: 282
+DEBUG: token: 282
+DEBUG: arg line: 366
+DEBUG: parsing line: 366
+DEBUG: token: 366
+DEBUG: arg line: 213
+DEBUG: parsing line: 213
+DEBUG: token: 213
+DEBUG: arg line: 178
+DEBUG: parsing line: 178
+DEBUG: token: 178
+DEBUG: arg line: 261
+DEBUG: parsing line: 261
+DEBUG: token: 261
+DEBUG: arg line: 53
+DEBUG: parsing line: 53
+DEBUG: token: 53
+DEBUG: arg line: 452
+DEBUG: parsing line: 452
+DEBUG: token: 452
+DEBUG: arg line: 205
+DEBUG: parsing line: 205
+DEBUG: token: 205
+DEBUG: arg line: 62
+DEBUG: parsing line: 62
+DEBUG: token: 62
+DEBUG: arg line: 323
+DEBUG: parsing line: 323
+DEBUG: token: 323
+DEBUG: arg line: 262
+DEBUG: parsing line: 262
+DEBUG: token: 262
+DEBUG: arg line: 50
+DEBUG: parsing line: 50
+DEBUG: token: 50
+DEBUG: arg line: 126
+DEBUG: parsing line: 126
+DEBUG: token: 126
+DEBUG: arg line: 255
+DEBUG: parsing line: 255
+DEBUG: token: 255
+DEBUG: arg line: 383
+DEBUG: parsing line: 383
+DEBUG: token: 383
+DEBUG: arg line: 358
+DEBUG: parsing line: 358
+DEBUG: token: 358
+DEBUG: arg line: 112
+DEBUG: parsing line: 112
+DEBUG: token: 112
+DEBUG: arg line: 132
+DEBUG: parsing line: 132
+DEBUG: token: 132
+DEBUG: arg line: 365
+DEBUG: parsing line: 365
+DEBUG: token: 365
+DEBUG: arg line: 346
+DEBUG: parsing line: 346
+DEBUG: token: 346
+DEBUG: arg line: 288
+DEBUG: parsing line: 288
+DEBUG: token: 288
+DEBUG: arg line: 131
+DEBUG: parsing line: 131
+DEBUG: token: 131
+DEBUG: arg line: 6
+DEBUG: parsing line: 6
+DEBUG: token: 6
+DEBUG: arg line: 220
+DEBUG: parsing line: 220
+DEBUG: token: 220
+DEBUG: arg line: 27
+DEBUG: parsing line: 27
+DEBUG: token: 27
+DEBUG: arg line: 155
+DEBUG: parsing line: 155
+DEBUG: token: 155
+DEBUG: arg line: 49
+DEBUG: parsing line: 49
+DEBUG: token: 49
+DEBUG: arg line: 51
+DEBUG: parsing line: 51
+DEBUG: token: 51
+DEBUG: arg line: 56
+DEBUG: parsing line: 56
+DEBUG: token: 56
+DEBUG: arg line: 387
+DEBUG: parsing line: 387
+DEBUG: token: 387
+DEBUG: arg line: 44
+DEBUG: parsing line: 44
+DEBUG: token: 44
+DEBUG: arg line: 373
+DEBUG: parsing line: 373
+DEBUG: token: 373
+DEBUG: arg line: 125
+DEBUG: parsing line: 125
+DEBUG: token: 125
+DEBUG: arg line: 455
+DEBUG: parsing line: 455
+DEBUG: token: 455
+DEBUG: arg line: 431
+DEBUG: parsing line: 431
+DEBUG: token: 431
+DEBUG: arg line: 163
+DEBUG: parsing line: 163
+DEBUG: token: 163
+DEBUG: arg line: 474
+DEBUG: parsing line: 474
+DEBUG: token: 474
+DEBUG: arg line: 219
+DEBUG: parsing line: 219
+DEBUG: token: 219
+DEBUG: arg line: 276
+DEBUG: parsing line: 276
+DEBUG: token: 276
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: arg line: 487
+DEBUG: parsing line: 487
+DEBUG: token: 487
+DEBUG: arg line: 277
+DEBUG: parsing line: 277
+DEBUG: token: 277
+DEBUG: arg line: 18
+DEBUG: parsing line: 18
+DEBUG: token: 18
+DEBUG: arg line: 170
+DEBUG: parsing line: 170
+DEBUG: token: 170
+DEBUG: arg line: 107
+DEBUG: parsing line: 107
+DEBUG: token: 107
+DEBUG: arg line: 477
+DEBUG: parsing line: 477
+DEBUG: token: 477
+DEBUG: arg line: 79
+DEBUG: parsing line: 79
+DEBUG: token: 79
+DEBUG: arg line: 408
+DEBUG: parsing line: 408
+DEBUG: token: 408
+DEBUG: arg line: 260
+DEBUG: parsing line: 260
+DEBUG: token: 260
+DEBUG: arg line: 348
+DEBUG: parsing line: 348
+DEBUG: token: 348
+DEBUG: arg line: 199
+DEBUG: parsing line: 199
+DEBUG: token: 199
+DEBUG: arg line: 101
+DEBUG: parsing line: 101
+DEBUG: token: 101
+DEBUG: arg line: 141
+DEBUG: parsing line: 141
+DEBUG: token: 141
+DEBUG: arg line: 472
+DEBUG: parsing line: 472
+DEBUG: token: 472
+DEBUG: arg line: 29
+DEBUG: parsing line: 29
+DEBUG: token: 29
+DEBUG: arg line: 311
+DEBUG: parsing line: 311
+DEBUG: token: 311
+DEBUG: arg line: 54
+DEBUG: parsing line: 54
+DEBUG: token: 54
+DEBUG: arg line: 444
+DEBUG: parsing line: 444
+DEBUG: token: 444
+DEBUG: arg line: 41
+DEBUG: parsing line: 41
+DEBUG: token: 41
+DEBUG: arg line: 19
+DEBUG: parsing line: 19
+DEBUG: token: 19
+DEBUG: arg line: 182
+DEBUG: parsing line: 182
+DEBUG: token: 182
+DEBUG: arg line: 154
+DEBUG: parsing line: 154
+DEBUG: token: 154
+DEBUG: arg line: 61
+DEBUG: parsing line: 61
+DEBUG: token: 61
+DEBUG: arg line: 446
+DEBUG: parsing line: 446
+DEBUG: token: 446
+DEBUG: arg line: 460
+DEBUG: parsing line: 460
+DEBUG: token: 460
+DEBUG: arg line: 419
+DEBUG: parsing line: 419
+DEBUG: token: 419
+DEBUG: arg line: 133
+DEBUG: parsing line: 133
+DEBUG: token: 133
+DEBUG: arg line: 290
+DEBUG: parsing line: 290
+DEBUG: token: 290
+DEBUG: arg line: 351
+DEBUG: parsing line: 351
+DEBUG: token: 351
+DEBUG: arg line: 434
+DEBUG: parsing line: 434
+DEBUG: token: 434
+DEBUG: arg line: 409
+DEBUG: parsing line: 409
+DEBUG: token: 409
+DEBUG: arg line: 59
+DEBUG: parsing line: 59
+DEBUG: token: 59
+DEBUG: arg line: 414
+DEBUG: parsing line: 414
+DEBUG: token: 414
+DEBUG: arg line: 226
+DEBUG: parsing line: 226
+DEBUG: token: 226
+DEBUG: arg line: 31
+DEBUG: parsing line: 31
+DEBUG: token: 31
+DEBUG: arg line: 223
+DEBUG: parsing line: 223
+DEBUG: token: 223
+DEBUG: arg line: 456
+DEBUG: parsing line: 456
+DEBUG: token: 456
+DEBUG: arg line: 65
+DEBUG: parsing line: 65
+DEBUG: token: 65
+DEBUG: arg line: 111
+DEBUG: parsing line: 111
+DEBUG: token: 111
+DEBUG: arg line: 231
+DEBUG: parsing line: 231
+DEBUG: token: 231
+DEBUG: arg line: 144
+DEBUG: parsing line: 144
+DEBUG: token: 144
+DEBUG: arg line: 114
+DEBUG: parsing line: 114
+DEBUG: token: 114
+DEBUG: arg line: 280
+DEBUG: parsing line: 280
+DEBUG: token: 280
+DEBUG: arg line: 251
+DEBUG: parsing line: 251
+DEBUG: token: 251
+DEBUG: arg line: 95
+DEBUG: parsing line: 95
+DEBUG: token: 95
+DEBUG: arg line: 341
+DEBUG: parsing line: 341
+DEBUG: token: 341
+DEBUG: arg line: 287
+DEBUG: parsing line: 287
+DEBUG: token: 287
+DEBUG: arg line: 195
+DEBUG: parsing line: 195
+DEBUG: token: 195
+DEBUG: arg line: 370
+DEBUG: parsing line: 370
+DEBUG: token: 370
+DEBUG: arg line: 283
+DEBUG: parsing line: 283
+DEBUG: token: 283
+DEBUG: arg line: 400
+DEBUG: parsing line: 400
+DEBUG: token: 400
+DEBUG: arg line: 244
+DEBUG: parsing line: 244
+DEBUG: token: 244
+DEBUG: arg line: 191
+DEBUG: parsing line: 191
+DEBUG: token: 191
+DEBUG: arg line: 355
+DEBUG: parsing line: 355
+DEBUG: token: 355
+DEBUG: arg line: 380
+DEBUG: parsing line: 380
+DEBUG: token: 380
+DEBUG: arg line: 403
+DEBUG: parsing line: 403
+DEBUG: token: 403
+DEBUG: arg line: 317
+DEBUG: parsing line: 317
+DEBUG: token: 317
+DEBUG: arg line: 412
+DEBUG: parsing line: 412
+DEBUG: token: 412
+DEBUG: arg line: 266
+DEBUG: parsing line: 266
+DEBUG: token: 266
+DEBUG: arg line: 301
+DEBUG: parsing line: 301
+DEBUG: token: 301
+DEBUG: arg line: 336
+DEBUG: parsing line: 336
+DEBUG: token: 336
+DEBUG: arg line: 13
+DEBUG: parsing line: 13
+DEBUG: token: 13
+DEBUG: arg line: 265
+DEBUG: parsing line: 265
+DEBUG: token: 265
+DEBUG: arg line: 267
+DEBUG: parsing line: 267
+DEBUG: token: 267
+DEBUG: arg line: 161
+DEBUG: parsing line: 161
+DEBUG: token: 161
+DEBUG: arg line: 381
+DEBUG: parsing line: 381
+DEBUG: token: 381
+DEBUG: arg line: 118
+DEBUG: parsing line: 118
+DEBUG: token: 118
+DEBUG: arg line: 238
+DEBUG: parsing line: 238
+DEBUG: token: 238
+DEBUG: arg line: 327
+DEBUG: parsing line: 327
+DEBUG: token: 327
+DEBUG: arg line: 124
+DEBUG: parsing line: 124
+DEBUG: token: 124
+DEBUG: arg line: 239
+DEBUG: parsing line: 239
+DEBUG: token: 239
+DEBUG: arg line: 272
+DEBUG: parsing line: 272
+DEBUG: token: 272
+DEBUG: arg line: 202
+DEBUG: parsing line: 202
+DEBUG: token: 202
+DEBUG: arg line: 319
+DEBUG: parsing line: 319
+DEBUG: token: 319
+DEBUG: arg line: 245
+DEBUG: parsing line: 245
+DEBUG: token: 245
+DEBUG: arg line: 349
+DEBUG: parsing line: 349
+DEBUG: token: 349
+DEBUG: arg line: 91
+DEBUG: parsing line: 91
+DEBUG: token: 91
+DEBUG: arg line: 39
+DEBUG: parsing line: 39
+DEBUG: token: 39
+DEBUG: rank_values complete. Stack A (ranks): 297 398 24 34 178 381 487 315 155 73 305 67 292 278 336 377 389 246 66 47 139 129 450 343 75 355 496 32 25 373 393 291 298 189 457 368 258 483 46 414 442 397 120 253 302 351 284 82 221 422 109 249 492 119 387 419 202 499 257 242 394 320 346 135 33 488 306 163 16 196 207 274 303 36 495 428 468 57 146 415 0 409 105 151 147 288 226 172 432 294 434 478 323 35 436 101 170 456 173 14 498 44 452 41 235 20 70 205 268 431 88 186 241 112 426 228 446 65 458 421 71 234 31 312 252 79 423 248 256 224 77 245 161 464 267 214 480 45 477 200 13 425 93 23 435 466 392 391 453 199 384 2 331 63 168 293 327 467 370 183 89 115 104 420 72 141 227 339 307 295 482 438 270 363 208 127 390 192 22 448 359 137 1 187 81 251 262 338 273 405 122 321 475 416 39 429 217 116 444 145 308 361 179 374 15 87 10 247 220 406 165 99 7 290 342 383 309 491 27 485 149 56 166 74 42 167 103 490 493 206 19 203 76 313 213 68 11 136 497 97 337 352 311 484 447 138 142 417 489 356 211 396 465 437 197 85 51 9 96 400 195 209 439 324 461 388 118 404 216 8 269 29 150 62 272 403 301 4 280 231 334 410 54 92 353 171 185 358 210 91 193 156 367 401 121 479 84 108 126 376 366 236 255 21 152 395 239 441 494 341 325 449 164 184 133 69 240 440 95 329 470 223 463 159 474 174 424 314 144 469 378 148 427 412 83 472 180 344 333 188 191 102 232 319 233 462 37 182 158 176 328 175 6 296 114 481 304 460 375 59 283 80 229 98 371 349 128 385 332 330 157 299 277 317 107 134 86 215 263 360 285 362 281 365 212 177 260 52 451 204 61 322 261 49 125 254 382 357 111 131 364 345 287 130 5 219 26 154 48 50 55 386 43 372 124 454 430 162 473 218 275 3 486 276 17 169 106 476 78 407 259 347 198 100 140 471 28 310 53 443 40 18 181 153 60 445 459 418 132 289 350 433 408 58 413 225 30 222 455 64 110 230 143 113 279 250 94 340 286 194 369 282 399 243 190 354 379 402 316 411 265 300 335 12 264 266 160 380 117 237 326 123 238 271 201 318 244 348 90 38 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: Done!
+6784
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 298
+DEBUG: parsing line: 298
+DEBUG: token: 298
+DEBUG: arg line: 399
+DEBUG: parsing line: 399
+DEBUG: token: 399
+DEBUG: arg line: 25
+DEBUG: parsing line: 25
+DEBUG: token: 25
+DEBUG: arg line: 35
+DEBUG: parsing line: 35
+DEBUG: token: 35
+DEBUG: arg line: 179
+DEBUG: parsing line: 179
+DEBUG: token: 179
+DEBUG: arg line: 382
+DEBUG: parsing line: 382
+DEBUG: token: 382
+DEBUG: arg line: 488
+DEBUG: parsing line: 488
+DEBUG: token: 488
+DEBUG: arg line: 316
+DEBUG: parsing line: 316
+DEBUG: token: 316
+DEBUG: arg line: 156
+DEBUG: parsing line: 156
+DEBUG: token: 156
+DEBUG: arg line: 74
+DEBUG: parsing line: 74
+DEBUG: token: 74
+DEBUG: arg line: 306
+DEBUG: parsing line: 306
+DEBUG: token: 306
+DEBUG: arg line: 68
+DEBUG: parsing line: 68
+DEBUG: token: 68
+DEBUG: arg line: 293
+DEBUG: parsing line: 293
+DEBUG: token: 293
+DEBUG: arg line: 279
+DEBUG: parsing line: 279
+DEBUG: token: 279
+DEBUG: arg line: 337
+DEBUG: parsing line: 337
+DEBUG: token: 337
+DEBUG: arg line: 378
+DEBUG: parsing line: 378
+DEBUG: token: 378
+DEBUG: arg line: 390
+DEBUG: parsing line: 390
+DEBUG: token: 390
+DEBUG: arg line: 247
+DEBUG: parsing line: 247
+DEBUG: token: 247
+DEBUG: arg line: 67
+DEBUG: parsing line: 67
+DEBUG: token: 67
+DEBUG: arg line: 48
+DEBUG: parsing line: 48
+DEBUG: token: 48
+DEBUG: arg line: 140
+DEBUG: parsing line: 140
+DEBUG: token: 140
+DEBUG: arg line: 130
+DEBUG: parsing line: 130
+DEBUG: token: 130
+DEBUG: arg line: 451
+DEBUG: parsing line: 451
+DEBUG: token: 451
+DEBUG: arg line: 344
+DEBUG: parsing line: 344
+DEBUG: token: 344
+DEBUG: arg line: 76
+DEBUG: parsing line: 76
+DEBUG: token: 76
+DEBUG: arg line: 356
+DEBUG: parsing line: 356
+DEBUG: token: 356
+DEBUG: arg line: 497
+DEBUG: parsing line: 497
+DEBUG: token: 497
+DEBUG: arg line: 33
+DEBUG: parsing line: 33
+DEBUG: token: 33
+DEBUG: arg line: 26
+DEBUG: parsing line: 26
+DEBUG: token: 26
+DEBUG: arg line: 374
+DEBUG: parsing line: 374
+DEBUG: token: 374
+DEBUG: arg line: 394
+DEBUG: parsing line: 394
+DEBUG: token: 394
+DEBUG: arg line: 292
+DEBUG: parsing line: 292
+DEBUG: token: 292
+DEBUG: arg line: 299
+DEBUG: parsing line: 299
+DEBUG: token: 299
+DEBUG: arg line: 190
+DEBUG: parsing line: 190
+DEBUG: token: 190
+DEBUG: arg line: 458
+DEBUG: parsing line: 458
+DEBUG: token: 458
+DEBUG: arg line: 369
+DEBUG: parsing line: 369
+DEBUG: token: 369
+DEBUG: arg line: 259
+DEBUG: parsing line: 259
+DEBUG: token: 259
+DEBUG: arg line: 484
+DEBUG: parsing line: 484
+DEBUG: token: 484
+DEBUG: arg line: 47
+DEBUG: parsing line: 47
+DEBUG: token: 47
+DEBUG: arg line: 415
+DEBUG: parsing line: 415
+DEBUG: token: 415
+DEBUG: arg line: 443
+DEBUG: parsing line: 443
+DEBUG: token: 443
+DEBUG: arg line: 398
+DEBUG: parsing line: 398
+DEBUG: token: 398
+DEBUG: arg line: 121
+DEBUG: parsing line: 121
+DEBUG: token: 121
+DEBUG: arg line: 254
+DEBUG: parsing line: 254
+DEBUG: token: 254
+DEBUG: arg line: 303
+DEBUG: parsing line: 303
+DEBUG: token: 303
+DEBUG: arg line: 352
+DEBUG: parsing line: 352
+DEBUG: token: 352
+DEBUG: arg line: 285
+DEBUG: parsing line: 285
+DEBUG: token: 285
+DEBUG: arg line: 83
+DEBUG: parsing line: 83
+DEBUG: token: 83
+DEBUG: arg line: 222
+DEBUG: parsing line: 222
+DEBUG: token: 222
+DEBUG: arg line: 423
+DEBUG: parsing line: 423
+DEBUG: token: 423
+DEBUG: arg line: 110
+DEBUG: parsing line: 110
+DEBUG: token: 110
+DEBUG: arg line: 250
+DEBUG: parsing line: 250
+DEBUG: token: 250
+DEBUG: arg line: 493
+DEBUG: parsing line: 493
+DEBUG: token: 493
+DEBUG: arg line: 120
+DEBUG: parsing line: 120
+DEBUG: token: 120
+DEBUG: arg line: 388
+DEBUG: parsing line: 388
+DEBUG: token: 388
+DEBUG: arg line: 420
+DEBUG: parsing line: 420
+DEBUG: token: 420
+DEBUG: arg line: 203
+DEBUG: parsing line: 203
+DEBUG: token: 203
+DEBUG: arg line: 500
+DEBUG: parsing line: 500
+DEBUG: token: 500
+DEBUG: arg line: 258
+DEBUG: parsing line: 258
+DEBUG: token: 258
+DEBUG: arg line: 243
+DEBUG: parsing line: 243
+DEBUG: token: 243
+DEBUG: arg line: 395
+DEBUG: parsing line: 395
+DEBUG: token: 395
+DEBUG: arg line: 321
+DEBUG: parsing line: 321
+DEBUG: token: 321
+DEBUG: arg line: 347
+DEBUG: parsing line: 347
+DEBUG: token: 347
+DEBUG: arg line: 136
+DEBUG: parsing line: 136
+DEBUG: token: 136
+DEBUG: arg line: 34
+DEBUG: parsing line: 34
+DEBUG: token: 34
+DEBUG: arg line: 489
+DEBUG: parsing line: 489
+DEBUG: token: 489
+DEBUG: arg line: 307
+DEBUG: parsing line: 307
+DEBUG: token: 307
+DEBUG: arg line: 164
+DEBUG: parsing line: 164
+DEBUG: token: 164
+DEBUG: arg line: 17
+DEBUG: parsing line: 17
+DEBUG: token: 17
+DEBUG: arg line: 197
+DEBUG: parsing line: 197
+DEBUG: token: 197
+DEBUG: arg line: 208
+DEBUG: parsing line: 208
+DEBUG: token: 208
+DEBUG: arg line: 275
+DEBUG: parsing line: 275
+DEBUG: token: 275
+DEBUG: arg line: 304
+DEBUG: parsing line: 304
+DEBUG: token: 304
+DEBUG: arg line: 37
+DEBUG: parsing line: 37
+DEBUG: token: 37
+DEBUG: arg line: 496
+DEBUG: parsing line: 496
+DEBUG: token: 496
+DEBUG: arg line: 429
+DEBUG: parsing line: 429
+DEBUG: token: 429
+DEBUG: arg line: 469
+DEBUG: parsing line: 469
+DEBUG: token: 469
+DEBUG: arg line: 58
+DEBUG: parsing line: 58
+DEBUG: token: 58
+DEBUG: arg line: 147
+DEBUG: parsing line: 147
+DEBUG: token: 147
+DEBUG: arg line: 416
+DEBUG: parsing line: 416
+DEBUG: token: 416
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: arg line: 410
+DEBUG: parsing line: 410
+DEBUG: token: 410
+DEBUG: arg line: 106
+DEBUG: parsing line: 106
+DEBUG: token: 106
+DEBUG: arg line: 152
+DEBUG: parsing line: 152
+DEBUG: token: 152
+DEBUG: arg line: 148
+DEBUG: parsing line: 148
+DEBUG: token: 148
+DEBUG: arg line: 289
+DEBUG: parsing line: 289
+DEBUG: token: 289
+DEBUG: arg line: 227
+DEBUG: parsing line: 227
+DEBUG: token: 227
+DEBUG: arg line: 173
+DEBUG: parsing line: 173
+DEBUG: token: 173
+DEBUG: arg line: 433
+DEBUG: parsing line: 433
+DEBUG: token: 433
+DEBUG: arg line: 295
+DEBUG: parsing line: 295
+DEBUG: token: 295
+DEBUG: arg line: 435
+DEBUG: parsing line: 435
+DEBUG: token: 435
+DEBUG: arg line: 479
+DEBUG: parsing line: 479
+DEBUG: token: 479
+DEBUG: arg line: 324
+DEBUG: parsing line: 324
+DEBUG: token: 324
+DEBUG: arg line: 36
+DEBUG: parsing line: 36
+DEBUG: token: 36
+DEBUG: arg line: 437
+DEBUG: parsing line: 437
+DEBUG: token: 437
+DEBUG: arg line: 102
+DEBUG: parsing line: 102
+DEBUG: token: 102
+DEBUG: arg line: 171
+DEBUG: parsing line: 171
+DEBUG: token: 171
+DEBUG: arg line: 457
+DEBUG: parsing line: 457
+DEBUG: token: 457
+DEBUG: arg line: 174
+DEBUG: parsing line: 174
+DEBUG: token: 174
+DEBUG: arg line: 15
+DEBUG: parsing line: 15
+DEBUG: token: 15
+DEBUG: arg line: 499
+DEBUG: parsing line: 499
+DEBUG: token: 499
+DEBUG: arg line: 45
+DEBUG: parsing line: 45
+DEBUG: token: 45
+DEBUG: arg line: 453
+DEBUG: parsing line: 453
+DEBUG: token: 453
+DEBUG: arg line: 42
+DEBUG: parsing line: 42
+DEBUG: token: 42
+DEBUG: arg line: 236
+DEBUG: parsing line: 236
+DEBUG: token: 236
+DEBUG: arg line: 21
+DEBUG: parsing line: 21
+DEBUG: token: 21
+DEBUG: arg line: 71
+DEBUG: parsing line: 71
+DEBUG: token: 71
+DEBUG: arg line: 206
+DEBUG: parsing line: 206
+DEBUG: token: 206
+DEBUG: arg line: 269
+DEBUG: parsing line: 269
+DEBUG: token: 269
+DEBUG: arg line: 432
+DEBUG: parsing line: 432
+DEBUG: token: 432
+DEBUG: arg line: 89
+DEBUG: parsing line: 89
+DEBUG: token: 89
+DEBUG: arg line: 187
+DEBUG: parsing line: 187
+DEBUG: token: 187
+DEBUG: arg line: 242
+DEBUG: parsing line: 242
+DEBUG: token: 242
+DEBUG: arg line: 113
+DEBUG: parsing line: 113
+DEBUG: token: 113
+DEBUG: arg line: 427
+DEBUG: parsing line: 427
+DEBUG: token: 427
+DEBUG: arg line: 229
+DEBUG: parsing line: 229
+DEBUG: token: 229
+DEBUG: arg line: 447
+DEBUG: parsing line: 447
+DEBUG: token: 447
+DEBUG: arg line: 66
+DEBUG: parsing line: 66
+DEBUG: token: 66
+DEBUG: arg line: 459
+DEBUG: parsing line: 459
+DEBUG: token: 459
+DEBUG: arg line: 422
+DEBUG: parsing line: 422
+DEBUG: token: 422
+DEBUG: arg line: 72
+DEBUG: parsing line: 72
+DEBUG: token: 72
+DEBUG: arg line: 235
+DEBUG: parsing line: 235
+DEBUG: token: 235
+DEBUG: arg line: 32
+DEBUG: parsing line: 32
+DEBUG: token: 32
+DEBUG: arg line: 313
+DEBUG: parsing line: 313
+DEBUG: token: 313
+DEBUG: arg line: 253
+DEBUG: parsing line: 253
+DEBUG: token: 253
+DEBUG: arg line: 80
+DEBUG: parsing line: 80
+DEBUG: token: 80
+DEBUG: arg line: 424
+DEBUG: parsing line: 424
+DEBUG: token: 424
+DEBUG: arg line: 249
+DEBUG: parsing line: 249
+DEBUG: token: 249
+DEBUG: arg line: 257
+DEBUG: parsing line: 257
+DEBUG: token: 257
+DEBUG: arg line: 225
+DEBUG: parsing line: 225
+DEBUG: token: 225
+DEBUG: arg line: 78
+DEBUG: parsing line: 78
+DEBUG: token: 78
+DEBUG: arg line: 246
+DEBUG: parsing line: 246
+DEBUG: token: 246
+DEBUG: arg line: 162
+DEBUG: parsing line: 162
+DEBUG: token: 162
+DEBUG: arg line: 465
+DEBUG: parsing line: 465
+DEBUG: token: 465
+DEBUG: arg line: 268
+DEBUG: parsing line: 268
+DEBUG: token: 268
+DEBUG: arg line: 215
+DEBUG: parsing line: 215
+DEBUG: token: 215
+DEBUG: arg line: 481
+DEBUG: parsing line: 481
+DEBUG: token: 481
+DEBUG: arg line: 46
+DEBUG: parsing line: 46
+DEBUG: token: 46
+DEBUG: arg line: 478
+DEBUG: parsing line: 478
+DEBUG: token: 478
+DEBUG: arg line: 201
+DEBUG: parsing line: 201
+DEBUG: token: 201
+DEBUG: arg line: 14
+DEBUG: parsing line: 14
+DEBUG: token: 14
+DEBUG: arg line: 426
+DEBUG: parsing line: 426
+DEBUG: token: 426
+DEBUG: arg line: 94
+DEBUG: parsing line: 94
+DEBUG: token: 94
+DEBUG: arg line: 24
+DEBUG: parsing line: 24
+DEBUG: token: 24
+DEBUG: arg line: 436
+DEBUG: parsing line: 436
+DEBUG: token: 436
+DEBUG: arg line: 467
+DEBUG: parsing line: 467
+DEBUG: token: 467
+DEBUG: arg line: 393
+DEBUG: parsing line: 393
+DEBUG: token: 393
+DEBUG: arg line: 392
+DEBUG: parsing line: 392
+DEBUG: token: 392
+DEBUG: arg line: 454
+DEBUG: parsing line: 454
+DEBUG: token: 454
+DEBUG: arg line: 200
+DEBUG: parsing line: 200
+DEBUG: token: 200
+DEBUG: arg line: 385
+DEBUG: parsing line: 385
+DEBUG: token: 385
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 332
+DEBUG: parsing line: 332
+DEBUG: token: 332
+DEBUG: arg line: 64
+DEBUG: parsing line: 64
+DEBUG: token: 64
+DEBUG: arg line: 169
+DEBUG: parsing line: 169
+DEBUG: token: 169
+DEBUG: arg line: 294
+DEBUG: parsing line: 294
+DEBUG: token: 294
+DEBUG: arg line: 328
+DEBUG: parsing line: 328
+DEBUG: token: 328
+DEBUG: arg line: 468
+DEBUG: parsing line: 468
+DEBUG: token: 468
+DEBUG: arg line: 371
+DEBUG: parsing line: 371
+DEBUG: token: 371
+DEBUG: arg line: 184
+DEBUG: parsing line: 184
+DEBUG: token: 184
+DEBUG: arg line: 90
+DEBUG: parsing line: 90
+DEBUG: token: 90
+DEBUG: arg line: 116
+DEBUG: parsing line: 116
+DEBUG: token: 116
+DEBUG: arg line: 105
+DEBUG: parsing line: 105
+DEBUG: token: 105
+DEBUG: arg line: 421
+DEBUG: parsing line: 421
+DEBUG: token: 421
+DEBUG: arg line: 73
+DEBUG: parsing line: 73
+DEBUG: token: 73
+DEBUG: arg line: 142
+DEBUG: parsing line: 142
+DEBUG: token: 142
+DEBUG: arg line: 228
+DEBUG: parsing line: 228
+DEBUG: token: 228
+DEBUG: arg line: 340
+DEBUG: parsing line: 340
+DEBUG: token: 340
+DEBUG: arg line: 308
+DEBUG: parsing line: 308
+DEBUG: token: 308
+DEBUG: arg line: 296
+DEBUG: parsing line: 296
+DEBUG: token: 296
+DEBUG: arg line: 483
+DEBUG: parsing line: 483
+DEBUG: token: 483
+DEBUG: arg line: 439
+DEBUG: parsing line: 439
+DEBUG: token: 439
+DEBUG: arg line: 271
+DEBUG: parsing line: 271
+DEBUG: token: 271
+DEBUG: arg line: 364
+DEBUG: parsing line: 364
+DEBUG: token: 364
+DEBUG: arg line: 209
+DEBUG: parsing line: 209
+DEBUG: token: 209
+DEBUG: arg line: 128
+DEBUG: parsing line: 128
+DEBUG: token: 128
+DEBUG: arg line: 391
+DEBUG: parsing line: 391
+DEBUG: token: 391
+DEBUG: arg line: 193
+DEBUG: parsing line: 193
+DEBUG: token: 193
+DEBUG: arg line: 23
+DEBUG: parsing line: 23
+DEBUG: token: 23
+DEBUG: arg line: 449
+DEBUG: parsing line: 449
+DEBUG: token: 449
+DEBUG: arg line: 360
+DEBUG: parsing line: 360
+DEBUG: token: 360
+DEBUG: arg line: 138
+DEBUG: parsing line: 138
+DEBUG: token: 138
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 188
+DEBUG: parsing line: 188
+DEBUG: token: 188
+DEBUG: arg line: 82
+DEBUG: parsing line: 82
+DEBUG: token: 82
+DEBUG: arg line: 252
+DEBUG: parsing line: 252
+DEBUG: token: 252
+DEBUG: arg line: 263
+DEBUG: parsing line: 263
+DEBUG: token: 263
+DEBUG: arg line: 339
+DEBUG: parsing line: 339
+DEBUG: token: 339
+DEBUG: arg line: 274
+DEBUG: parsing line: 274
+DEBUG: token: 274
+DEBUG: arg line: 406
+DEBUG: parsing line: 406
+DEBUG: token: 406
+DEBUG: arg line: 123
+DEBUG: parsing line: 123
+DEBUG: token: 123
+DEBUG: arg line: 322
+DEBUG: parsing line: 322
+DEBUG: token: 322
+DEBUG: arg line: 476
+DEBUG: parsing line: 476
+DEBUG: token: 476
+DEBUG: arg line: 417
+DEBUG: parsing line: 417
+DEBUG: token: 417
+DEBUG: arg line: 40
+DEBUG: parsing line: 40
+DEBUG: token: 40
+DEBUG: arg line: 430
+DEBUG: parsing line: 430
+DEBUG: token: 430
+DEBUG: arg line: 218
+DEBUG: parsing line: 218
+DEBUG: token: 218
+DEBUG: arg line: 117
+DEBUG: parsing line: 117
+DEBUG: token: 117
+DEBUG: arg line: 445
+DEBUG: parsing line: 445
+DEBUG: token: 445
+DEBUG: arg line: 146
+DEBUG: parsing line: 146
+DEBUG: token: 146
+DEBUG: arg line: 309
+DEBUG: parsing line: 309
+DEBUG: token: 309
+DEBUG: arg line: 362
+DEBUG: parsing line: 362
+DEBUG: token: 362
+DEBUG: arg line: 180
+DEBUG: parsing line: 180
+DEBUG: token: 180
+DEBUG: arg line: 375
+DEBUG: parsing line: 375
+DEBUG: token: 375
+DEBUG: arg line: 16
+DEBUG: parsing line: 16
+DEBUG: token: 16
+DEBUG: arg line: 88
+DEBUG: parsing line: 88
+DEBUG: token: 88
+DEBUG: arg line: 11
+DEBUG: parsing line: 11
+DEBUG: token: 11
+DEBUG: arg line: 248
+DEBUG: parsing line: 248
+DEBUG: token: 248
+DEBUG: arg line: 221
+DEBUG: parsing line: 221
+DEBUG: token: 221
+DEBUG: arg line: 407
+DEBUG: parsing line: 407
+DEBUG: token: 407
+DEBUG: arg line: 166
+DEBUG: parsing line: 166
+DEBUG: token: 166
+DEBUG: arg line: 100
+DEBUG: parsing line: 100
+DEBUG: token: 100
+DEBUG: arg line: 8
+DEBUG: parsing line: 8
+DEBUG: token: 8
+DEBUG: arg line: 291
+DEBUG: parsing line: 291
+DEBUG: token: 291
+DEBUG: arg line: 343
+DEBUG: parsing line: 343
+DEBUG: token: 343
+DEBUG: arg line: 384
+DEBUG: parsing line: 384
+DEBUG: token: 384
+DEBUG: arg line: 310
+DEBUG: parsing line: 310
+DEBUG: token: 310
+DEBUG: arg line: 492
+DEBUG: parsing line: 492
+DEBUG: token: 492
+DEBUG: arg line: 28
+DEBUG: parsing line: 28
+DEBUG: token: 28
+DEBUG: arg line: 486
+DEBUG: parsing line: 486
+DEBUG: token: 486
+DEBUG: arg line: 150
+DEBUG: parsing line: 150
+DEBUG: token: 150
+DEBUG: arg line: 57
+DEBUG: parsing line: 57
+DEBUG: token: 57
+DEBUG: arg line: 167
+DEBUG: parsing line: 167
+DEBUG: token: 167
+DEBUG: arg line: 75
+DEBUG: parsing line: 75
+DEBUG: token: 75
+DEBUG: arg line: 43
+DEBUG: parsing line: 43
+DEBUG: token: 43
+DEBUG: arg line: 168
+DEBUG: parsing line: 168
+DEBUG: token: 168
+DEBUG: arg line: 104
+DEBUG: parsing line: 104
+DEBUG: token: 104
+DEBUG: arg line: 491
+DEBUG: parsing line: 491
+DEBUG: token: 491
+DEBUG: arg line: 494
+DEBUG: parsing line: 494
+DEBUG: token: 494
+DEBUG: arg line: 207
+DEBUG: parsing line: 207
+DEBUG: token: 207
+DEBUG: arg line: 20
+DEBUG: parsing line: 20
+DEBUG: token: 20
+DEBUG: arg line: 204
+DEBUG: parsing line: 204
+DEBUG: token: 204
+DEBUG: arg line: 77
+DEBUG: parsing line: 77
+DEBUG: token: 77
+DEBUG: arg line: 314
+DEBUG: parsing line: 314
+DEBUG: token: 314
+DEBUG: arg line: 214
+DEBUG: parsing line: 214
+DEBUG: token: 214
+DEBUG: arg line: 69
+DEBUG: parsing line: 69
+DEBUG: token: 69
+DEBUG: arg line: 12
+DEBUG: parsing line: 12
+DEBUG: token: 12
+DEBUG: arg line: 137
+DEBUG: parsing line: 137
+DEBUG: token: 137
+DEBUG: arg line: 498
+DEBUG: parsing line: 498
+DEBUG: token: 498
+DEBUG: arg line: 98
+DEBUG: parsing line: 98
+DEBUG: token: 98
+DEBUG: arg line: 338
+DEBUG: parsing line: 338
+DEBUG: token: 338
+DEBUG: arg line: 353
+DEBUG: parsing line: 353
+DEBUG: token: 353
+DEBUG: arg line: 312
+DEBUG: parsing line: 312
+DEBUG: token: 312
+DEBUG: arg line: 485
+DEBUG: parsing line: 485
+DEBUG: token: 485
+DEBUG: arg line: 448
+DEBUG: parsing line: 448
+DEBUG: token: 448
+DEBUG: arg line: 139
+DEBUG: parsing line: 139
+DEBUG: token: 139
+DEBUG: arg line: 143
+DEBUG: parsing line: 143
+DEBUG: token: 143
+DEBUG: arg line: 418
+DEBUG: parsing line: 418
+DEBUG: token: 418
+DEBUG: arg line: 490
+DEBUG: parsing line: 490
+DEBUG: token: 490
+DEBUG: arg line: 357
+DEBUG: parsing line: 357
+DEBUG: token: 357
+DEBUG: arg line: 212
+DEBUG: parsing line: 212
+DEBUG: token: 212
+DEBUG: arg line: 397
+DEBUG: parsing line: 397
+DEBUG: token: 397
+DEBUG: arg line: 466
+DEBUG: parsing line: 466
+DEBUG: token: 466
+DEBUG: arg line: 438
+DEBUG: parsing line: 438
+DEBUG: token: 438
+DEBUG: arg line: 198
+DEBUG: parsing line: 198
+DEBUG: token: 198
+DEBUG: arg line: 86
+DEBUG: parsing line: 86
+DEBUG: token: 86
+DEBUG: arg line: 52
+DEBUG: parsing line: 52
+DEBUG: token: 52
+DEBUG: arg line: 10
+DEBUG: parsing line: 10
+DEBUG: token: 10
+DEBUG: arg line: 97
+DEBUG: parsing line: 97
+DEBUG: token: 97
+DEBUG: arg line: 401
+DEBUG: parsing line: 401
+DEBUG: token: 401
+DEBUG: arg line: 196
+DEBUG: parsing line: 196
+DEBUG: token: 196
+DEBUG: arg line: 210
+DEBUG: parsing line: 210
+DEBUG: token: 210
+DEBUG: arg line: 440
+DEBUG: parsing line: 440
+DEBUG: token: 440
+DEBUG: arg line: 325
+DEBUG: parsing line: 325
+DEBUG: token: 325
+DEBUG: arg line: 462
+DEBUG: parsing line: 462
+DEBUG: token: 462
+DEBUG: arg line: 389
+DEBUG: parsing line: 389
+DEBUG: token: 389
+DEBUG: arg line: 119
+DEBUG: parsing line: 119
+DEBUG: token: 119
+DEBUG: arg line: 405
+DEBUG: parsing line: 405
+DEBUG: token: 405
+DEBUG: arg line: 217
+DEBUG: parsing line: 217
+DEBUG: token: 217
+DEBUG: arg line: 9
+DEBUG: parsing line: 9
+DEBUG: token: 9
+DEBUG: arg line: 270
+DEBUG: parsing line: 270
+DEBUG: token: 270
+DEBUG: arg line: 30
+DEBUG: parsing line: 30
+DEBUG: token: 30
+DEBUG: arg line: 151
+DEBUG: parsing line: 151
+DEBUG: token: 151
+DEBUG: arg line: 63
+DEBUG: parsing line: 63
+DEBUG: token: 63
+DEBUG: arg line: 273
+DEBUG: parsing line: 273
+DEBUG: token: 273
+DEBUG: arg line: 404
+DEBUG: parsing line: 404
+DEBUG: token: 404
+DEBUG: arg line: 302
+DEBUG: parsing line: 302
+DEBUG: token: 302
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 281
+DEBUG: parsing line: 281
+DEBUG: token: 281
+DEBUG: arg line: 232
+DEBUG: parsing line: 232
+DEBUG: token: 232
+DEBUG: arg line: 335
+DEBUG: parsing line: 335
+DEBUG: token: 335
+DEBUG: arg line: 411
+DEBUG: parsing line: 411
+DEBUG: token: 411
+DEBUG: arg line: 55
+DEBUG: parsing line: 55
+DEBUG: token: 55
+DEBUG: arg line: 93
+DEBUG: parsing line: 93
+DEBUG: token: 93
+DEBUG: arg line: 354
+DEBUG: parsing line: 354
+DEBUG: token: 354
+DEBUG: arg line: 172
+DEBUG: parsing line: 172
+DEBUG: token: 172
+DEBUG: arg line: 186
+DEBUG: parsing line: 186
+DEBUG: token: 186
+DEBUG: arg line: 359
+DEBUG: parsing line: 359
+DEBUG: token: 359
+DEBUG: arg line: 211
+DEBUG: parsing line: 211
+DEBUG: token: 211
+DEBUG: arg line: 92
+DEBUG: parsing line: 92
+DEBUG: token: 92
+DEBUG: arg line: 194
+DEBUG: parsing line: 194
+DEBUG: token: 194
+DEBUG: arg line: 157
+DEBUG: parsing line: 157
+DEBUG: token: 157
+DEBUG: arg line: 368
+DEBUG: parsing line: 368
+DEBUG: token: 368
+DEBUG: arg line: 402
+DEBUG: parsing line: 402
+DEBUG: token: 402
+DEBUG: arg line: 122
+DEBUG: parsing line: 122
+DEBUG: token: 122
+DEBUG: arg line: 480
+DEBUG: parsing line: 480
+DEBUG: token: 480
+DEBUG: arg line: 85
+DEBUG: parsing line: 85
+DEBUG: token: 85
+DEBUG: arg line: 109
+DEBUG: parsing line: 109
+DEBUG: token: 109
+DEBUG: arg line: 127
+DEBUG: parsing line: 127
+DEBUG: token: 127
+DEBUG: arg line: 377
+DEBUG: parsing line: 377
+DEBUG: token: 377
+DEBUG: arg line: 367
+DEBUG: parsing line: 367
+DEBUG: token: 367
+DEBUG: arg line: 237
+DEBUG: parsing line: 237
+DEBUG: token: 237
+DEBUG: arg line: 256
+DEBUG: parsing line: 256
+DEBUG: token: 256
+DEBUG: arg line: 22
+DEBUG: parsing line: 22
+DEBUG: token: 22
+DEBUG: arg line: 153
+DEBUG: parsing line: 153
+DEBUG: token: 153
+DEBUG: arg line: 396
+DEBUG: parsing line: 396
+DEBUG: token: 396
+DEBUG: arg line: 240
+DEBUG: parsing line: 240
+DEBUG: token: 240
+DEBUG: arg line: 442
+DEBUG: parsing line: 442
+DEBUG: token: 442
+DEBUG: arg line: 495
+DEBUG: parsing line: 495
+DEBUG: token: 495
+DEBUG: arg line: 342
+DEBUG: parsing line: 342
+DEBUG: token: 342
+DEBUG: arg line: 326
+DEBUG: parsing line: 326
+DEBUG: token: 326
+DEBUG: arg line: 450
+DEBUG: parsing line: 450
+DEBUG: token: 450
+DEBUG: arg line: 165
+DEBUG: parsing line: 165
+DEBUG: token: 165
+DEBUG: arg line: 185
+DEBUG: parsing line: 185
+DEBUG: token: 185
+DEBUG: arg line: 134
+DEBUG: parsing line: 134
+DEBUG: token: 134
+DEBUG: arg line: 70
+DEBUG: parsing line: 70
+DEBUG: token: 70
+DEBUG: arg line: 241
+DEBUG: parsing line: 241
+DEBUG: token: 241
+DEBUG: arg line: 441
+DEBUG: parsing line: 441
+DEBUG: token: 441
+DEBUG: arg line: 96
+DEBUG: parsing line: 96
+DEBUG: token: 96
+DEBUG: arg line: 330
+DEBUG: parsing line: 330
+DEBUG: token: 330
+DEBUG: arg line: 471
+DEBUG: parsing line: 471
+DEBUG: token: 471
+DEBUG: arg line: 224
+DEBUG: parsing line: 224
+DEBUG: token: 224
+DEBUG: arg line: 464
+DEBUG: parsing line: 464
+DEBUG: token: 464
+DEBUG: arg line: 160
+DEBUG: parsing line: 160
+DEBUG: token: 160
+DEBUG: arg line: 475
+DEBUG: parsing line: 475
+DEBUG: token: 475
+DEBUG: arg line: 175
+DEBUG: parsing line: 175
+DEBUG: token: 175
+DEBUG: arg line: 425
+DEBUG: parsing line: 425
+DEBUG: token: 425
+DEBUG: arg line: 315
+DEBUG: parsing line: 315
+DEBUG: token: 315
+DEBUG: arg line: 145
+DEBUG: parsing line: 145
+DEBUG: token: 145
+DEBUG: arg line: 470
+DEBUG: parsing line: 470
+DEBUG: token: 470
+DEBUG: arg line: 379
+DEBUG: parsing line: 379
+DEBUG: token: 379
+DEBUG: arg line: 149
+DEBUG: parsing line: 149
+DEBUG: token: 149
+DEBUG: arg line: 428
+DEBUG: parsing line: 428
+DEBUG: token: 428
+DEBUG: arg line: 413
+DEBUG: parsing line: 413
+DEBUG: token: 413
+DEBUG: arg line: 84
+DEBUG: parsing line: 84
+DEBUG: token: 84
+DEBUG: arg line: 473
+DEBUG: parsing line: 473
+DEBUG: token: 473
+DEBUG: arg line: 181
+DEBUG: parsing line: 181
+DEBUG: token: 181
+DEBUG: arg line: 345
+DEBUG: parsing line: 345
+DEBUG: token: 345
+DEBUG: arg line: 334
+DEBUG: parsing line: 334
+DEBUG: token: 334
+DEBUG: arg line: 189
+DEBUG: parsing line: 189
+DEBUG: token: 189
+DEBUG: arg line: 192
+DEBUG: parsing line: 192
+DEBUG: token: 192
+DEBUG: arg line: 103
+DEBUG: parsing line: 103
+DEBUG: token: 103
+DEBUG: arg line: 233
+DEBUG: parsing line: 233
+DEBUG: token: 233
+DEBUG: arg line: 320
+DEBUG: parsing line: 320
+DEBUG: token: 320
+DEBUG: arg line: 234
+DEBUG: parsing line: 234
+DEBUG: token: 234
+DEBUG: arg line: 463
+DEBUG: parsing line: 463
+DEBUG: token: 463
+DEBUG: arg line: 38
+DEBUG: parsing line: 38
+DEBUG: token: 38
+DEBUG: arg line: 183
+DEBUG: parsing line: 183
+DEBUG: token: 183
+DEBUG: arg line: 159
+DEBUG: parsing line: 159
+DEBUG: token: 159
+DEBUG: arg line: 177
+DEBUG: parsing line: 177
+DEBUG: token: 177
+DEBUG: arg line: 329
+DEBUG: parsing line: 329
+DEBUG: token: 329
+DEBUG: arg line: 176
+DEBUG: parsing line: 176
+DEBUG: token: 176
+DEBUG: arg line: 7
+DEBUG: parsing line: 7
+DEBUG: token: 7
+DEBUG: arg line: 297
+DEBUG: parsing line: 297
+DEBUG: token: 297
+DEBUG: arg line: 115
+DEBUG: parsing line: 115
+DEBUG: token: 115
+DEBUG: arg line: 482
+DEBUG: parsing line: 482
+DEBUG: token: 482
+DEBUG: arg line: 305
+DEBUG: parsing line: 305
+DEBUG: token: 305
+DEBUG: arg line: 461
+DEBUG: parsing line: 461
+DEBUG: token: 461
+DEBUG: arg line: 376
+DEBUG: parsing line: 376
+DEBUG: token: 376
+DEBUG: arg line: 60
+DEBUG: parsing line: 60
+DEBUG: token: 60
+DEBUG: arg line: 284
+DEBUG: parsing line: 284
+DEBUG: token: 284
+DEBUG: arg line: 81
+DEBUG: parsing line: 81
+DEBUG: token: 81
+DEBUG: arg line: 230
+DEBUG: parsing line: 230
+DEBUG: token: 230
+DEBUG: arg line: 99
+DEBUG: parsing line: 99
+DEBUG: token: 99
+DEBUG: arg line: 372
+DEBUG: parsing line: 372
+DEBUG: token: 372
+DEBUG: arg line: 350
+DEBUG: parsing line: 350
+DEBUG: token: 350
+DEBUG: arg line: 129
+DEBUG: parsing line: 129
+DEBUG: token: 129
+DEBUG: arg line: 386
+DEBUG: parsing line: 386
+DEBUG: token: 386
+DEBUG: arg line: 333
+DEBUG: parsing line: 333
+DEBUG: token: 333
+DEBUG: arg line: 331
+DEBUG: parsing line: 331
+DEBUG: token: 331
+DEBUG: arg line: 158
+DEBUG: parsing line: 158
+DEBUG: token: 158
+DEBUG: arg line: 300
+DEBUG: parsing line: 300
+DEBUG: token: 300
+DEBUG: arg line: 278
+DEBUG: parsing line: 278
+DEBUG: token: 278
+DEBUG: arg line: 318
+DEBUG: parsing line: 318
+DEBUG: token: 318
+DEBUG: arg line: 108
+DEBUG: parsing line: 108
+DEBUG: token: 108
+DEBUG: arg line: 135
+DEBUG: parsing line: 135
+DEBUG: token: 135
+DEBUG: arg line: 87
+DEBUG: parsing line: 87
+DEBUG: token: 87
+DEBUG: arg line: 216
+DEBUG: parsing line: 216
+DEBUG: token: 216
+DEBUG: arg line: 264
+DEBUG: parsing line: 264
+DEBUG: token: 264
+DEBUG: arg line: 361
+DEBUG: parsing line: 361
+DEBUG: token: 361
+DEBUG: arg line: 286
+DEBUG: parsing line: 286
+DEBUG: token: 286
+DEBUG: arg line: 363
+DEBUG: parsing line: 363
+DEBUG: token: 363
+DEBUG: arg line: 282
+DEBUG: parsing line: 282
+DEBUG: token: 282
+DEBUG: arg line: 366
+DEBUG: parsing line: 366
+DEBUG: token: 366
+DEBUG: arg line: 213
+DEBUG: parsing line: 213
+DEBUG: token: 213
+DEBUG: arg line: 178
+DEBUG: parsing line: 178
+DEBUG: token: 178
+DEBUG: arg line: 261
+DEBUG: parsing line: 261
+DEBUG: token: 261
+DEBUG: arg line: 53
+DEBUG: parsing line: 53
+DEBUG: token: 53
+DEBUG: arg line: 452
+DEBUG: parsing line: 452
+DEBUG: token: 452
+DEBUG: arg line: 205
+DEBUG: parsing line: 205
+DEBUG: token: 205
+DEBUG: arg line: 62
+DEBUG: parsing line: 62
+DEBUG: token: 62
+DEBUG: arg line: 323
+DEBUG: parsing line: 323
+DEBUG: token: 323
+DEBUG: arg line: 262
+DEBUG: parsing line: 262
+DEBUG: token: 262
+DEBUG: arg line: 50
+DEBUG: parsing line: 50
+DEBUG: token: 50
+DEBUG: arg line: 126
+DEBUG: parsing line: 126
+DEBUG: token: 126
+DEBUG: arg line: 255
+DEBUG: parsing line: 255
+DEBUG: token: 255
+DEBUG: arg line: 383
+DEBUG: parsing line: 383
+DEBUG: token: 383
+DEBUG: arg line: 358
+DEBUG: parsing line: 358
+DEBUG: token: 358
+DEBUG: arg line: 112
+DEBUG: parsing line: 112
+DEBUG: token: 112
+DEBUG: arg line: 132
+DEBUG: parsing line: 132
+DEBUG: token: 132
+DEBUG: arg line: 365
+DEBUG: parsing line: 365
+DEBUG: token: 365
+DEBUG: arg line: 346
+DEBUG: parsing line: 346
+DEBUG: token: 346
+DEBUG: arg line: 288
+DEBUG: parsing line: 288
+DEBUG: token: 288
+DEBUG: arg line: 131
+DEBUG: parsing line: 131
+DEBUG: token: 131
+DEBUG: arg line: 6
+DEBUG: parsing line: 6
+DEBUG: token: 6
+DEBUG: arg line: 220
+DEBUG: parsing line: 220
+DEBUG: token: 220
+DEBUG: arg line: 27
+DEBUG: parsing line: 27
+DEBUG: token: 27
+DEBUG: arg line: 155
+DEBUG: parsing line: 155
+DEBUG: token: 155
+DEBUG: arg line: 49
+DEBUG: parsing line: 49
+DEBUG: token: 49
+DEBUG: arg line: 51
+DEBUG: parsing line: 51
+DEBUG: token: 51
+DEBUG: arg line: 56
+DEBUG: parsing line: 56
+DEBUG: token: 56
+DEBUG: arg line: 387
+DEBUG: parsing line: 387
+DEBUG: token: 387
+DEBUG: arg line: 44
+DEBUG: parsing line: 44
+DEBUG: token: 44
+DEBUG: arg line: 373
+DEBUG: parsing line: 373
+DEBUG: token: 373
+DEBUG: arg line: 125
+DEBUG: parsing line: 125
+DEBUG: token: 125
+DEBUG: arg line: 455
+DEBUG: parsing line: 455
+DEBUG: token: 455
+DEBUG: arg line: 431
+DEBUG: parsing line: 431
+DEBUG: token: 431
+DEBUG: arg line: 163
+DEBUG: parsing line: 163
+DEBUG: token: 163
+DEBUG: arg line: 474
+DEBUG: parsing line: 474
+DEBUG: token: 474
+DEBUG: arg line: 219
+DEBUG: parsing line: 219
+DEBUG: token: 219
+DEBUG: arg line: 276
+DEBUG: parsing line: 276
+DEBUG: token: 276
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: arg line: 487
+DEBUG: parsing line: 487
+DEBUG: token: 487
+DEBUG: arg line: 277
+DEBUG: parsing line: 277
+DEBUG: token: 277
+DEBUG: arg line: 18
+DEBUG: parsing line: 18
+DEBUG: token: 18
+DEBUG: arg line: 170
+DEBUG: parsing line: 170
+DEBUG: token: 170
+DEBUG: arg line: 107
+DEBUG: parsing line: 107
+DEBUG: token: 107
+DEBUG: arg line: 477
+DEBUG: parsing line: 477
+DEBUG: token: 477
+DEBUG: arg line: 79
+DEBUG: parsing line: 79
+DEBUG: token: 79
+DEBUG: arg line: 408
+DEBUG: parsing line: 408
+DEBUG: token: 408
+DEBUG: arg line: 260
+DEBUG: parsing line: 260
+DEBUG: token: 260
+DEBUG: arg line: 348
+DEBUG: parsing line: 348
+DEBUG: token: 348
+DEBUG: arg line: 199
+DEBUG: parsing line: 199
+DEBUG: token: 199
+DEBUG: arg line: 101
+DEBUG: parsing line: 101
+DEBUG: token: 101
+DEBUG: arg line: 141
+DEBUG: parsing line: 141
+DEBUG: token: 141
+DEBUG: arg line: 472
+DEBUG: parsing line: 472
+DEBUG: token: 472
+DEBUG: arg line: 29
+DEBUG: parsing line: 29
+DEBUG: token: 29
+DEBUG: arg line: 311
+DEBUG: parsing line: 311
+DEBUG: token: 311
+DEBUG: arg line: 54
+DEBUG: parsing line: 54
+DEBUG: token: 54
+DEBUG: arg line: 444
+DEBUG: parsing line: 444
+DEBUG: token: 444
+DEBUG: arg line: 41
+DEBUG: parsing line: 41
+DEBUG: token: 41
+DEBUG: arg line: 19
+DEBUG: parsing line: 19
+DEBUG: token: 19
+DEBUG: arg line: 182
+DEBUG: parsing line: 182
+DEBUG: token: 182
+DEBUG: arg line: 154
+DEBUG: parsing line: 154
+DEBUG: token: 154
+DEBUG: arg line: 61
+DEBUG: parsing line: 61
+DEBUG: token: 61
+DEBUG: arg line: 446
+DEBUG: parsing line: 446
+DEBUG: token: 446
+DEBUG: arg line: 460
+DEBUG: parsing line: 460
+DEBUG: token: 460
+DEBUG: arg line: 419
+DEBUG: parsing line: 419
+DEBUG: token: 419
+DEBUG: arg line: 133
+DEBUG: parsing line: 133
+DEBUG: token: 133
+DEBUG: arg line: 290
+DEBUG: parsing line: 290
+DEBUG: token: 290
+DEBUG: arg line: 351
+DEBUG: parsing line: 351
+DEBUG: token: 351
+DEBUG: arg line: 434
+DEBUG: parsing line: 434
+DEBUG: token: 434
+DEBUG: arg line: 409
+DEBUG: parsing line: 409
+DEBUG: token: 409
+DEBUG: arg line: 59
+DEBUG: parsing line: 59
+DEBUG: token: 59
+DEBUG: arg line: 414
+DEBUG: parsing line: 414
+DEBUG: token: 414
+DEBUG: arg line: 226
+DEBUG: parsing line: 226
+DEBUG: token: 226
+DEBUG: arg line: 31
+DEBUG: parsing line: 31
+DEBUG: token: 31
+DEBUG: arg line: 223
+DEBUG: parsing line: 223
+DEBUG: token: 223
+DEBUG: arg line: 456
+DEBUG: parsing line: 456
+DEBUG: token: 456
+DEBUG: arg line: 65
+DEBUG: parsing line: 65
+DEBUG: token: 65
+DEBUG: arg line: 111
+DEBUG: parsing line: 111
+DEBUG: token: 111
+DEBUG: arg line: 231
+DEBUG: parsing line: 231
+DEBUG: token: 231
+DEBUG: arg line: 144
+DEBUG: parsing line: 144
+DEBUG: token: 144
+DEBUG: arg line: 114
+DEBUG: parsing line: 114
+DEBUG: token: 114
+DEBUG: arg line: 280
+DEBUG: parsing line: 280
+DEBUG: token: 280
+DEBUG: arg line: 251
+DEBUG: parsing line: 251
+DEBUG: token: 251
+DEBUG: arg line: 95
+DEBUG: parsing line: 95
+DEBUG: token: 95
+DEBUG: arg line: 341
+DEBUG: parsing line: 341
+DEBUG: token: 341
+DEBUG: arg line: 287
+DEBUG: parsing line: 287
+DEBUG: token: 287
+DEBUG: arg line: 195
+DEBUG: parsing line: 195
+DEBUG: token: 195
+DEBUG: arg line: 370
+DEBUG: parsing line: 370
+DEBUG: token: 370
+DEBUG: arg line: 283
+DEBUG: parsing line: 283
+DEBUG: token: 283
+DEBUG: arg line: 400
+DEBUG: parsing line: 400
+DEBUG: token: 400
+DEBUG: arg line: 244
+DEBUG: parsing line: 244
+DEBUG: token: 244
+DEBUG: arg line: 191
+DEBUG: parsing line: 191
+DEBUG: token: 191
+DEBUG: arg line: 355
+DEBUG: parsing line: 355
+DEBUG: token: 355
+DEBUG: arg line: 380
+DEBUG: parsing line: 380
+DEBUG: token: 380
+DEBUG: arg line: 403
+DEBUG: parsing line: 403
+DEBUG: token: 403
+DEBUG: arg line: 317
+DEBUG: parsing line: 317
+DEBUG: token: 317
+DEBUG: arg line: 412
+DEBUG: parsing line: 412
+DEBUG: token: 412
+DEBUG: arg line: 266
+DEBUG: parsing line: 266
+DEBUG: token: 266
+DEBUG: arg line: 301
+DEBUG: parsing line: 301
+DEBUG: token: 301
+DEBUG: arg line: 336
+DEBUG: parsing line: 336
+DEBUG: token: 336
+DEBUG: arg line: 13
+DEBUG: parsing line: 13
+DEBUG: token: 13
+DEBUG: arg line: 265
+DEBUG: parsing line: 265
+DEBUG: token: 265
+DEBUG: arg line: 267
+DEBUG: parsing line: 267
+DEBUG: token: 267
+DEBUG: arg line: 161
+DEBUG: parsing line: 161
+DEBUG: token: 161
+DEBUG: arg line: 381
+DEBUG: parsing line: 381
+DEBUG: token: 381
+DEBUG: arg line: 118
+DEBUG: parsing line: 118
+DEBUG: token: 118
+DEBUG: arg line: 238
+DEBUG: parsing line: 238
+DEBUG: token: 238
+DEBUG: arg line: 327
+DEBUG: parsing line: 327
+DEBUG: token: 327
+DEBUG: arg line: 124
+DEBUG: parsing line: 124
+DEBUG: token: 124
+DEBUG: arg line: 239
+DEBUG: parsing line: 239
+DEBUG: token: 239
+DEBUG: arg line: 272
+DEBUG: parsing line: 272
+DEBUG: token: 272
+DEBUG: arg line: 202
+DEBUG: parsing line: 202
+DEBUG: token: 202
+DEBUG: arg line: 319
+DEBUG: parsing line: 319
+DEBUG: token: 319
+DEBUG: arg line: 245
+DEBUG: parsing line: 245
+DEBUG: token: 245
+DEBUG: arg line: 349
+DEBUG: parsing line: 349
+DEBUG: token: 349
+DEBUG: arg line: 91
+DEBUG: parsing line: 91
+DEBUG: token: 91
+DEBUG: arg line: 39
+DEBUG: parsing line: 39
+DEBUG: token: 39
+DEBUG: rank_values complete. Stack A (ranks): 297 398 24 34 178 381 487 315 155 73 305 67 292 278 336 377 389 246 66 47 139 129 450 343 75 355 496 32 25 373 393 291 298 189 457 368 258 483 46 414 442 397 120 253 302 351 284 82 221 422 109 249 492 119 387 419 202 499 257 242 394 320 346 135 33 488 306 163 16 196 207 274 303 36 495 428 468 57 146 415 0 409 105 151 147 288 226 172 432 294 434 478 323 35 436 101 170 456 173 14 498 44 452 41 235 20 70 205 268 431 88 186 241 112 426 228 446 65 458 421 71 234 31 312 252 79 423 248 256 224 77 245 161 464 267 214 480 45 477 200 13 425 93 23 435 466 392 391 453 199 384 2 331 63 168 293 327 467 370 183 89 115 104 420 72 141 227 339 307 295 482 438 270 363 208 127 390 192 22 448 359 137 1 187 81 251 262 338 273 405 122 321 475 416 39 429 217 116 444 145 308 361 179 374 15 87 10 247 220 406 165 99 7 290 342 383 309 491 27 485 149 56 166 74 42 167 103 490 493 206 19 203 76 313 213 68 11 136 497 97 337 352 311 484 447 138 142 417 489 356 211 396 465 437 197 85 51 9 96 400 195 209 439 324 461 388 118 404 216 8 269 29 150 62 272 403 301 4 280 231 334 410 54 92 353 171 185 358 210 91 193 156 367 401 121 479 84 108 126 376 366 236 255 21 152 395 239 441 494 341 325 449 164 184 133 69 240 440 95 329 470 223 463 159 474 174 424 314 144 469 378 148 427 412 83 472 180 344 333 188 191 102 232 319 233 462 37 182 158 176 328 175 6 296 114 481 304 460 375 59 283 80 229 98 371 349 128 385 332 330 157 299 277 317 107 134 86 215 263 360 285 362 281 365 212 177 260 52 451 204 61 322 261 49 125 254 382 357 111 131 364 345 287 130 5 219 26 154 48 50 55 386 43 372 124 454 430 162 473 218 275 3 486 276 17 169 106 476 78 407 259 347 198 100 140 471 28 310 53 443 40 18 181 153 60 445 459 418 132 289 350 433 408 58 413 225 30 222 455 64 110 230 143 113 279 250 94 340 286 194 369 282 399 243 190 354 379 402 316 411 265 300 335 12 264 266 160 380 117 237 326 123 238 271 201 318 244 348 90 38 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: Done!
+OK
+----------------------------------------
+Stress Tests
+Reverse 100:
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 100
+DEBUG: parsing line: 100
+DEBUG: token: 100
+DEBUG: arg line: 99
+DEBUG: parsing line: 99
+DEBUG: token: 99
+DEBUG: arg line: 98
+DEBUG: parsing line: 98
+DEBUG: token: 98
+DEBUG: arg line: 97
+DEBUG: parsing line: 97
+DEBUG: token: 97
+DEBUG: arg line: 96
+DEBUG: parsing line: 96
+DEBUG: token: 96
+DEBUG: arg line: 95
+DEBUG: parsing line: 95
+DEBUG: token: 95
+DEBUG: arg line: 94
+DEBUG: parsing line: 94
+DEBUG: token: 94
+DEBUG: arg line: 93
+DEBUG: parsing line: 93
+DEBUG: token: 93
+DEBUG: arg line: 92
+DEBUG: parsing line: 92
+DEBUG: token: 92
+DEBUG: arg line: 91
+DEBUG: parsing line: 91
+DEBUG: token: 91
+DEBUG: arg line: 90
+DEBUG: parsing line: 90
+DEBUG: token: 90
+DEBUG: arg line: 89
+DEBUG: parsing line: 89
+DEBUG: token: 89
+DEBUG: arg line: 88
+DEBUG: parsing line: 88
+DEBUG: token: 88
+DEBUG: arg line: 87
+DEBUG: parsing line: 87
+DEBUG: token: 87
+DEBUG: arg line: 86
+DEBUG: parsing line: 86
+DEBUG: token: 86
+DEBUG: arg line: 85
+DEBUG: parsing line: 85
+DEBUG: token: 85
+DEBUG: arg line: 84
+DEBUG: parsing line: 84
+DEBUG: token: 84
+DEBUG: arg line: 83
+DEBUG: parsing line: 83
+DEBUG: token: 83
+DEBUG: arg line: 82
+DEBUG: parsing line: 82
+DEBUG: token: 82
+DEBUG: arg line: 81
+DEBUG: parsing line: 81
+DEBUG: token: 81
+DEBUG: arg line: 80
+DEBUG: parsing line: 80
+DEBUG: token: 80
+DEBUG: arg line: 79
+DEBUG: parsing line: 79
+DEBUG: token: 79
+DEBUG: arg line: 78
+DEBUG: parsing line: 78
+DEBUG: token: 78
+DEBUG: arg line: 77
+DEBUG: parsing line: 77
+DEBUG: token: 77
+DEBUG: arg line: 76
+DEBUG: parsing line: 76
+DEBUG: token: 76
+DEBUG: arg line: 75
+DEBUG: parsing line: 75
+DEBUG: token: 75
+DEBUG: arg line: 74
+DEBUG: parsing line: 74
+DEBUG: token: 74
+DEBUG: arg line: 73
+DEBUG: parsing line: 73
+DEBUG: token: 73
+DEBUG: arg line: 72
+DEBUG: parsing line: 72
+DEBUG: token: 72
+DEBUG: arg line: 71
+DEBUG: parsing line: 71
+DEBUG: token: 71
+DEBUG: arg line: 70
+DEBUG: parsing line: 70
+DEBUG: token: 70
+DEBUG: arg line: 69
+DEBUG: parsing line: 69
+DEBUG: token: 69
+DEBUG: arg line: 68
+DEBUG: parsing line: 68
+DEBUG: token: 68
+DEBUG: arg line: 67
+DEBUG: parsing line: 67
+DEBUG: token: 67
+DEBUG: arg line: 66
+DEBUG: parsing line: 66
+DEBUG: token: 66
+DEBUG: arg line: 65
+DEBUG: parsing line: 65
+DEBUG: token: 65
+DEBUG: arg line: 64
+DEBUG: parsing line: 64
+DEBUG: token: 64
+DEBUG: arg line: 63
+DEBUG: parsing line: 63
+DEBUG: token: 63
+DEBUG: arg line: 62
+DEBUG: parsing line: 62
+DEBUG: token: 62
+DEBUG: arg line: 61
+DEBUG: parsing line: 61
+DEBUG: token: 61
+DEBUG: arg line: 60
+DEBUG: parsing line: 60
+DEBUG: token: 60
+DEBUG: arg line: 59
+DEBUG: parsing line: 59
+DEBUG: token: 59
+DEBUG: arg line: 58
+DEBUG: parsing line: 58
+DEBUG: token: 58
+DEBUG: arg line: 57
+DEBUG: parsing line: 57
+DEBUG: token: 57
+DEBUG: arg line: 56
+DEBUG: parsing line: 56
+DEBUG: token: 56
+DEBUG: arg line: 55
+DEBUG: parsing line: 55
+DEBUG: token: 55
+DEBUG: arg line: 54
+DEBUG: parsing line: 54
+DEBUG: token: 54
+DEBUG: arg line: 53
+DEBUG: parsing line: 53
+DEBUG: token: 53
+DEBUG: arg line: 52
+DEBUG: parsing line: 52
+DEBUG: token: 52
+DEBUG: arg line: 51
+DEBUG: parsing line: 51
+DEBUG: token: 51
+DEBUG: arg line: 50
+DEBUG: parsing line: 50
+DEBUG: token: 50
+DEBUG: arg line: 49
+DEBUG: parsing line: 49
+DEBUG: token: 49
+DEBUG: arg line: 48
+DEBUG: parsing line: 48
+DEBUG: token: 48
+DEBUG: arg line: 47
+DEBUG: parsing line: 47
+DEBUG: token: 47
+DEBUG: arg line: 46
+DEBUG: parsing line: 46
+DEBUG: token: 46
+DEBUG: arg line: 45
+DEBUG: parsing line: 45
+DEBUG: token: 45
+DEBUG: arg line: 44
+DEBUG: parsing line: 44
+DEBUG: token: 44
+DEBUG: arg line: 43
+DEBUG: parsing line: 43
+DEBUG: token: 43
+DEBUG: arg line: 42
+DEBUG: parsing line: 42
+DEBUG: token: 42
+DEBUG: arg line: 41
+DEBUG: parsing line: 41
+DEBUG: token: 41
+DEBUG: arg line: 40
+DEBUG: parsing line: 40
+DEBUG: token: 40
+DEBUG: arg line: 39
+DEBUG: parsing line: 39
+DEBUG: token: 39
+DEBUG: arg line: 38
+DEBUG: parsing line: 38
+DEBUG: token: 38
+DEBUG: arg line: 37
+DEBUG: parsing line: 37
+DEBUG: token: 37
+DEBUG: arg line: 36
+DEBUG: parsing line: 36
+DEBUG: token: 36
+DEBUG: arg line: 35
+DEBUG: parsing line: 35
+DEBUG: token: 35
+DEBUG: arg line: 34
+DEBUG: parsing line: 34
+DEBUG: token: 34
+DEBUG: arg line: 33
+DEBUG: parsing line: 33
+DEBUG: token: 33
+DEBUG: arg line: 32
+DEBUG: parsing line: 32
+DEBUG: token: 32
+DEBUG: arg line: 31
+DEBUG: parsing line: 31
+DEBUG: token: 31
+DEBUG: arg line: 30
+DEBUG: parsing line: 30
+DEBUG: token: 30
+DEBUG: arg line: 29
+DEBUG: parsing line: 29
+DEBUG: token: 29
+DEBUG: arg line: 28
+DEBUG: parsing line: 28
+DEBUG: token: 28
+DEBUG: arg line: 27
+DEBUG: parsing line: 27
+DEBUG: token: 27
+DEBUG: arg line: 26
+DEBUG: parsing line: 26
+DEBUG: token: 26
+DEBUG: arg line: 25
+DEBUG: parsing line: 25
+DEBUG: token: 25
+DEBUG: arg line: 24
+DEBUG: parsing line: 24
+DEBUG: token: 24
+DEBUG: arg line: 23
+DEBUG: parsing line: 23
+DEBUG: token: 23
+DEBUG: arg line: 22
+DEBUG: parsing line: 22
+DEBUG: token: 22
+DEBUG: arg line: 21
+DEBUG: parsing line: 21
+DEBUG: token: 21
+DEBUG: arg line: 20
+DEBUG: parsing line: 20
+DEBUG: token: 20
+DEBUG: arg line: 19
+DEBUG: parsing line: 19
+DEBUG: token: 19
+DEBUG: arg line: 18
+DEBUG: parsing line: 18
+DEBUG: token: 18
+DEBUG: arg line: 17
+DEBUG: parsing line: 17
+DEBUG: token: 17
+DEBUG: arg line: 16
+DEBUG: parsing line: 16
+DEBUG: token: 16
+DEBUG: arg line: 15
+DEBUG: parsing line: 15
+DEBUG: token: 15
+DEBUG: arg line: 14
+DEBUG: parsing line: 14
+DEBUG: token: 14
+DEBUG: arg line: 13
+DEBUG: parsing line: 13
+DEBUG: token: 13
+DEBUG: arg line: 12
+DEBUG: parsing line: 12
+DEBUG: token: 12
+DEBUG: arg line: 11
+DEBUG: parsing line: 11
+DEBUG: token: 11
+DEBUG: arg line: 10
+DEBUG: parsing line: 10
+DEBUG: token: 10
+DEBUG: arg line: 9
+DEBUG: parsing line: 9
+DEBUG: token: 9
+DEBUG: arg line: 8
+DEBUG: parsing line: 8
+DEBUG: token: 8
+DEBUG: arg line: 7
+DEBUG: parsing line: 7
+DEBUG: token: 7
+DEBUG: arg line: 6
+DEBUG: parsing line: 6
+DEBUG: token: 6
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: rank_values complete. Stack A (ranks): 99 98 97 96 95 94 93 92 91 90 89 88 87 86 85 84 83 82 81 80 79 78 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Sorting with chunk strategy
+DEBUG: Using chunk sort
+DEBUG: Done!
+OK
+----------------------------------------
+Reverse 500:
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 500
+DEBUG: parsing line: 500
+DEBUG: token: 500
+DEBUG: arg line: 499
+DEBUG: parsing line: 499
+DEBUG: token: 499
+DEBUG: arg line: 498
+DEBUG: parsing line: 498
+DEBUG: token: 498
+DEBUG: arg line: 497
+DEBUG: parsing line: 497
+DEBUG: token: 497
+DEBUG: arg line: 496
+DEBUG: parsing line: 496
+DEBUG: token: 496
+DEBUG: arg line: 495
+DEBUG: parsing line: 495
+DEBUG: token: 495
+DEBUG: arg line: 494
+DEBUG: parsing line: 494
+DEBUG: token: 494
+DEBUG: arg line: 493
+DEBUG: parsing line: 493
+DEBUG: token: 493
+DEBUG: arg line: 492
+DEBUG: parsing line: 492
+DEBUG: token: 492
+DEBUG: arg line: 491
+DEBUG: parsing line: 491
+DEBUG: token: 491
+DEBUG: arg line: 490
+DEBUG: parsing line: 490
+DEBUG: token: 490
+DEBUG: arg line: 489
+DEBUG: parsing line: 489
+DEBUG: token: 489
+DEBUG: arg line: 488
+DEBUG: parsing line: 488
+DEBUG: token: 488
+DEBUG: arg line: 487
+DEBUG: parsing line: 487
+DEBUG: token: 487
+DEBUG: arg line: 486
+DEBUG: parsing line: 486
+DEBUG: token: 486
+DEBUG: arg line: 485
+DEBUG: parsing line: 485
+DEBUG: token: 485
+DEBUG: arg line: 484
+DEBUG: parsing line: 484
+DEBUG: token: 484
+DEBUG: arg line: 483
+DEBUG: parsing line: 483
+DEBUG: token: 483
+DEBUG: arg line: 482
+DEBUG: parsing line: 482
+DEBUG: token: 482
+DEBUG: arg line: 481
+DEBUG: parsing line: 481
+DEBUG: token: 481
+DEBUG: arg line: 480
+DEBUG: parsing line: 480
+DEBUG: token: 480
+DEBUG: arg line: 479
+DEBUG: parsing line: 479
+DEBUG: token: 479
+DEBUG: arg line: 478
+DEBUG: parsing line: 478
+DEBUG: token: 478
+DEBUG: arg line: 477
+DEBUG: parsing line: 477
+DEBUG: token: 477
+DEBUG: arg line: 476
+DEBUG: parsing line: 476
+DEBUG: token: 476
+DEBUG: arg line: 475
+DEBUG: parsing line: 475
+DEBUG: token: 475
+DEBUG: arg line: 474
+DEBUG: parsing line: 474
+DEBUG: token: 474
+DEBUG: arg line: 473
+DEBUG: parsing line: 473
+DEBUG: token: 473
+DEBUG: arg line: 472
+DEBUG: parsing line: 472
+DEBUG: token: 472
+DEBUG: arg line: 471
+DEBUG: parsing line: 471
+DEBUG: token: 471
+DEBUG: arg line: 470
+DEBUG: parsing line: 470
+DEBUG: token: 470
+DEBUG: arg line: 469
+DEBUG: parsing line: 469
+DEBUG: token: 469
+DEBUG: arg line: 468
+DEBUG: parsing line: 468
+DEBUG: token: 468
+DEBUG: arg line: 467
+DEBUG: parsing line: 467
+DEBUG: token: 467
+DEBUG: arg line: 466
+DEBUG: parsing line: 466
+DEBUG: token: 466
+DEBUG: arg line: 465
+DEBUG: parsing line: 465
+DEBUG: token: 465
+DEBUG: arg line: 464
+DEBUG: parsing line: 464
+DEBUG: token: 464
+DEBUG: arg line: 463
+DEBUG: parsing line: 463
+DEBUG: token: 463
+DEBUG: arg line: 462
+DEBUG: parsing line: 462
+DEBUG: token: 462
+DEBUG: arg line: 461
+DEBUG: parsing line: 461
+DEBUG: token: 461
+DEBUG: arg line: 460
+DEBUG: parsing line: 460
+DEBUG: token: 460
+DEBUG: arg line: 459
+DEBUG: parsing line: 459
+DEBUG: token: 459
+DEBUG: arg line: 458
+DEBUG: parsing line: 458
+DEBUG: token: 458
+DEBUG: arg line: 457
+DEBUG: parsing line: 457
+DEBUG: token: 457
+DEBUG: arg line: 456
+DEBUG: parsing line: 456
+DEBUG: token: 456
+DEBUG: arg line: 455
+DEBUG: parsing line: 455
+DEBUG: token: 455
+DEBUG: arg line: 454
+DEBUG: parsing line: 454
+DEBUG: token: 454
+DEBUG: arg line: 453
+DEBUG: parsing line: 453
+DEBUG: token: 453
+DEBUG: arg line: 452
+DEBUG: parsing line: 452
+DEBUG: token: 452
+DEBUG: arg line: 451
+DEBUG: parsing line: 451
+DEBUG: token: 451
+DEBUG: arg line: 450
+DEBUG: parsing line: 450
+DEBUG: token: 450
+DEBUG: arg line: 449
+DEBUG: parsing line: 449
+DEBUG: token: 449
+DEBUG: arg line: 448
+DEBUG: parsing line: 448
+DEBUG: token: 448
+DEBUG: arg line: 447
+DEBUG: parsing line: 447
+DEBUG: token: 447
+DEBUG: arg line: 446
+DEBUG: parsing line: 446
+DEBUG: token: 446
+DEBUG: arg line: 445
+DEBUG: parsing line: 445
+DEBUG: token: 445
+DEBUG: arg line: 444
+DEBUG: parsing line: 444
+DEBUG: token: 444
+DEBUG: arg line: 443
+DEBUG: parsing line: 443
+DEBUG: token: 443
+DEBUG: arg line: 442
+DEBUG: parsing line: 442
+DEBUG: token: 442
+DEBUG: arg line: 441
+DEBUG: parsing line: 441
+DEBUG: token: 441
+DEBUG: arg line: 440
+DEBUG: parsing line: 440
+DEBUG: token: 440
+DEBUG: arg line: 439
+DEBUG: parsing line: 439
+DEBUG: token: 439
+DEBUG: arg line: 438
+DEBUG: parsing line: 438
+DEBUG: token: 438
+DEBUG: arg line: 437
+DEBUG: parsing line: 437
+DEBUG: token: 437
+DEBUG: arg line: 436
+DEBUG: parsing line: 436
+DEBUG: token: 436
+DEBUG: arg line: 435
+DEBUG: parsing line: 435
+DEBUG: token: 435
+DEBUG: arg line: 434
+DEBUG: parsing line: 434
+DEBUG: token: 434
+DEBUG: arg line: 433
+DEBUG: parsing line: 433
+DEBUG: token: 433
+DEBUG: arg line: 432
+DEBUG: parsing line: 432
+DEBUG: token: 432
+DEBUG: arg line: 431
+DEBUG: parsing line: 431
+DEBUG: token: 431
+DEBUG: arg line: 430
+DEBUG: parsing line: 430
+DEBUG: token: 430
+DEBUG: arg line: 429
+DEBUG: parsing line: 429
+DEBUG: token: 429
+DEBUG: arg line: 428
+DEBUG: parsing line: 428
+DEBUG: token: 428
+DEBUG: arg line: 427
+DEBUG: parsing line: 427
+DEBUG: token: 427
+DEBUG: arg line: 426
+DEBUG: parsing line: 426
+DEBUG: token: 426
+DEBUG: arg line: 425
+DEBUG: parsing line: 425
+DEBUG: token: 425
+DEBUG: arg line: 424
+DEBUG: parsing line: 424
+DEBUG: token: 424
+DEBUG: arg line: 423
+DEBUG: parsing line: 423
+DEBUG: token: 423
+DEBUG: arg line: 422
+DEBUG: parsing line: 422
+DEBUG: token: 422
+DEBUG: arg line: 421
+DEBUG: parsing line: 421
+DEBUG: token: 421
+DEBUG: arg line: 420
+DEBUG: parsing line: 420
+DEBUG: token: 420
+DEBUG: arg line: 419
+DEBUG: parsing line: 419
+DEBUG: token: 419
+DEBUG: arg line: 418
+DEBUG: parsing line: 418
+DEBUG: token: 418
+DEBUG: arg line: 417
+DEBUG: parsing line: 417
+DEBUG: token: 417
+DEBUG: arg line: 416
+DEBUG: parsing line: 416
+DEBUG: token: 416
+DEBUG: arg line: 415
+DEBUG: parsing line: 415
+DEBUG: token: 415
+DEBUG: arg line: 414
+DEBUG: parsing line: 414
+DEBUG: token: 414
+DEBUG: arg line: 413
+DEBUG: parsing line: 413
+DEBUG: token: 413
+DEBUG: arg line: 412
+DEBUG: parsing line: 412
+DEBUG: token: 412
+DEBUG: arg line: 411
+DEBUG: parsing line: 411
+DEBUG: token: 411
+DEBUG: arg line: 410
+DEBUG: parsing line: 410
+DEBUG: token: 410
+DEBUG: arg line: 409
+DEBUG: parsing line: 409
+DEBUG: token: 409
+DEBUG: arg line: 408
+DEBUG: parsing line: 408
+DEBUG: token: 408
+DEBUG: arg line: 407
+DEBUG: parsing line: 407
+DEBUG: token: 407
+DEBUG: arg line: 406
+DEBUG: parsing line: 406
+DEBUG: token: 406
+DEBUG: arg line: 405
+DEBUG: parsing line: 405
+DEBUG: token: 405
+DEBUG: arg line: 404
+DEBUG: parsing line: 404
+DEBUG: token: 404
+DEBUG: arg line: 403
+DEBUG: parsing line: 403
+DEBUG: token: 403
+DEBUG: arg line: 402
+DEBUG: parsing line: 402
+DEBUG: token: 402
+DEBUG: arg line: 401
+DEBUG: parsing line: 401
+DEBUG: token: 401
+DEBUG: arg line: 400
+DEBUG: parsing line: 400
+DEBUG: token: 400
+DEBUG: arg line: 399
+DEBUG: parsing line: 399
+DEBUG: token: 399
+DEBUG: arg line: 398
+DEBUG: parsing line: 398
+DEBUG: token: 398
+DEBUG: arg line: 397
+DEBUG: parsing line: 397
+DEBUG: token: 397
+DEBUG: arg line: 396
+DEBUG: parsing line: 396
+DEBUG: token: 396
+DEBUG: arg line: 395
+DEBUG: parsing line: 395
+DEBUG: token: 395
+DEBUG: arg line: 394
+DEBUG: parsing line: 394
+DEBUG: token: 394
+DEBUG: arg line: 393
+DEBUG: parsing line: 393
+DEBUG: token: 393
+DEBUG: arg line: 392
+DEBUG: parsing line: 392
+DEBUG: token: 392
+DEBUG: arg line: 391
+DEBUG: parsing line: 391
+DEBUG: token: 391
+DEBUG: arg line: 390
+DEBUG: parsing line: 390
+DEBUG: token: 390
+DEBUG: arg line: 389
+DEBUG: parsing line: 389
+DEBUG: token: 389
+DEBUG: arg line: 388
+DEBUG: parsing line: 388
+DEBUG: token: 388
+DEBUG: arg line: 387
+DEBUG: parsing line: 387
+DEBUG: token: 387
+DEBUG: arg line: 386
+DEBUG: parsing line: 386
+DEBUG: token: 386
+DEBUG: arg line: 385
+DEBUG: parsing line: 385
+DEBUG: token: 385
+DEBUG: arg line: 384
+DEBUG: parsing line: 384
+DEBUG: token: 384
+DEBUG: arg line: 383
+DEBUG: parsing line: 383
+DEBUG: token: 383
+DEBUG: arg line: 382
+DEBUG: parsing line: 382
+DEBUG: token: 382
+DEBUG: arg line: 381
+DEBUG: parsing line: 381
+DEBUG: token: 381
+DEBUG: arg line: 380
+DEBUG: parsing line: 380
+DEBUG: token: 380
+DEBUG: arg line: 379
+DEBUG: parsing line: 379
+DEBUG: token: 379
+DEBUG: arg line: 378
+DEBUG: parsing line: 378
+DEBUG: token: 378
+DEBUG: arg line: 377
+DEBUG: parsing line: 377
+DEBUG: token: 377
+DEBUG: arg line: 376
+DEBUG: parsing line: 376
+DEBUG: token: 376
+DEBUG: arg line: 375
+DEBUG: parsing line: 375
+DEBUG: token: 375
+DEBUG: arg line: 374
+DEBUG: parsing line: 374
+DEBUG: token: 374
+DEBUG: arg line: 373
+DEBUG: parsing line: 373
+DEBUG: token: 373
+DEBUG: arg line: 372
+DEBUG: parsing line: 372
+DEBUG: token: 372
+DEBUG: arg line: 371
+DEBUG: parsing line: 371
+DEBUG: token: 371
+DEBUG: arg line: 370
+DEBUG: parsing line: 370
+DEBUG: token: 370
+DEBUG: arg line: 369
+DEBUG: parsing line: 369
+DEBUG: token: 369
+DEBUG: arg line: 368
+DEBUG: parsing line: 368
+DEBUG: token: 368
+DEBUG: arg line: 367
+DEBUG: parsing line: 367
+DEBUG: token: 367
+DEBUG: arg line: 366
+DEBUG: parsing line: 366
+DEBUG: token: 366
+DEBUG: arg line: 365
+DEBUG: parsing line: 365
+DEBUG: token: 365
+DEBUG: arg line: 364
+DEBUG: parsing line: 364
+DEBUG: token: 364
+DEBUG: arg line: 363
+DEBUG: parsing line: 363
+DEBUG: token: 363
+DEBUG: arg line: 362
+DEBUG: parsing line: 362
+DEBUG: token: 362
+DEBUG: arg line: 361
+DEBUG: parsing line: 361
+DEBUG: token: 361
+DEBUG: arg line: 360
+DEBUG: parsing line: 360
+DEBUG: token: 360
+DEBUG: arg line: 359
+DEBUG: parsing line: 359
+DEBUG: token: 359
+DEBUG: arg line: 358
+DEBUG: parsing line: 358
+DEBUG: token: 358
+DEBUG: arg line: 357
+DEBUG: parsing line: 357
+DEBUG: token: 357
+DEBUG: arg line: 356
+DEBUG: parsing line: 356
+DEBUG: token: 356
+DEBUG: arg line: 355
+DEBUG: parsing line: 355
+DEBUG: token: 355
+DEBUG: arg line: 354
+DEBUG: parsing line: 354
+DEBUG: token: 354
+DEBUG: arg line: 353
+DEBUG: parsing line: 353
+DEBUG: token: 353
+DEBUG: arg line: 352
+DEBUG: parsing line: 352
+DEBUG: token: 352
+DEBUG: arg line: 351
+DEBUG: parsing line: 351
+DEBUG: token: 351
+DEBUG: arg line: 350
+DEBUG: parsing line: 350
+DEBUG: token: 350
+DEBUG: arg line: 349
+DEBUG: parsing line: 349
+DEBUG: token: 349
+DEBUG: arg line: 348
+DEBUG: parsing line: 348
+DEBUG: token: 348
+DEBUG: arg line: 347
+DEBUG: parsing line: 347
+DEBUG: token: 347
+DEBUG: arg line: 346
+DEBUG: parsing line: 346
+DEBUG: token: 346
+DEBUG: arg line: 345
+DEBUG: parsing line: 345
+DEBUG: token: 345
+DEBUG: arg line: 344
+DEBUG: parsing line: 344
+DEBUG: token: 344
+DEBUG: arg line: 343
+DEBUG: parsing line: 343
+DEBUG: token: 343
+DEBUG: arg line: 342
+DEBUG: parsing line: 342
+DEBUG: token: 342
+DEBUG: arg line: 341
+DEBUG: parsing line: 341
+DEBUG: token: 341
+DEBUG: arg line: 340
+DEBUG: parsing line: 340
+DEBUG: token: 340
+DEBUG: arg line: 339
+DEBUG: parsing line: 339
+DEBUG: token: 339
+DEBUG: arg line: 338
+DEBUG: parsing line: 338
+DEBUG: token: 338
+DEBUG: arg line: 337
+DEBUG: parsing line: 337
+DEBUG: token: 337
+DEBUG: arg line: 336
+DEBUG: parsing line: 336
+DEBUG: token: 336
+DEBUG: arg line: 335
+DEBUG: parsing line: 335
+DEBUG: token: 335
+DEBUG: arg line: 334
+DEBUG: parsing line: 334
+DEBUG: token: 334
+DEBUG: arg line: 333
+DEBUG: parsing line: 333
+DEBUG: token: 333
+DEBUG: arg line: 332
+DEBUG: parsing line: 332
+DEBUG: token: 332
+DEBUG: arg line: 331
+DEBUG: parsing line: 331
+DEBUG: token: 331
+DEBUG: arg line: 330
+DEBUG: parsing line: 330
+DEBUG: token: 330
+DEBUG: arg line: 329
+DEBUG: parsing line: 329
+DEBUG: token: 329
+DEBUG: arg line: 328
+DEBUG: parsing line: 328
+DEBUG: token: 328
+DEBUG: arg line: 327
+DEBUG: parsing line: 327
+DEBUG: token: 327
+DEBUG: arg line: 326
+DEBUG: parsing line: 326
+DEBUG: token: 326
+DEBUG: arg line: 325
+DEBUG: parsing line: 325
+DEBUG: token: 325
+DEBUG: arg line: 324
+DEBUG: parsing line: 324
+DEBUG: token: 324
+DEBUG: arg line: 323
+DEBUG: parsing line: 323
+DEBUG: token: 323
+DEBUG: arg line: 322
+DEBUG: parsing line: 322
+DEBUG: token: 322
+DEBUG: arg line: 321
+DEBUG: parsing line: 321
+DEBUG: token: 321
+DEBUG: arg line: 320
+DEBUG: parsing line: 320
+DEBUG: token: 320
+DEBUG: arg line: 319
+DEBUG: parsing line: 319
+DEBUG: token: 319
+DEBUG: arg line: 318
+DEBUG: parsing line: 318
+DEBUG: token: 318
+DEBUG: arg line: 317
+DEBUG: parsing line: 317
+DEBUG: token: 317
+DEBUG: arg line: 316
+DEBUG: parsing line: 316
+DEBUG: token: 316
+DEBUG: arg line: 315
+DEBUG: parsing line: 315
+DEBUG: token: 315
+DEBUG: arg line: 314
+DEBUG: parsing line: 314
+DEBUG: token: 314
+DEBUG: arg line: 313
+DEBUG: parsing line: 313
+DEBUG: token: 313
+DEBUG: arg line: 312
+DEBUG: parsing line: 312
+DEBUG: token: 312
+DEBUG: arg line: 311
+DEBUG: parsing line: 311
+DEBUG: token: 311
+DEBUG: arg line: 310
+DEBUG: parsing line: 310
+DEBUG: token: 310
+DEBUG: arg line: 309
+DEBUG: parsing line: 309
+DEBUG: token: 309
+DEBUG: arg line: 308
+DEBUG: parsing line: 308
+DEBUG: token: 308
+DEBUG: arg line: 307
+DEBUG: parsing line: 307
+DEBUG: token: 307
+DEBUG: arg line: 306
+DEBUG: parsing line: 306
+DEBUG: token: 306
+DEBUG: arg line: 305
+DEBUG: parsing line: 305
+DEBUG: token: 305
+DEBUG: arg line: 304
+DEBUG: parsing line: 304
+DEBUG: token: 304
+DEBUG: arg line: 303
+DEBUG: parsing line: 303
+DEBUG: token: 303
+DEBUG: arg line: 302
+DEBUG: parsing line: 302
+DEBUG: token: 302
+DEBUG: arg line: 301
+DEBUG: parsing line: 301
+DEBUG: token: 301
+DEBUG: arg line: 300
+DEBUG: parsing line: 300
+DEBUG: token: 300
+DEBUG: arg line: 299
+DEBUG: parsing line: 299
+DEBUG: token: 299
+DEBUG: arg line: 298
+DEBUG: parsing line: 298
+DEBUG: token: 298
+DEBUG: arg line: 297
+DEBUG: parsing line: 297
+DEBUG: token: 297
+DEBUG: arg line: 296
+DEBUG: parsing line: 296
+DEBUG: token: 296
+DEBUG: arg line: 295
+DEBUG: parsing line: 295
+DEBUG: token: 295
+DEBUG: arg line: 294
+DEBUG: parsing line: 294
+DEBUG: token: 294
+DEBUG: arg line: 293
+DEBUG: parsing line: 293
+DEBUG: token: 293
+DEBUG: arg line: 292
+DEBUG: parsing line: 292
+DEBUG: token: 292
+DEBUG: arg line: 291
+DEBUG: parsing line: 291
+DEBUG: token: 291
+DEBUG: arg line: 290
+DEBUG: parsing line: 290
+DEBUG: token: 290
+DEBUG: arg line: 289
+DEBUG: parsing line: 289
+DEBUG: token: 289
+DEBUG: arg line: 288
+DEBUG: parsing line: 288
+DEBUG: token: 288
+DEBUG: arg line: 287
+DEBUG: parsing line: 287
+DEBUG: token: 287
+DEBUG: arg line: 286
+DEBUG: parsing line: 286
+DEBUG: token: 286
+DEBUG: arg line: 285
+DEBUG: parsing line: 285
+DEBUG: token: 285
+DEBUG: arg line: 284
+DEBUG: parsing line: 284
+DEBUG: token: 284
+DEBUG: arg line: 283
+DEBUG: parsing line: 283
+DEBUG: token: 283
+DEBUG: arg line: 282
+DEBUG: parsing line: 282
+DEBUG: token: 282
+DEBUG: arg line: 281
+DEBUG: parsing line: 281
+DEBUG: token: 281
+DEBUG: arg line: 280
+DEBUG: parsing line: 280
+DEBUG: token: 280
+DEBUG: arg line: 279
+DEBUG: parsing line: 279
+DEBUG: token: 279
+DEBUG: arg line: 278
+DEBUG: parsing line: 278
+DEBUG: token: 278
+DEBUG: arg line: 277
+DEBUG: parsing line: 277
+DEBUG: token: 277
+DEBUG: arg line: 276
+DEBUG: parsing line: 276
+DEBUG: token: 276
+DEBUG: arg line: 275
+DEBUG: parsing line: 275
+DEBUG: token: 275
+DEBUG: arg line: 274
+DEBUG: parsing line: 274
+DEBUG: token: 274
+DEBUG: arg line: 273
+DEBUG: parsing line: 273
+DEBUG: token: 273
+DEBUG: arg line: 272
+DEBUG: parsing line: 272
+DEBUG: token: 272
+DEBUG: arg line: 271
+DEBUG: parsing line: 271
+DEBUG: token: 271
+DEBUG: arg line: 270
+DEBUG: parsing line: 270
+DEBUG: token: 270
+DEBUG: arg line: 269
+DEBUG: parsing line: 269
+DEBUG: token: 269
+DEBUG: arg line: 268
+DEBUG: parsing line: 268
+DEBUG: token: 268
+DEBUG: arg line: 267
+DEBUG: parsing line: 267
+DEBUG: token: 267
+DEBUG: arg line: 266
+DEBUG: parsing line: 266
+DEBUG: token: 266
+DEBUG: arg line: 265
+DEBUG: parsing line: 265
+DEBUG: token: 265
+DEBUG: arg line: 264
+DEBUG: parsing line: 264
+DEBUG: token: 264
+DEBUG: arg line: 263
+DEBUG: parsing line: 263
+DEBUG: token: 263
+DEBUG: arg line: 262
+DEBUG: parsing line: 262
+DEBUG: token: 262
+DEBUG: arg line: 261
+DEBUG: parsing line: 261
+DEBUG: token: 261
+DEBUG: arg line: 260
+DEBUG: parsing line: 260
+DEBUG: token: 260
+DEBUG: arg line: 259
+DEBUG: parsing line: 259
+DEBUG: token: 259
+DEBUG: arg line: 258
+DEBUG: parsing line: 258
+DEBUG: token: 258
+DEBUG: arg line: 257
+DEBUG: parsing line: 257
+DEBUG: token: 257
+DEBUG: arg line: 256
+DEBUG: parsing line: 256
+DEBUG: token: 256
+DEBUG: arg line: 255
+DEBUG: parsing line: 255
+DEBUG: token: 255
+DEBUG: arg line: 254
+DEBUG: parsing line: 254
+DEBUG: token: 254
+DEBUG: arg line: 253
+DEBUG: parsing line: 253
+DEBUG: token: 253
+DEBUG: arg line: 252
+DEBUG: parsing line: 252
+DEBUG: token: 252
+DEBUG: arg line: 251
+DEBUG: parsing line: 251
+DEBUG: token: 251
+DEBUG: arg line: 250
+DEBUG: parsing line: 250
+DEBUG: token: 250
+DEBUG: arg line: 249
+DEBUG: parsing line: 249
+DEBUG: token: 249
+DEBUG: arg line: 248
+DEBUG: parsing line: 248
+DEBUG: token: 248
+DEBUG: arg line: 247
+DEBUG: parsing line: 247
+DEBUG: token: 247
+DEBUG: arg line: 246
+DEBUG: parsing line: 246
+DEBUG: token: 246
+DEBUG: arg line: 245
+DEBUG: parsing line: 245
+DEBUG: token: 245
+DEBUG: arg line: 244
+DEBUG: parsing line: 244
+DEBUG: token: 244
+DEBUG: arg line: 243
+DEBUG: parsing line: 243
+DEBUG: token: 243
+DEBUG: arg line: 242
+DEBUG: parsing line: 242
+DEBUG: token: 242
+DEBUG: arg line: 241
+DEBUG: parsing line: 241
+DEBUG: token: 241
+DEBUG: arg line: 240
+DEBUG: parsing line: 240
+DEBUG: token: 240
+DEBUG: arg line: 239
+DEBUG: parsing line: 239
+DEBUG: token: 239
+DEBUG: arg line: 238
+DEBUG: parsing line: 238
+DEBUG: token: 238
+DEBUG: arg line: 237
+DEBUG: parsing line: 237
+DEBUG: token: 237
+DEBUG: arg line: 236
+DEBUG: parsing line: 236
+DEBUG: token: 236
+DEBUG: arg line: 235
+DEBUG: parsing line: 235
+DEBUG: token: 235
+DEBUG: arg line: 234
+DEBUG: parsing line: 234
+DEBUG: token: 234
+DEBUG: arg line: 233
+DEBUG: parsing line: 233
+DEBUG: token: 233
+DEBUG: arg line: 232
+DEBUG: parsing line: 232
+DEBUG: token: 232
+DEBUG: arg line: 231
+DEBUG: parsing line: 231
+DEBUG: token: 231
+DEBUG: arg line: 230
+DEBUG: parsing line: 230
+DEBUG: token: 230
+DEBUG: arg line: 229
+DEBUG: parsing line: 229
+DEBUG: token: 229
+DEBUG: arg line: 228
+DEBUG: parsing line: 228
+DEBUG: token: 228
+DEBUG: arg line: 227
+DEBUG: parsing line: 227
+DEBUG: token: 227
+DEBUG: arg line: 226
+DEBUG: parsing line: 226
+DEBUG: token: 226
+DEBUG: arg line: 225
+DEBUG: parsing line: 225
+DEBUG: token: 225
+DEBUG: arg line: 224
+DEBUG: parsing line: 224
+DEBUG: token: 224
+DEBUG: arg line: 223
+DEBUG: parsing line: 223
+DEBUG: token: 223
+DEBUG: arg line: 222
+DEBUG: parsing line: 222
+DEBUG: token: 222
+DEBUG: arg line: 221
+DEBUG: parsing line: 221
+DEBUG: token: 221
+DEBUG: arg line: 220
+DEBUG: parsing line: 220
+DEBUG: token: 220
+DEBUG: arg line: 219
+DEBUG: parsing line: 219
+DEBUG: token: 219
+DEBUG: arg line: 218
+DEBUG: parsing line: 218
+DEBUG: token: 218
+DEBUG: arg line: 217
+DEBUG: parsing line: 217
+DEBUG: token: 217
+DEBUG: arg line: 216
+DEBUG: parsing line: 216
+DEBUG: token: 216
+DEBUG: arg line: 215
+DEBUG: parsing line: 215
+DEBUG: token: 215
+DEBUG: arg line: 214
+DEBUG: parsing line: 214
+DEBUG: token: 214
+DEBUG: arg line: 213
+DEBUG: parsing line: 213
+DEBUG: token: 213
+DEBUG: arg line: 212
+DEBUG: parsing line: 212
+DEBUG: token: 212
+DEBUG: arg line: 211
+DEBUG: parsing line: 211
+DEBUG: token: 211
+DEBUG: arg line: 210
+DEBUG: parsing line: 210
+DEBUG: token: 210
+DEBUG: arg line: 209
+DEBUG: parsing line: 209
+DEBUG: token: 209
+DEBUG: arg line: 208
+DEBUG: parsing line: 208
+DEBUG: token: 208
+DEBUG: arg line: 207
+DEBUG: parsing line: 207
+DEBUG: token: 207
+DEBUG: arg line: 206
+DEBUG: parsing line: 206
+DEBUG: token: 206
+DEBUG: arg line: 205
+DEBUG: parsing line: 205
+DEBUG: token: 205
+DEBUG: arg line: 204
+DEBUG: parsing line: 204
+DEBUG: token: 204
+DEBUG: arg line: 203
+DEBUG: parsing line: 203
+DEBUG: token: 203
+DEBUG: arg line: 202
+DEBUG: parsing line: 202
+DEBUG: token: 202
+DEBUG: arg line: 201
+DEBUG: parsing line: 201
+DEBUG: token: 201
+DEBUG: arg line: 200
+DEBUG: parsing line: 200
+DEBUG: token: 200
+DEBUG: arg line: 199
+DEBUG: parsing line: 199
+DEBUG: token: 199
+DEBUG: arg line: 198
+DEBUG: parsing line: 198
+DEBUG: token: 198
+DEBUG: arg line: 197
+DEBUG: parsing line: 197
+DEBUG: token: 197
+DEBUG: arg line: 196
+DEBUG: parsing line: 196
+DEBUG: token: 196
+DEBUG: arg line: 195
+DEBUG: parsing line: 195
+DEBUG: token: 195
+DEBUG: arg line: 194
+DEBUG: parsing line: 194
+DEBUG: token: 194
+DEBUG: arg line: 193
+DEBUG: parsing line: 193
+DEBUG: token: 193
+DEBUG: arg line: 192
+DEBUG: parsing line: 192
+DEBUG: token: 192
+DEBUG: arg line: 191
+DEBUG: parsing line: 191
+DEBUG: token: 191
+DEBUG: arg line: 190
+DEBUG: parsing line: 190
+DEBUG: token: 190
+DEBUG: arg line: 189
+DEBUG: parsing line: 189
+DEBUG: token: 189
+DEBUG: arg line: 188
+DEBUG: parsing line: 188
+DEBUG: token: 188
+DEBUG: arg line: 187
+DEBUG: parsing line: 187
+DEBUG: token: 187
+DEBUG: arg line: 186
+DEBUG: parsing line: 186
+DEBUG: token: 186
+DEBUG: arg line: 185
+DEBUG: parsing line: 185
+DEBUG: token: 185
+DEBUG: arg line: 184
+DEBUG: parsing line: 184
+DEBUG: token: 184
+DEBUG: arg line: 183
+DEBUG: parsing line: 183
+DEBUG: token: 183
+DEBUG: arg line: 182
+DEBUG: parsing line: 182
+DEBUG: token: 182
+DEBUG: arg line: 181
+DEBUG: parsing line: 181
+DEBUG: token: 181
+DEBUG: arg line: 180
+DEBUG: parsing line: 180
+DEBUG: token: 180
+DEBUG: arg line: 179
+DEBUG: parsing line: 179
+DEBUG: token: 179
+DEBUG: arg line: 178
+DEBUG: parsing line: 178
+DEBUG: token: 178
+DEBUG: arg line: 177
+DEBUG: parsing line: 177
+DEBUG: token: 177
+DEBUG: arg line: 176
+DEBUG: parsing line: 176
+DEBUG: token: 176
+DEBUG: arg line: 175
+DEBUG: parsing line: 175
+DEBUG: token: 175
+DEBUG: arg line: 174
+DEBUG: parsing line: 174
+DEBUG: token: 174
+DEBUG: arg line: 173
+DEBUG: parsing line: 173
+DEBUG: token: 173
+DEBUG: arg line: 172
+DEBUG: parsing line: 172
+DEBUG: token: 172
+DEBUG: arg line: 171
+DEBUG: parsing line: 171
+DEBUG: token: 171
+DEBUG: arg line: 170
+DEBUG: parsing line: 170
+DEBUG: token: 170
+DEBUG: arg line: 169
+DEBUG: parsing line: 169
+DEBUG: token: 169
+DEBUG: arg line: 168
+DEBUG: parsing line: 168
+DEBUG: token: 168
+DEBUG: arg line: 167
+DEBUG: parsing line: 167
+DEBUG: token: 167
+DEBUG: arg line: 166
+DEBUG: parsing line: 166
+DEBUG: token: 166
+DEBUG: arg line: 165
+DEBUG: parsing line: 165
+DEBUG: token: 165
+DEBUG: arg line: 164
+DEBUG: parsing line: 164
+DEBUG: token: 164
+DEBUG: arg line: 163
+DEBUG: parsing line: 163
+DEBUG: token: 163
+DEBUG: arg line: 162
+DEBUG: parsing line: 162
+DEBUG: token: 162
+DEBUG: arg line: 161
+DEBUG: parsing line: 161
+DEBUG: token: 161
+DEBUG: arg line: 160
+DEBUG: parsing line: 160
+DEBUG: token: 160
+DEBUG: arg line: 159
+DEBUG: parsing line: 159
+DEBUG: token: 159
+DEBUG: arg line: 158
+DEBUG: parsing line: 158
+DEBUG: token: 158
+DEBUG: arg line: 157
+DEBUG: parsing line: 157
+DEBUG: token: 157
+DEBUG: arg line: 156
+DEBUG: parsing line: 156
+DEBUG: token: 156
+DEBUG: arg line: 155
+DEBUG: parsing line: 155
+DEBUG: token: 155
+DEBUG: arg line: 154
+DEBUG: parsing line: 154
+DEBUG: token: 154
+DEBUG: arg line: 153
+DEBUG: parsing line: 153
+DEBUG: token: 153
+DEBUG: arg line: 152
+DEBUG: parsing line: 152
+DEBUG: token: 152
+DEBUG: arg line: 151
+DEBUG: parsing line: 151
+DEBUG: token: 151
+DEBUG: arg line: 150
+DEBUG: parsing line: 150
+DEBUG: token: 150
+DEBUG: arg line: 149
+DEBUG: parsing line: 149
+DEBUG: token: 149
+DEBUG: arg line: 148
+DEBUG: parsing line: 148
+DEBUG: token: 148
+DEBUG: arg line: 147
+DEBUG: parsing line: 147
+DEBUG: token: 147
+DEBUG: arg line: 146
+DEBUG: parsing line: 146
+DEBUG: token: 146
+DEBUG: arg line: 145
+DEBUG: parsing line: 145
+DEBUG: token: 145
+DEBUG: arg line: 144
+DEBUG: parsing line: 144
+DEBUG: token: 144
+DEBUG: arg line: 143
+DEBUG: parsing line: 143
+DEBUG: token: 143
+DEBUG: arg line: 142
+DEBUG: parsing line: 142
+DEBUG: token: 142
+DEBUG: arg line: 141
+DEBUG: parsing line: 141
+DEBUG: token: 141
+DEBUG: arg line: 140
+DEBUG: parsing line: 140
+DEBUG: token: 140
+DEBUG: arg line: 139
+DEBUG: parsing line: 139
+DEBUG: token: 139
+DEBUG: arg line: 138
+DEBUG: parsing line: 138
+DEBUG: token: 138
+DEBUG: arg line: 137
+DEBUG: parsing line: 137
+DEBUG: token: 137
+DEBUG: arg line: 136
+DEBUG: parsing line: 136
+DEBUG: token: 136
+DEBUG: arg line: 135
+DEBUG: parsing line: 135
+DEBUG: token: 135
+DEBUG: arg line: 134
+DEBUG: parsing line: 134
+DEBUG: token: 134
+DEBUG: arg line: 133
+DEBUG: parsing line: 133
+DEBUG: token: 133
+DEBUG: arg line: 132
+DEBUG: parsing line: 132
+DEBUG: token: 132
+DEBUG: arg line: 131
+DEBUG: parsing line: 131
+DEBUG: token: 131
+DEBUG: arg line: 130
+DEBUG: parsing line: 130
+DEBUG: token: 130
+DEBUG: arg line: 129
+DEBUG: parsing line: 129
+DEBUG: token: 129
+DEBUG: arg line: 128
+DEBUG: parsing line: 128
+DEBUG: token: 128
+DEBUG: arg line: 127
+DEBUG: parsing line: 127
+DEBUG: token: 127
+DEBUG: arg line: 126
+DEBUG: parsing line: 126
+DEBUG: token: 126
+DEBUG: arg line: 125
+DEBUG: parsing line: 125
+DEBUG: token: 125
+DEBUG: arg line: 124
+DEBUG: parsing line: 124
+DEBUG: token: 124
+DEBUG: arg line: 123
+DEBUG: parsing line: 123
+DEBUG: token: 123
+DEBUG: arg line: 122
+DEBUG: parsing line: 122
+DEBUG: token: 122
+DEBUG: arg line: 121
+DEBUG: parsing line: 121
+DEBUG: token: 121
+DEBUG: arg line: 120
+DEBUG: parsing line: 120
+DEBUG: token: 120
+DEBUG: arg line: 119
+DEBUG: parsing line: 119
+DEBUG: token: 119
+DEBUG: arg line: 118
+DEBUG: parsing line: 118
+DEBUG: token: 118
+DEBUG: arg line: 117
+DEBUG: parsing line: 117
+DEBUG: token: 117
+DEBUG: arg line: 116
+DEBUG: parsing line: 116
+DEBUG: token: 116
+DEBUG: arg line: 115
+DEBUG: parsing line: 115
+DEBUG: token: 115
+DEBUG: arg line: 114
+DEBUG: parsing line: 114
+DEBUG: token: 114
+DEBUG: arg line: 113
+DEBUG: parsing line: 113
+DEBUG: token: 113
+DEBUG: arg line: 112
+DEBUG: parsing line: 112
+DEBUG: token: 112
+DEBUG: arg line: 111
+DEBUG: parsing line: 111
+DEBUG: token: 111
+DEBUG: arg line: 110
+DEBUG: parsing line: 110
+DEBUG: token: 110
+DEBUG: arg line: 109
+DEBUG: parsing line: 109
+DEBUG: token: 109
+DEBUG: arg line: 108
+DEBUG: parsing line: 108
+DEBUG: token: 108
+DEBUG: arg line: 107
+DEBUG: parsing line: 107
+DEBUG: token: 107
+DEBUG: arg line: 106
+DEBUG: parsing line: 106
+DEBUG: token: 106
+DEBUG: arg line: 105
+DEBUG: parsing line: 105
+DEBUG: token: 105
+DEBUG: arg line: 104
+DEBUG: parsing line: 104
+DEBUG: token: 104
+DEBUG: arg line: 103
+DEBUG: parsing line: 103
+DEBUG: token: 103
+DEBUG: arg line: 102
+DEBUG: parsing line: 102
+DEBUG: token: 102
+DEBUG: arg line: 101
+DEBUG: parsing line: 101
+DEBUG: token: 101
+DEBUG: arg line: 100
+DEBUG: parsing line: 100
+DEBUG: token: 100
+DEBUG: arg line: 99
+DEBUG: parsing line: 99
+DEBUG: token: 99
+DEBUG: arg line: 98
+DEBUG: parsing line: 98
+DEBUG: token: 98
+DEBUG: arg line: 97
+DEBUG: parsing line: 97
+DEBUG: token: 97
+DEBUG: arg line: 96
+DEBUG: parsing line: 96
+DEBUG: token: 96
+DEBUG: arg line: 95
+DEBUG: parsing line: 95
+DEBUG: token: 95
+DEBUG: arg line: 94
+DEBUG: parsing line: 94
+DEBUG: token: 94
+DEBUG: arg line: 93
+DEBUG: parsing line: 93
+DEBUG: token: 93
+DEBUG: arg line: 92
+DEBUG: parsing line: 92
+DEBUG: token: 92
+DEBUG: arg line: 91
+DEBUG: parsing line: 91
+DEBUG: token: 91
+DEBUG: arg line: 90
+DEBUG: parsing line: 90
+DEBUG: token: 90
+DEBUG: arg line: 89
+DEBUG: parsing line: 89
+DEBUG: token: 89
+DEBUG: arg line: 88
+DEBUG: parsing line: 88
+DEBUG: token: 88
+DEBUG: arg line: 87
+DEBUG: parsing line: 87
+DEBUG: token: 87
+DEBUG: arg line: 86
+DEBUG: parsing line: 86
+DEBUG: token: 86
+DEBUG: arg line: 85
+DEBUG: parsing line: 85
+DEBUG: token: 85
+DEBUG: arg line: 84
+DEBUG: parsing line: 84
+DEBUG: token: 84
+DEBUG: arg line: 83
+DEBUG: parsing line: 83
+DEBUG: token: 83
+DEBUG: arg line: 82
+DEBUG: parsing line: 82
+DEBUG: token: 82
+DEBUG: arg line: 81
+DEBUG: parsing line: 81
+DEBUG: token: 81
+DEBUG: arg line: 80
+DEBUG: parsing line: 80
+DEBUG: token: 80
+DEBUG: arg line: 79
+DEBUG: parsing line: 79
+DEBUG: token: 79
+DEBUG: arg line: 78
+DEBUG: parsing line: 78
+DEBUG: token: 78
+DEBUG: arg line: 77
+DEBUG: parsing line: 77
+DEBUG: token: 77
+DEBUG: arg line: 76
+DEBUG: parsing line: 76
+DEBUG: token: 76
+DEBUG: arg line: 75
+DEBUG: parsing line: 75
+DEBUG: token: 75
+DEBUG: arg line: 74
+DEBUG: parsing line: 74
+DEBUG: token: 74
+DEBUG: arg line: 73
+DEBUG: parsing line: 73
+DEBUG: token: 73
+DEBUG: arg line: 72
+DEBUG: parsing line: 72
+DEBUG: token: 72
+DEBUG: arg line: 71
+DEBUG: parsing line: 71
+DEBUG: token: 71
+DEBUG: arg line: 70
+DEBUG: parsing line: 70
+DEBUG: token: 70
+DEBUG: arg line: 69
+DEBUG: parsing line: 69
+DEBUG: token: 69
+DEBUG: arg line: 68
+DEBUG: parsing line: 68
+DEBUG: token: 68
+DEBUG: arg line: 67
+DEBUG: parsing line: 67
+DEBUG: token: 67
+DEBUG: arg line: 66
+DEBUG: parsing line: 66
+DEBUG: token: 66
+DEBUG: arg line: 65
+DEBUG: parsing line: 65
+DEBUG: token: 65
+DEBUG: arg line: 64
+DEBUG: parsing line: 64
+DEBUG: token: 64
+DEBUG: arg line: 63
+DEBUG: parsing line: 63
+DEBUG: token: 63
+DEBUG: arg line: 62
+DEBUG: parsing line: 62
+DEBUG: token: 62
+DEBUG: arg line: 61
+DEBUG: parsing line: 61
+DEBUG: token: 61
+DEBUG: arg line: 60
+DEBUG: parsing line: 60
+DEBUG: token: 60
+DEBUG: arg line: 59
+DEBUG: parsing line: 59
+DEBUG: token: 59
+DEBUG: arg line: 58
+DEBUG: parsing line: 58
+DEBUG: token: 58
+DEBUG: arg line: 57
+DEBUG: parsing line: 57
+DEBUG: token: 57
+DEBUG: arg line: 56
+DEBUG: parsing line: 56
+DEBUG: token: 56
+DEBUG: arg line: 55
+DEBUG: parsing line: 55
+DEBUG: token: 55
+DEBUG: arg line: 54
+DEBUG: parsing line: 54
+DEBUG: token: 54
+DEBUG: arg line: 53
+DEBUG: parsing line: 53
+DEBUG: token: 53
+DEBUG: arg line: 52
+DEBUG: parsing line: 52
+DEBUG: token: 52
+DEBUG: arg line: 51
+DEBUG: parsing line: 51
+DEBUG: token: 51
+DEBUG: arg line: 50
+DEBUG: parsing line: 50
+DEBUG: token: 50
+DEBUG: arg line: 49
+DEBUG: parsing line: 49
+DEBUG: token: 49
+DEBUG: arg line: 48
+DEBUG: parsing line: 48
+DEBUG: token: 48
+DEBUG: arg line: 47
+DEBUG: parsing line: 47
+DEBUG: token: 47
+DEBUG: arg line: 46
+DEBUG: parsing line: 46
+DEBUG: token: 46
+DEBUG: arg line: 45
+DEBUG: parsing line: 45
+DEBUG: token: 45
+DEBUG: arg line: 44
+DEBUG: parsing line: 44
+DEBUG: token: 44
+DEBUG: arg line: 43
+DEBUG: parsing line: 43
+DEBUG: token: 43
+DEBUG: arg line: 42
+DEBUG: parsing line: 42
+DEBUG: token: 42
+DEBUG: arg line: 41
+DEBUG: parsing line: 41
+DEBUG: token: 41
+DEBUG: arg line: 40
+DEBUG: parsing line: 40
+DEBUG: token: 40
+DEBUG: arg line: 39
+DEBUG: parsing line: 39
+DEBUG: token: 39
+DEBUG: arg line: 38
+DEBUG: parsing line: 38
+DEBUG: token: 38
+DEBUG: arg line: 37
+DEBUG: parsing line: 37
+DEBUG: token: 37
+DEBUG: arg line: 36
+DEBUG: parsing line: 36
+DEBUG: token: 36
+DEBUG: arg line: 35
+DEBUG: parsing line: 35
+DEBUG: token: 35
+DEBUG: arg line: 34
+DEBUG: parsing line: 34
+DEBUG: token: 34
+DEBUG: arg line: 33
+DEBUG: parsing line: 33
+DEBUG: token: 33
+DEBUG: arg line: 32
+DEBUG: parsing line: 32
+DEBUG: token: 32
+DEBUG: arg line: 31
+DEBUG: parsing line: 31
+DEBUG: token: 31
+DEBUG: arg line: 30
+DEBUG: parsing line: 30
+DEBUG: token: 30
+DEBUG: arg line: 29
+DEBUG: parsing line: 29
+DEBUG: token: 29
+DEBUG: arg line: 28
+DEBUG: parsing line: 28
+DEBUG: token: 28
+DEBUG: arg line: 27
+DEBUG: parsing line: 27
+DEBUG: token: 27
+DEBUG: arg line: 26
+DEBUG: parsing line: 26
+DEBUG: token: 26
+DEBUG: arg line: 25
+DEBUG: parsing line: 25
+DEBUG: token: 25
+DEBUG: arg line: 24
+DEBUG: parsing line: 24
+DEBUG: token: 24
+DEBUG: arg line: 23
+DEBUG: parsing line: 23
+DEBUG: token: 23
+DEBUG: arg line: 22
+DEBUG: parsing line: 22
+DEBUG: token: 22
+DEBUG: arg line: 21
+DEBUG: parsing line: 21
+DEBUG: token: 21
+DEBUG: arg line: 20
+DEBUG: parsing line: 20
+DEBUG: token: 20
+DEBUG: arg line: 19
+DEBUG: parsing line: 19
+DEBUG: token: 19
+DEBUG: arg line: 18
+DEBUG: parsing line: 18
+DEBUG: token: 18
+DEBUG: arg line: 17
+DEBUG: parsing line: 17
+DEBUG: token: 17
+DEBUG: arg line: 16
+DEBUG: parsing line: 16
+DEBUG: token: 16
+DEBUG: arg line: 15
+DEBUG: parsing line: 15
+DEBUG: token: 15
+DEBUG: arg line: 14
+DEBUG: parsing line: 14
+DEBUG: token: 14
+DEBUG: arg line: 13
+DEBUG: parsing line: 13
+DEBUG: token: 13
+DEBUG: arg line: 12
+DEBUG: parsing line: 12
+DEBUG: token: 12
+DEBUG: arg line: 11
+DEBUG: parsing line: 11
+DEBUG: token: 11
+DEBUG: arg line: 10
+DEBUG: parsing line: 10
+DEBUG: token: 10
+DEBUG: arg line: 9
+DEBUG: parsing line: 9
+DEBUG: token: 9
+DEBUG: arg line: 8
+DEBUG: parsing line: 8
+DEBUG: token: 8
+DEBUG: arg line: 7
+DEBUG: parsing line: 7
+DEBUG: token: 7
+DEBUG: arg line: 6
+DEBUG: parsing line: 6
+DEBUG: token: 6
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: rank_values complete. Stack A (ranks): 499 498 497 496 495 494 493 492 491 490 489 488 487 486 485 484 483 482 481 480 479 478 477 476 475 474 473 472 471 470 469 468 467 466 465 464 463 462 461 460 459 458 457 456 455 454 453 452 451 450 449 448 447 446 445 444 443 442 441 440 439 438 437 436 435 434 433 432 431 430 429 428 427 426 425 424 423 422 421 420 419 418 417 416 415 414 413 412 411 410 409 408 407 406 405 404 403 402 401 400 399 398 397 396 395 394 393 392 391 390 389 388 387 386 385 384 383 382 381 380 379 378 377 376 375 374 373 372 371 370 369 368 367 366 365 364 363 362 361 360 359 358 357 356 355 354 353 352 351 350 349 348 347 346 345 344 343 342 341 340 339 338 337 336 335 334 333 332 331 330 329 328 327 326 325 324 323 322 321 320 319 318 317 316 315 314 313 312 311 310 309 308 307 306 305 304 303 302 301 300 299 298 297 296 295 294 293 292 291 290 289 288 287 286 285 284 283 282 281 280 279 278 277 276 275 274 273 272 271 270 269 268 267 266 265 264 263 262 261 260 259 258 257 256 255 254 253 252 251 250 249 248 247 246 245 244 243 242 241 240 239 238 237 236 235 234 233 232 231 230 229 228 227 226 225 224 223 222 221 220 219 218 217 216 215 214 213 212 211 210 209 208 207 206 205 204 203 202 201 200 199 198 197 196 195 194 193 192 191 190 189 188 187 186 185 184 183 182 181 180 179 178 177 176 175 174 173 172 171 170 169 168 167 166 165 164 163 162 161 160 159 158 157 156 155 154 153 152 151 150 149 148 147 146 145 144 143 142 141 140 139 138 137 136 135 134 133 132 131 130 129 128 127 126 125 124 123 122 121 120 119 118 117 116 115 114 113 112 111 110 109 108 107 106 105 104 103 102 101 100 99 98 97 96 95 94 93 92 91 90 89 88 87 86 85 84 83 82 81 80 79 78 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: Done!
+OK
+----------------------------------------
+Alternating High-Low (1 to 99 and 100 to 2):
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 7
+DEBUG: parsing line: 7
+DEBUG: token: 7
+DEBUG: arg line: 9
+DEBUG: parsing line: 9
+DEBUG: token: 9
+DEBUG: arg line: 11
+DEBUG: parsing line: 11
+DEBUG: token: 11
+DEBUG: arg line: 13
+DEBUG: parsing line: 13
+DEBUG: token: 13
+DEBUG: arg line: 15
+DEBUG: parsing line: 15
+DEBUG: token: 15
+DEBUG: arg line: 17
+DEBUG: parsing line: 17
+DEBUG: token: 17
+DEBUG: arg line: 19
+DEBUG: parsing line: 19
+DEBUG: token: 19
+DEBUG: arg line: 21
+DEBUG: parsing line: 21
+DEBUG: token: 21
+DEBUG: arg line: 23
+DEBUG: parsing line: 23
+DEBUG: token: 23
+DEBUG: arg line: 25
+DEBUG: parsing line: 25
+DEBUG: token: 25
+DEBUG: arg line: 27
+DEBUG: parsing line: 27
+DEBUG: token: 27
+DEBUG: arg line: 29
+DEBUG: parsing line: 29
+DEBUG: token: 29
+DEBUG: arg line: 31
+DEBUG: parsing line: 31
+DEBUG: token: 31
+DEBUG: arg line: 33
+DEBUG: parsing line: 33
+DEBUG: token: 33
+DEBUG: arg line: 35
+DEBUG: parsing line: 35
+DEBUG: token: 35
+DEBUG: arg line: 37
+DEBUG: parsing line: 37
+DEBUG: token: 37
+DEBUG: arg line: 39
+DEBUG: parsing line: 39
+DEBUG: token: 39
+DEBUG: arg line: 41
+DEBUG: parsing line: 41
+DEBUG: token: 41
+DEBUG: arg line: 43
+DEBUG: parsing line: 43
+DEBUG: token: 43
+DEBUG: arg line: 45
+DEBUG: parsing line: 45
+DEBUG: token: 45
+DEBUG: arg line: 47
+DEBUG: parsing line: 47
+DEBUG: token: 47
+DEBUG: arg line: 49
+DEBUG: parsing line: 49
+DEBUG: token: 49
+DEBUG: arg line: 51
+DEBUG: parsing line: 51
+DEBUG: token: 51
+DEBUG: arg line: 53
+DEBUG: parsing line: 53
+DEBUG: token: 53
+DEBUG: arg line: 55
+DEBUG: parsing line: 55
+DEBUG: token: 55
+DEBUG: arg line: 57
+DEBUG: parsing line: 57
+DEBUG: token: 57
+DEBUG: arg line: 59
+DEBUG: parsing line: 59
+DEBUG: token: 59
+DEBUG: arg line: 61
+DEBUG: parsing line: 61
+DEBUG: token: 61
+DEBUG: arg line: 63
+DEBUG: parsing line: 63
+DEBUG: token: 63
+DEBUG: arg line: 65
+DEBUG: parsing line: 65
+DEBUG: token: 65
+DEBUG: arg line: 67
+DEBUG: parsing line: 67
+DEBUG: token: 67
+DEBUG: arg line: 69
+DEBUG: parsing line: 69
+DEBUG: token: 69
+DEBUG: arg line: 71
+DEBUG: parsing line: 71
+DEBUG: token: 71
+DEBUG: arg line: 73
+DEBUG: parsing line: 73
+DEBUG: token: 73
+DEBUG: arg line: 75
+DEBUG: parsing line: 75
+DEBUG: token: 75
+DEBUG: arg line: 77
+DEBUG: parsing line: 77
+DEBUG: token: 77
+DEBUG: arg line: 79
+DEBUG: parsing line: 79
+DEBUG: token: 79
+DEBUG: arg line: 81
+DEBUG: parsing line: 81
+DEBUG: token: 81
+DEBUG: arg line: 83
+DEBUG: parsing line: 83
+DEBUG: token: 83
+DEBUG: arg line: 85
+DEBUG: parsing line: 85
+DEBUG: token: 85
+DEBUG: arg line: 87
+DEBUG: parsing line: 87
+DEBUG: token: 87
+DEBUG: arg line: 89
+DEBUG: parsing line: 89
+DEBUG: token: 89
+DEBUG: arg line: 91
+DEBUG: parsing line: 91
+DEBUG: token: 91
+DEBUG: arg line: 93
+DEBUG: parsing line: 93
+DEBUG: token: 93
+DEBUG: arg line: 95
+DEBUG: parsing line: 95
+DEBUG: token: 95
+DEBUG: arg line: 97
+DEBUG: parsing line: 97
+DEBUG: token: 97
+DEBUG: arg line: 99
+DEBUG: parsing line: 99
+DEBUG: token: 99
+DEBUG: arg line: 100
+DEBUG: parsing line: 100
+DEBUG: token: 100
+DEBUG: arg line: 98
+DEBUG: parsing line: 98
+DEBUG: token: 98
+DEBUG: arg line: 96
+DEBUG: parsing line: 96
+DEBUG: token: 96
+DEBUG: arg line: 94
+DEBUG: parsing line: 94
+DEBUG: token: 94
+DEBUG: arg line: 92
+DEBUG: parsing line: 92
+DEBUG: token: 92
+DEBUG: arg line: 90
+DEBUG: parsing line: 90
+DEBUG: token: 90
+DEBUG: arg line: 88
+DEBUG: parsing line: 88
+DEBUG: token: 88
+DEBUG: arg line: 86
+DEBUG: parsing line: 86
+DEBUG: token: 86
+DEBUG: arg line: 84
+DEBUG: parsing line: 84
+DEBUG: token: 84
+DEBUG: arg line: 82
+DEBUG: parsing line: 82
+DEBUG: token: 82
+DEBUG: arg line: 80
+DEBUG: parsing line: 80
+DEBUG: token: 80
+DEBUG: arg line: 78
+DEBUG: parsing line: 78
+DEBUG: token: 78
+DEBUG: arg line: 76
+DEBUG: parsing line: 76
+DEBUG: token: 76
+DEBUG: arg line: 74
+DEBUG: parsing line: 74
+DEBUG: token: 74
+DEBUG: arg line: 72
+DEBUG: parsing line: 72
+DEBUG: token: 72
+DEBUG: arg line: 70
+DEBUG: parsing line: 70
+DEBUG: token: 70
+DEBUG: arg line: 68
+DEBUG: parsing line: 68
+DEBUG: token: 68
+DEBUG: arg line: 66
+DEBUG: parsing line: 66
+DEBUG: token: 66
+DEBUG: arg line: 64
+DEBUG: parsing line: 64
+DEBUG: token: 64
+DEBUG: arg line: 62
+DEBUG: parsing line: 62
+DEBUG: token: 62
+DEBUG: arg line: 60
+DEBUG: parsing line: 60
+DEBUG: token: 60
+DEBUG: arg line: 58
+DEBUG: parsing line: 58
+DEBUG: token: 58
+DEBUG: arg line: 56
+DEBUG: parsing line: 56
+DEBUG: token: 56
+DEBUG: arg line: 54
+DEBUG: parsing line: 54
+DEBUG: token: 54
+DEBUG: arg line: 52
+DEBUG: parsing line: 52
+DEBUG: token: 52
+DEBUG: arg line: 50
+DEBUG: parsing line: 50
+DEBUG: token: 50
+DEBUG: arg line: 48
+DEBUG: parsing line: 48
+DEBUG: token: 48
+DEBUG: arg line: 46
+DEBUG: parsing line: 46
+DEBUG: token: 46
+DEBUG: arg line: 44
+DEBUG: parsing line: 44
+DEBUG: token: 44
+DEBUG: arg line: 42
+DEBUG: parsing line: 42
+DEBUG: token: 42
+DEBUG: arg line: 40
+DEBUG: parsing line: 40
+DEBUG: token: 40
+DEBUG: arg line: 38
+DEBUG: parsing line: 38
+DEBUG: token: 38
+DEBUG: arg line: 36
+DEBUG: parsing line: 36
+DEBUG: token: 36
+DEBUG: arg line: 34
+DEBUG: parsing line: 34
+DEBUG: token: 34
+DEBUG: arg line: 32
+DEBUG: parsing line: 32
+DEBUG: token: 32
+DEBUG: arg line: 30
+DEBUG: parsing line: 30
+DEBUG: token: 30
+DEBUG: arg line: 28
+DEBUG: parsing line: 28
+DEBUG: token: 28
+DEBUG: arg line: 26
+DEBUG: parsing line: 26
+DEBUG: token: 26
+DEBUG: arg line: 24
+DEBUG: parsing line: 24
+DEBUG: token: 24
+DEBUG: arg line: 22
+DEBUG: parsing line: 22
+DEBUG: token: 22
+DEBUG: arg line: 20
+DEBUG: parsing line: 20
+DEBUG: token: 20
+DEBUG: arg line: 18
+DEBUG: parsing line: 18
+DEBUG: token: 18
+DEBUG: arg line: 16
+DEBUG: parsing line: 16
+DEBUG: token: 16
+DEBUG: arg line: 14
+DEBUG: parsing line: 14
+DEBUG: token: 14
+DEBUG: arg line: 12
+DEBUG: parsing line: 12
+DEBUG: token: 12
+DEBUG: arg line: 10
+DEBUG: parsing line: 10
+DEBUG: token: 10
+DEBUG: arg line: 8
+DEBUG: parsing line: 8
+DEBUG: token: 8
+DEBUG: arg line: 6
+DEBUG: parsing line: 6
+DEBUG: token: 6
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: rank_values complete. Stack A (ranks): 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88 90 92 94 96 98 99 97 95 93 91 89 87 85 83 81 79 77 75 73 71 69 67 65 63 61 59 57 55 53 51 49 47 45 43 41 39 37 35 33 31 29 27 25 23 21 19 17 15 13 11 9 7 5 3 1 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Sorting with chunk strategy
+DEBUG: Using chunk sort
+DEBUG: Done!
+OK
+----------------------------------------
+All Negative Numbers (-1 to -100):
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: -1
+DEBUG: parsing line: -1
+DEBUG: token: -1
+DEBUG: arg line: -2
+DEBUG: parsing line: -2
+DEBUG: token: -2
+DEBUG: arg line: -3
+DEBUG: parsing line: -3
+DEBUG: token: -3
+DEBUG: arg line: -4
+DEBUG: parsing line: -4
+DEBUG: token: -4
+DEBUG: arg line: -5
+DEBUG: parsing line: -5
+DEBUG: token: -5
+DEBUG: arg line: -6
+DEBUG: parsing line: -6
+DEBUG: token: -6
+DEBUG: arg line: -7
+DEBUG: parsing line: -7
+DEBUG: token: -7
+DEBUG: arg line: -8
+DEBUG: parsing line: -8
+DEBUG: token: -8
+DEBUG: arg line: -9
+DEBUG: parsing line: -9
+DEBUG: token: -9
+DEBUG: arg line: -10
+DEBUG: parsing line: -10
+DEBUG: token: -10
+DEBUG: arg line: -11
+DEBUG: parsing line: -11
+DEBUG: token: -11
+DEBUG: arg line: -12
+DEBUG: parsing line: -12
+DEBUG: token: -12
+DEBUG: arg line: -13
+DEBUG: parsing line: -13
+DEBUG: token: -13
+DEBUG: arg line: -14
+DEBUG: parsing line: -14
+DEBUG: token: -14
+DEBUG: arg line: -15
+DEBUG: parsing line: -15
+DEBUG: token: -15
+DEBUG: arg line: -16
+DEBUG: parsing line: -16
+DEBUG: token: -16
+DEBUG: arg line: -17
+DEBUG: parsing line: -17
+DEBUG: token: -17
+DEBUG: arg line: -18
+DEBUG: parsing line: -18
+DEBUG: token: -18
+DEBUG: arg line: -19
+DEBUG: parsing line: -19
+DEBUG: token: -19
+DEBUG: arg line: -20
+DEBUG: parsing line: -20
+DEBUG: token: -20
+DEBUG: arg line: -21
+DEBUG: parsing line: -21
+DEBUG: token: -21
+DEBUG: arg line: -22
+DEBUG: parsing line: -22
+DEBUG: token: -22
+DEBUG: arg line: -23
+DEBUG: parsing line: -23
+DEBUG: token: -23
+DEBUG: arg line: -24
+DEBUG: parsing line: -24
+DEBUG: token: -24
+DEBUG: arg line: -25
+DEBUG: parsing line: -25
+DEBUG: token: -25
+DEBUG: arg line: -26
+DEBUG: parsing line: -26
+DEBUG: token: -26
+DEBUG: arg line: -27
+DEBUG: parsing line: -27
+DEBUG: token: -27
+DEBUG: arg line: -28
+DEBUG: parsing line: -28
+DEBUG: token: -28
+DEBUG: arg line: -29
+DEBUG: parsing line: -29
+DEBUG: token: -29
+DEBUG: arg line: -30
+DEBUG: parsing line: -30
+DEBUG: token: -30
+DEBUG: arg line: -31
+DEBUG: parsing line: -31
+DEBUG: token: -31
+DEBUG: arg line: -32
+DEBUG: parsing line: -32
+DEBUG: token: -32
+DEBUG: arg line: -33
+DEBUG: parsing line: -33
+DEBUG: token: -33
+DEBUG: arg line: -34
+DEBUG: parsing line: -34
+DEBUG: token: -34
+DEBUG: arg line: -35
+DEBUG: parsing line: -35
+DEBUG: token: -35
+DEBUG: arg line: -36
+DEBUG: parsing line: -36
+DEBUG: token: -36
+DEBUG: arg line: -37
+DEBUG: parsing line: -37
+DEBUG: token: -37
+DEBUG: arg line: -38
+DEBUG: parsing line: -38
+DEBUG: token: -38
+DEBUG: arg line: -39
+DEBUG: parsing line: -39
+DEBUG: token: -39
+DEBUG: arg line: -40
+DEBUG: parsing line: -40
+DEBUG: token: -40
+DEBUG: arg line: -41
+DEBUG: parsing line: -41
+DEBUG: token: -41
+DEBUG: arg line: -42
+DEBUG: parsing line: -42
+DEBUG: token: -42
+DEBUG: arg line: -43
+DEBUG: parsing line: -43
+DEBUG: token: -43
+DEBUG: arg line: -44
+DEBUG: parsing line: -44
+DEBUG: token: -44
+DEBUG: arg line: -45
+DEBUG: parsing line: -45
+DEBUG: token: -45
+DEBUG: arg line: -46
+DEBUG: parsing line: -46
+DEBUG: token: -46
+DEBUG: arg line: -47
+DEBUG: parsing line: -47
+DEBUG: token: -47
+DEBUG: arg line: -48
+DEBUG: parsing line: -48
+DEBUG: token: -48
+DEBUG: arg line: -49
+DEBUG: parsing line: -49
+DEBUG: token: -49
+DEBUG: arg line: -50
+DEBUG: parsing line: -50
+DEBUG: token: -50
+DEBUG: arg line: -51
+DEBUG: parsing line: -51
+DEBUG: token: -51
+DEBUG: arg line: -52
+DEBUG: parsing line: -52
+DEBUG: token: -52
+DEBUG: arg line: -53
+DEBUG: parsing line: -53
+DEBUG: token: -53
+DEBUG: arg line: -54
+DEBUG: parsing line: -54
+DEBUG: token: -54
+DEBUG: arg line: -55
+DEBUG: parsing line: -55
+DEBUG: token: -55
+DEBUG: arg line: -56
+DEBUG: parsing line: -56
+DEBUG: token: -56
+DEBUG: arg line: -57
+DEBUG: parsing line: -57
+DEBUG: token: -57
+DEBUG: arg line: -58
+DEBUG: parsing line: -58
+DEBUG: token: -58
+DEBUG: arg line: -59
+DEBUG: parsing line: -59
+DEBUG: token: -59
+DEBUG: arg line: -60
+DEBUG: parsing line: -60
+DEBUG: token: -60
+DEBUG: arg line: -61
+DEBUG: parsing line: -61
+DEBUG: token: -61
+DEBUG: arg line: -62
+DEBUG: parsing line: -62
+DEBUG: token: -62
+DEBUG: arg line: -63
+DEBUG: parsing line: -63
+DEBUG: token: -63
+DEBUG: arg line: -64
+DEBUG: parsing line: -64
+DEBUG: token: -64
+DEBUG: arg line: -65
+DEBUG: parsing line: -65
+DEBUG: token: -65
+DEBUG: arg line: -66
+DEBUG: parsing line: -66
+DEBUG: token: -66
+DEBUG: arg line: -67
+DEBUG: parsing line: -67
+DEBUG: token: -67
+DEBUG: arg line: -68
+DEBUG: parsing line: -68
+DEBUG: token: -68
+DEBUG: arg line: -69
+DEBUG: parsing line: -69
+DEBUG: token: -69
+DEBUG: arg line: -70
+DEBUG: parsing line: -70
+DEBUG: token: -70
+DEBUG: arg line: -71
+DEBUG: parsing line: -71
+DEBUG: token: -71
+DEBUG: arg line: -72
+DEBUG: parsing line: -72
+DEBUG: token: -72
+DEBUG: arg line: -73
+DEBUG: parsing line: -73
+DEBUG: token: -73
+DEBUG: arg line: -74
+DEBUG: parsing line: -74
+DEBUG: token: -74
+DEBUG: arg line: -75
+DEBUG: parsing line: -75
+DEBUG: token: -75
+DEBUG: arg line: -76
+DEBUG: parsing line: -76
+DEBUG: token: -76
+DEBUG: arg line: -77
+DEBUG: parsing line: -77
+DEBUG: token: -77
+DEBUG: arg line: -78
+DEBUG: parsing line: -78
+DEBUG: token: -78
+DEBUG: arg line: -79
+DEBUG: parsing line: -79
+DEBUG: token: -79
+DEBUG: arg line: -80
+DEBUG: parsing line: -80
+DEBUG: token: -80
+DEBUG: arg line: -81
+DEBUG: parsing line: -81
+DEBUG: token: -81
+DEBUG: arg line: -82
+DEBUG: parsing line: -82
+DEBUG: token: -82
+DEBUG: arg line: -83
+DEBUG: parsing line: -83
+DEBUG: token: -83
+DEBUG: arg line: -84
+DEBUG: parsing line: -84
+DEBUG: token: -84
+DEBUG: arg line: -85
+DEBUG: parsing line: -85
+DEBUG: token: -85
+DEBUG: arg line: -86
+DEBUG: parsing line: -86
+DEBUG: token: -86
+DEBUG: arg line: -87
+DEBUG: parsing line: -87
+DEBUG: token: -87
+DEBUG: arg line: -88
+DEBUG: parsing line: -88
+DEBUG: token: -88
+DEBUG: arg line: -89
+DEBUG: parsing line: -89
+DEBUG: token: -89
+DEBUG: arg line: -90
+DEBUG: parsing line: -90
+DEBUG: token: -90
+DEBUG: arg line: -91
+DEBUG: parsing line: -91
+DEBUG: token: -91
+DEBUG: arg line: -92
+DEBUG: parsing line: -92
+DEBUG: token: -92
+DEBUG: arg line: -93
+DEBUG: parsing line: -93
+DEBUG: token: -93
+DEBUG: arg line: -94
+DEBUG: parsing line: -94
+DEBUG: token: -94
+DEBUG: arg line: -95
+DEBUG: parsing line: -95
+DEBUG: token: -95
+DEBUG: arg line: -96
+DEBUG: parsing line: -96
+DEBUG: token: -96
+DEBUG: arg line: -97
+DEBUG: parsing line: -97
+DEBUG: token: -97
+DEBUG: arg line: -98
+DEBUG: parsing line: -98
+DEBUG: token: -98
+DEBUG: arg line: -99
+DEBUG: parsing line: -99
+DEBUG: token: -99
+DEBUG: arg line: -100
+DEBUG: parsing line: -100
+DEBUG: token: -100
+DEBUG: rank_values complete. Stack A (ranks): 99 98 97 96 95 94 93 92 91 90 89 88 87 86 85 84 83 82 81 80 79 78 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Sorting with chunk strategy
+DEBUG: Using chunk sort
+DEBUG: Done!
+OK
+----------------------------------------
+----------------------------------------
+Test Run Completed. Results logged in push_swap_test_results.log
