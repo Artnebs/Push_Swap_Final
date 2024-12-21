@@ -1,0 +1,2227 @@
+Generated Input: 30 74 10 4 73 6 32 75 44 55 58 92 96 100 36 86 11 45 84 8 69 43 34 68 49 65 15 99 14 7 39 63 78 66 27 33 50 2 62 97 28 42 53 26 19 41 40 64 21 25 13 57 38 70 85 61 22 94 90 72 56 18 60 23 80 93 52 98 59 20 37 31 24 71 82 81 46 1 67 35 17 16 91 87 83 88 76 89 12 79 47 51 9 77 29 3 5 48 54 95
+Running push_swap and checker_linux...
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 30
+DEBUG: parsing line: 30
+DEBUG: token: 30
+DEBUG: arg line: 74
+DEBUG: parsing line: 74
+DEBUG: token: 74
+DEBUG: arg line: 10
+DEBUG: parsing line: 10
+DEBUG: token: 10
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: arg line: 73
+DEBUG: parsing line: 73
+DEBUG: token: 73
+DEBUG: arg line: 6
+DEBUG: parsing line: 6
+DEBUG: token: 6
+DEBUG: arg line: 32
+DEBUG: parsing line: 32
+DEBUG: token: 32
+DEBUG: arg line: 75
+DEBUG: parsing line: 75
+DEBUG: token: 75
+DEBUG: arg line: 44
+DEBUG: parsing line: 44
+DEBUG: token: 44
+DEBUG: arg line: 55
+DEBUG: parsing line: 55
+DEBUG: token: 55
+DEBUG: arg line: 58
+DEBUG: parsing line: 58
+DEBUG: token: 58
+DEBUG: arg line: 92
+DEBUG: parsing line: 92
+DEBUG: token: 92
+DEBUG: arg line: 96
+DEBUG: parsing line: 96
+DEBUG: token: 96
+DEBUG: arg line: 100
+DEBUG: parsing line: 100
+DEBUG: token: 100
+DEBUG: arg line: 36
+DEBUG: parsing line: 36
+DEBUG: token: 36
+DEBUG: arg line: 86
+DEBUG: parsing line: 86
+DEBUG: token: 86
+DEBUG: arg line: 11
+DEBUG: parsing line: 11
+DEBUG: token: 11
+DEBUG: arg line: 45
+DEBUG: parsing line: 45
+DEBUG: token: 45
+DEBUG: arg line: 84
+DEBUG: parsing line: 84
+DEBUG: token: 84
+DEBUG: arg line: 8
+DEBUG: parsing line: 8
+DEBUG: token: 8
+DEBUG: arg line: 69
+DEBUG: parsing line: 69
+DEBUG: token: 69
+DEBUG: arg line: 43
+DEBUG: parsing line: 43
+DEBUG: token: 43
+DEBUG: arg line: 34
+DEBUG: parsing line: 34
+DEBUG: token: 34
+DEBUG: arg line: 68
+DEBUG: parsing line: 68
+DEBUG: token: 68
+DEBUG: arg line: 49
+DEBUG: parsing line: 49
+DEBUG: token: 49
+DEBUG: arg line: 65
+DEBUG: parsing line: 65
+DEBUG: token: 65
+DEBUG: arg line: 15
+DEBUG: parsing line: 15
+DEBUG: token: 15
+DEBUG: arg line: 99
+DEBUG: parsing line: 99
+DEBUG: token: 99
+DEBUG: arg line: 14
+DEBUG: parsing line: 14
+DEBUG: token: 14
+DEBUG: arg line: 7
+DEBUG: parsing line: 7
+DEBUG: token: 7
+DEBUG: arg line: 39
+DEBUG: parsing line: 39
+DEBUG: token: 39
+DEBUG: arg line: 63
+DEBUG: parsing line: 63
+DEBUG: token: 63
+DEBUG: arg line: 78
+DEBUG: parsing line: 78
+DEBUG: token: 78
+DEBUG: arg line: 66
+DEBUG: parsing line: 66
+DEBUG: token: 66
+DEBUG: arg line: 27
+DEBUG: parsing line: 27
+DEBUG: token: 27
+DEBUG: arg line: 33
+DEBUG: parsing line: 33
+DEBUG: token: 33
+DEBUG: arg line: 50
+DEBUG: parsing line: 50
+DEBUG: token: 50
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 62
+DEBUG: parsing line: 62
+DEBUG: token: 62
+DEBUG: arg line: 97
+DEBUG: parsing line: 97
+DEBUG: token: 97
+DEBUG: arg line: 28
+DEBUG: parsing line: 28
+DEBUG: token: 28
+DEBUG: arg line: 42
+DEBUG: parsing line: 42
+DEBUG: token: 42
+DEBUG: arg line: 53
+DEBUG: parsing line: 53
+DEBUG: token: 53
+DEBUG: arg line: 26
+DEBUG: parsing line: 26
+DEBUG: token: 26
+DEBUG: arg line: 19
+DEBUG: parsing line: 19
+DEBUG: token: 19
+DEBUG: arg line: 41
+DEBUG: parsing line: 41
+DEBUG: token: 41
+DEBUG: arg line: 40
+DEBUG: parsing line: 40
+DEBUG: token: 40
+DEBUG: arg line: 64
+DEBUG: parsing line: 64
+DEBUG: token: 64
+DEBUG: arg line: 21
+DEBUG: parsing line: 21
+DEBUG: token: 21
+DEBUG: arg line: 25
+DEBUG: parsing line: 25
+DEBUG: token: 25
+DEBUG: arg line: 13
+DEBUG: parsing line: 13
+DEBUG: token: 13
+DEBUG: arg line: 57
+DEBUG: parsing line: 57
+DEBUG: token: 57
+DEBUG: arg line: 38
+DEBUG: parsing line: 38
+DEBUG: token: 38
+DEBUG: arg line: 70
+DEBUG: parsing line: 70
+DEBUG: token: 70
+DEBUG: arg line: 85
+DEBUG: parsing line: 85
+DEBUG: token: 85
+DEBUG: arg line: 61
+DEBUG: parsing line: 61
+DEBUG: token: 61
+DEBUG: arg line: 22
+DEBUG: parsing line: 22
+DEBUG: token: 22
+DEBUG: arg line: 94
+DEBUG: parsing line: 94
+DEBUG: token: 94
+DEBUG: arg line: 90
+DEBUG: parsing line: 90
+DEBUG: token: 90
+DEBUG: arg line: 72
+DEBUG: parsing line: 72
+DEBUG: token: 72
+DEBUG: arg line: 56
+DEBUG: parsing line: 56
+DEBUG: token: 56
+DEBUG: arg line: 18
+DEBUG: parsing line: 18
+DEBUG: token: 18
+DEBUG: arg line: 60
+DEBUG: parsing line: 60
+DEBUG: token: 60
+DEBUG: arg line: 23
+DEBUG: parsing line: 23
+DEBUG: token: 23
+DEBUG: arg line: 80
+DEBUG: parsing line: 80
+DEBUG: token: 80
+DEBUG: arg line: 93
+DEBUG: parsing line: 93
+DEBUG: token: 93
+DEBUG: arg line: 52
+DEBUG: parsing line: 52
+DEBUG: token: 52
+DEBUG: arg line: 98
+DEBUG: parsing line: 98
+DEBUG: token: 98
+DEBUG: arg line: 59
+DEBUG: parsing line: 59
+DEBUG: token: 59
+DEBUG: arg line: 20
+DEBUG: parsing line: 20
+DEBUG: token: 20
+DEBUG: arg line: 37
+DEBUG: parsing line: 37
+DEBUG: token: 37
+DEBUG: arg line: 31
+DEBUG: parsing line: 31
+DEBUG: token: 31
+DEBUG: arg line: 24
+DEBUG: parsing line: 24
+DEBUG: token: 24
+DEBUG: arg line: 71
+DEBUG: parsing line: 71
+DEBUG: token: 71
+DEBUG: arg line: 82
+DEBUG: parsing line: 82
+DEBUG: token: 82
+DEBUG: arg line: 81
+DEBUG: parsing line: 81
+DEBUG: token: 81
+DEBUG: arg line: 46
+DEBUG: parsing line: 46
+DEBUG: token: 46
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: arg line: 67
+DEBUG: parsing line: 67
+DEBUG: token: 67
+DEBUG: arg line: 35
+DEBUG: parsing line: 35
+DEBUG: token: 35
+DEBUG: arg line: 17
+DEBUG: parsing line: 17
+DEBUG: token: 17
+DEBUG: arg line: 16
+DEBUG: parsing line: 16
+DEBUG: token: 16
+DEBUG: arg line: 91
+DEBUG: parsing line: 91
+DEBUG: token: 91
+DEBUG: arg line: 87
+DEBUG: parsing line: 87
+DEBUG: token: 87
+DEBUG: arg line: 83
+DEBUG: parsing line: 83
+DEBUG: token: 83
+DEBUG: arg line: 88
+DEBUG: parsing line: 88
+DEBUG: token: 88
+DEBUG: arg line: 76
+DEBUG: parsing line: 76
+DEBUG: token: 76
+DEBUG: arg line: 89
+DEBUG: parsing line: 89
+DEBUG: token: 89
+DEBUG: arg line: 12
+DEBUG: parsing line: 12
+DEBUG: token: 12
+DEBUG: arg line: 79
+DEBUG: parsing line: 79
+DEBUG: token: 79
+DEBUG: arg line: 47
+DEBUG: parsing line: 47
+DEBUG: token: 47
+DEBUG: arg line: 51
+DEBUG: parsing line: 51
+DEBUG: token: 51
+DEBUG: arg line: 9
+DEBUG: parsing line: 9
+DEBUG: token: 9
+DEBUG: arg line: 77
+DEBUG: parsing line: 77
+DEBUG: token: 77
+DEBUG: arg line: 29
+DEBUG: parsing line: 29
+DEBUG: token: 29
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 48
+DEBUG: parsing line: 48
+DEBUG: token: 48
+DEBUG: arg line: 54
+DEBUG: parsing line: 54
+DEBUG: token: 54
+DEBUG: arg line: 95
+DEBUG: parsing line: 95
+DEBUG: token: 95
+DEBUG: rank_values complete. Stack A (ranks): 29 73 9 3 72 5 31 74 43 54 57 91 95 99 35 85 10 44 83 7 68 42 33 67 48 64 14 98 13 6 38 62 77 65 26 32 49 1 61 96 27 41 52 25 18 40 39 63 20 24 12 56 37 69 84 60 21 93 89 71 55 17 59 22 79 92 51 97 58 19 36 30 23 70 81 80 45 0 66 34 16 15 90 86 82 87 75 88 11 78 46 50 8 76 28 2 4 47 53 94 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Starting chunk_sort
+DEBUG: Processing chunk. Range: 0 to 24
+DEBUG: Checking value: 29
+DEBUG: Rotated a
+DEBUG: Checking value: 73
+DEBUG: Rotated a
+DEBUG: Checking value: 9
+DEBUG: Pushed to b
+DEBUG: Checking value: 3
+DEBUG: Pushed to b
+DEBUG: Checking value: 72
+DEBUG: Rotated a
+DEBUG: Checking value: 5
+DEBUG: Pushed to b
+DEBUG: Checking value: 31
+DEBUG: Rotated a
+DEBUG: Checking value: 74
+DEBUG: Rotated a
+DEBUG: Checking value: 43
+DEBUG: Rotated a
+DEBUG: Checking value: 54
+DEBUG: Rotated a
+DEBUG: Checking value: 57
+DEBUG: Rotated a
+DEBUG: Checking value: 91
+DEBUG: Rotated a
+DEBUG: Checking value: 95
+DEBUG: Rotated a
+DEBUG: Checking value: 99
+DEBUG: Rotated a
+DEBUG: Checking value: 35
+DEBUG: Rotated a
+DEBUG: Checking value: 85
+DEBUG: Rotated a
+DEBUG: Checking value: 10
+DEBUG: Pushed to b
+DEBUG: Checking value: 44
+DEBUG: Rotated a
+DEBUG: Checking value: 83
+DEBUG: Rotated a
+DEBUG: Checking value: 7
+DEBUG: Pushed to b
+DEBUG: Checking value: 68
+DEBUG: Rotated a
+DEBUG: Checking value: 42
+DEBUG: Rotated a
+DEBUG: Checking value: 33
+DEBUG: Rotated a
+DEBUG: Checking value: 67
+DEBUG: Rotated a
+DEBUG: Checking value: 48
+DEBUG: Rotated a
+DEBUG: Checking value: 64
+DEBUG: Rotated a
+DEBUG: Checking value: 14
+DEBUG: Pushed to b
+DEBUG: Checking value: 98
+DEBUG: Rotated a
+DEBUG: Checking value: 13
+DEBUG: Pushed to b
+DEBUG: Checking value: 6
+DEBUG: Pushed to b
+DEBUG: Checking value: 38
+DEBUG: Rotated a
+DEBUG: Checking value: 62
+DEBUG: Rotated a
+DEBUG: Checking value: 77
+DEBUG: Rotated a
+DEBUG: Checking value: 65
+DEBUG: Rotated a
+DEBUG: Checking value: 26
+DEBUG: Rotated a
+DEBUG: Checking value: 32
+DEBUG: Rotated a
+DEBUG: Checking value: 49
+DEBUG: Rotated a
+DEBUG: Checking value: 1
+DEBUG: Pushed to b
+DEBUG: Checking value: 61
+DEBUG: Rotated a
+DEBUG: Checking value: 96
+DEBUG: Rotated a
+DEBUG: Checking value: 27
+DEBUG: Rotated a
+DEBUG: Checking value: 41
+DEBUG: Rotated a
+DEBUG: Checking value: 52
+DEBUG: Rotated a
+DEBUG: Checking value: 25
+DEBUG: Rotated a
+DEBUG: Checking value: 18
+DEBUG: Pushed to b
+DEBUG: Checking value: 40
+DEBUG: Rotated a
+DEBUG: Checking value: 39
+DEBUG: Rotated a
+DEBUG: Checking value: 63
+DEBUG: Rotated a
+DEBUG: Checking value: 20
+DEBUG: Pushed to b
+DEBUG: Checking value: 24
+DEBUG: Pushed to b
+DEBUG: Checking value: 12
+DEBUG: Pushed to b
+DEBUG: Checking value: 56
+DEBUG: Rotated a
+DEBUG: Checking value: 37
+DEBUG: Rotated a
+DEBUG: Checking value: 69
+DEBUG: Rotated a
+DEBUG: Checking value: 84
+DEBUG: Rotated a
+DEBUG: Checking value: 60
+DEBUG: Rotated a
+DEBUG: Checking value: 21
+DEBUG: Pushed to b
+DEBUG: Checking value: 93
+DEBUG: Rotated a
+DEBUG: Checking value: 89
+DEBUG: Rotated a
+DEBUG: Checking value: 71
+DEBUG: Rotated a
+DEBUG: Checking value: 55
+DEBUG: Rotated a
+DEBUG: Checking value: 17
+DEBUG: Pushed to b
+DEBUG: Checking value: 59
+DEBUG: Rotated a
+DEBUG: Checking value: 22
+DEBUG: Pushed to b
+DEBUG: Checking value: 79
+DEBUG: Rotated a
+DEBUG: Checking value: 92
+DEBUG: Rotated a
+DEBUG: Checking value: 51
+DEBUG: Rotated a
+DEBUG: Checking value: 97
+DEBUG: Rotated a
+DEBUG: Checking value: 58
+DEBUG: Rotated a
+DEBUG: Checking value: 19
+DEBUG: Pushed to b
+DEBUG: Checking value: 36
+DEBUG: Rotated a
+DEBUG: Checking value: 30
+DEBUG: Rotated a
+DEBUG: Checking value: 23
+DEBUG: Pushed to b
+DEBUG: Checking value: 70
+DEBUG: Rotated a
+DEBUG: Checking value: 81
+DEBUG: Rotated a
+DEBUG: Checking value: 80
+DEBUG: Rotated a
+DEBUG: Checking value: 45
+DEBUG: Rotated a
+DEBUG: Checking value: 0
+DEBUG: Pushed to b
+DEBUG: Checking value: 66
+DEBUG: Rotated a
+DEBUG: Checking value: 34
+DEBUG: Rotated a
+DEBUG: Checking value: 16
+DEBUG: Pushed to b
+DEBUG: Checking value: 15
+DEBUG: Pushed to b
+DEBUG: Checking value: 90
+DEBUG: Rotated a
+DEBUG: Checking value: 86
+DEBUG: Rotated a
+DEBUG: Checking value: 82
+DEBUG: Rotated a
+DEBUG: Checking value: 87
+DEBUG: Rotated a
+DEBUG: Checking value: 75
+DEBUG: Rotated a
+DEBUG: Checking value: 88
+DEBUG: Rotated a
+DEBUG: Checking value: 11
+DEBUG: Pushed to b
+DEBUG: Checking value: 78
+DEBUG: Rotated a
+DEBUG: Checking value: 46
+DEBUG: Rotated a
+DEBUG: Checking value: 50
+DEBUG: Rotated a
+DEBUG: Checking value: 8
+DEBUG: Pushed to b
+DEBUG: Checking value: 76
+DEBUG: Rotated a
+DEBUG: Checking value: 28
+DEBUG: Rotated a
+DEBUG: Checking value: 2
+DEBUG: Pushed to b
+DEBUG: Checking value: 4
+DEBUG: Pushed to b
+DEBUG: Chunk processing finished
+DEBUG: Processing chunk. Range: 25 to 49
+DEBUG: Checking value: 47
+DEBUG: Pushed to b
+DEBUG: Checking value: 53
+DEBUG: Rotated a
+DEBUG: Checking value: 94
+DEBUG: Rotated a
+DEBUG: Checking value: 29
+DEBUG: Pushed to b
+DEBUG: Checking value: 73
+DEBUG: Rotated a
+DEBUG: Checking value: 72
+DEBUG: Rotated a
+DEBUG: Checking value: 31
+DEBUG: Pushed to b
+DEBUG: Checking value: 74
+DEBUG: Rotated a
+DEBUG: Checking value: 43
+DEBUG: Pushed to b
+DEBUG: Checking value: 54
+DEBUG: Rotated a
+DEBUG: Checking value: 57
+DEBUG: Rotated a
+DEBUG: Checking value: 91
+DEBUG: Rotated a
+DEBUG: Checking value: 95
+DEBUG: Rotated a
+DEBUG: Checking value: 99
+DEBUG: Rotated a
+DEBUG: Checking value: 35
+DEBUG: Pushed to b
+DEBUG: Checking value: 85
+DEBUG: Rotated a
+DEBUG: Checking value: 44
+DEBUG: Pushed to b
+DEBUG: Checking value: 83
+DEBUG: Rotated a
+DEBUG: Checking value: 68
+DEBUG: Rotated a
+DEBUG: Checking value: 42
+DEBUG: Pushed to b
+DEBUG: Checking value: 33
+DEBUG: Pushed to b
+DEBUG: Checking value: 67
+DEBUG: Rotated a
+DEBUG: Checking value: 48
+DEBUG: Pushed to b
+DEBUG: Checking value: 64
+DEBUG: Rotated a
+DEBUG: Checking value: 98
+DEBUG: Rotated a
+DEBUG: Checking value: 38
+DEBUG: Pushed to b
+DEBUG: Checking value: 62
+DEBUG: Rotated a
+DEBUG: Checking value: 77
+DEBUG: Rotated a
+DEBUG: Checking value: 65
+DEBUG: Rotated a
+DEBUG: Checking value: 26
+DEBUG: Pushed to b
+DEBUG: Checking value: 32
+DEBUG: Pushed to b
+DEBUG: Checking value: 49
+DEBUG: Pushed to b
+DEBUG: Checking value: 61
+DEBUG: Rotated a
+DEBUG: Checking value: 96
+DEBUG: Rotated a
+DEBUG: Checking value: 27
+DEBUG: Pushed to b
+DEBUG: Checking value: 41
+DEBUG: Pushed to b
+DEBUG: Checking value: 52
+DEBUG: Rotated a
+DEBUG: Checking value: 25
+DEBUG: Pushed to b
+DEBUG: Checking value: 40
+DEBUG: Pushed to b
+DEBUG: Checking value: 39
+DEBUG: Pushed to b
+DEBUG: Checking value: 63
+DEBUG: Rotated a
+DEBUG: Checking value: 56
+DEBUG: Rotated a
+DEBUG: Checking value: 37
+DEBUG: Pushed to b
+DEBUG: Checking value: 69
+DEBUG: Rotated a
+DEBUG: Checking value: 84
+DEBUG: Rotated a
+DEBUG: Checking value: 60
+DEBUG: Rotated a
+DEBUG: Checking value: 93
+DEBUG: Rotated a
+DEBUG: Checking value: 89
+DEBUG: Rotated a
+DEBUG: Checking value: 71
+DEBUG: Rotated a
+DEBUG: Checking value: 55
+DEBUG: Rotated a
+DEBUG: Checking value: 59
+DEBUG: Rotated a
+DEBUG: Checking value: 79
+DEBUG: Rotated a
+DEBUG: Checking value: 92
+DEBUG: Rotated a
+DEBUG: Checking value: 51
+DEBUG: Rotated a
+DEBUG: Checking value: 97
+DEBUG: Rotated a
+DEBUG: Checking value: 58
+DEBUG: Rotated a
+DEBUG: Checking value: 36
+DEBUG: Pushed to b
+DEBUG: Checking value: 30
+DEBUG: Pushed to b
+DEBUG: Checking value: 70
+DEBUG: Rotated a
+DEBUG: Checking value: 81
+DEBUG: Rotated a
+DEBUG: Checking value: 80
+DEBUG: Rotated a
+DEBUG: Checking value: 45
+DEBUG: Pushed to b
+DEBUG: Checking value: 66
+DEBUG: Rotated a
+DEBUG: Checking value: 34
+DEBUG: Pushed to b
+DEBUG: Checking value: 90
+DEBUG: Rotated a
+DEBUG: Checking value: 86
+DEBUG: Rotated a
+DEBUG: Checking value: 82
+DEBUG: Rotated a
+DEBUG: Checking value: 87
+DEBUG: Rotated a
+DEBUG: Checking value: 75
+DEBUG: Rotated a
+DEBUG: Checking value: 88
+DEBUG: Rotated a
+DEBUG: Checking value: 78
+DEBUG: Rotated a
+DEBUG: Checking value: 46
+DEBUG: Pushed to b
+DEBUG: Checking value: 50
+DEBUG: Rotated a
+DEBUG: Checking value: 76
+DEBUG: Rotated a
+DEBUG: Checking value: 28
+DEBUG: Pushed to b
+DEBUG: Chunk processing finished
+DEBUG: Processing chunk. Range: 50 to 74
+DEBUG: Checking value: 53
+DEBUG: Pushed to b
+DEBUG: Checking value: 94
+DEBUG: Rotated a
+DEBUG: Checking value: 73
+DEBUG: Pushed to b
+DEBUG: Checking value: 72
+DEBUG: Pushed to b
+DEBUG: Checking value: 74
+DEBUG: Pushed to b
+DEBUG: Checking value: 54
+DEBUG: Pushed to b
+DEBUG: Checking value: 57
+DEBUG: Pushed to b
+DEBUG: Checking value: 91
+DEBUG: Rotated a
+DEBUG: Checking value: 95
+DEBUG: Rotated a
+DEBUG: Checking value: 99
+DEBUG: Rotated a
+DEBUG: Checking value: 85
+DEBUG: Rotated a
+DEBUG: Checking value: 83
+DEBUG: Rotated a
+DEBUG: Checking value: 68
+DEBUG: Pushed to b
+DEBUG: Checking value: 67
+DEBUG: Pushed to b
+DEBUG: Checking value: 64
+DEBUG: Pushed to b
+DEBUG: Checking value: 98
+DEBUG: Rotated a
+DEBUG: Checking value: 62
+DEBUG: Pushed to b
+DEBUG: Checking value: 77
+DEBUG: Rotated a
+DEBUG: Checking value: 65
+DEBUG: Pushed to b
+DEBUG: Checking value: 61
+DEBUG: Pushed to b
+DEBUG: Checking value: 96
+DEBUG: Rotated a
+DEBUG: Checking value: 52
+DEBUG: Pushed to b
+DEBUG: Checking value: 63
+DEBUG: Pushed to b
+DEBUG: Checking value: 56
+DEBUG: Pushed to b
+DEBUG: Checking value: 69
+DEBUG: Pushed to b
+DEBUG: Checking value: 84
+DEBUG: Rotated a
+DEBUG: Checking value: 60
+DEBUG: Pushed to b
+DEBUG: Checking value: 93
+DEBUG: Rotated a
+DEBUG: Checking value: 89
+DEBUG: Rotated a
+DEBUG: Checking value: 71
+DEBUG: Pushed to b
+DEBUG: Checking value: 55
+DEBUG: Pushed to b
+DEBUG: Checking value: 59
+DEBUG: Pushed to b
+DEBUG: Checking value: 79
+DEBUG: Rotated a
+DEBUG: Checking value: 92
+DEBUG: Rotated a
+DEBUG: Checking value: 51
+DEBUG: Pushed to b
+DEBUG: Checking value: 97
+DEBUG: Rotated a
+DEBUG: Checking value: 58
+DEBUG: Pushed to b
+DEBUG: Checking value: 70
+DEBUG: Pushed to b
+DEBUG: Checking value: 81
+DEBUG: Rotated a
+DEBUG: Checking value: 80
+DEBUG: Rotated a
+DEBUG: Checking value: 66
+DEBUG: Pushed to b
+DEBUG: Checking value: 90
+DEBUG: Rotated a
+DEBUG: Checking value: 86
+DEBUG: Rotated a
+DEBUG: Checking value: 82
+DEBUG: Rotated a
+DEBUG: Checking value: 87
+DEBUG: Rotated a
+DEBUG: Checking value: 75
+DEBUG: Rotated a
+DEBUG: Checking value: 88
+DEBUG: Rotated a
+DEBUG: Checking value: 78
+DEBUG: Rotated a
+DEBUG: Checking value: 50
+DEBUG: Pushed to b
+DEBUG: Chunk processing finished
+DEBUG: Processing chunk. Range: 75 to 99
+DEBUG: Checking value: 76
+DEBUG: Pushed to b
+DEBUG: Checking value: 94
+DEBUG: Pushed to b
+DEBUG: Checking value: 91
+DEBUG: Pushed to b
+DEBUG: Checking value: 95
+DEBUG: Pushed to b
+DEBUG: Checking value: 99
+DEBUG: Pushed to b
+DEBUG: Checking value: 85
+DEBUG: Pushed to b
+DEBUG: Checking value: 83
+DEBUG: Pushed to b
+DEBUG: Checking value: 98
+DEBUG: Pushed to b
+DEBUG: Checking value: 77
+DEBUG: Pushed to b
+DEBUG: Checking value: 96
+DEBUG: Pushed to b
+DEBUG: Checking value: 84
+DEBUG: Pushed to b
+DEBUG: Checking value: 93
+DEBUG: Pushed to b
+DEBUG: Checking value: 89
+DEBUG: Pushed to b
+DEBUG: Checking value: 79
+DEBUG: Pushed to b
+DEBUG: Checking value: 92
+DEBUG: Pushed to b
+DEBUG: Checking value: 97
+DEBUG: Pushed to b
+DEBUG: Checking value: 81
+DEBUG: Pushed to b
+DEBUG: Checking value: 80
+DEBUG: Pushed to b
+DEBUG: Checking value: 90
+DEBUG: Pushed to b
+DEBUG: Checking value: 86
+DEBUG: Pushed to b
+DEBUG: Checking value: 82
+DEBUG: Pushed to b
+DEBUG: Checking value: 87
+DEBUG: Pushed to b
+DEBUG: Checking value: 75
+DEBUG: Pushed to b
+DEBUG: Checking value: 88
+DEBUG: Pushed to b
+DEBUG: Checking value: 78
+DEBUG: Pushed to b
+DEBUG: Chunk processing finished
+DEBUG: Moving back from b to a
+DEBUG: Max in b: 99
+DEBUG: Rotating stack to top. Target: 99, Position: 20
+DEBUG: Pushed to a
+DEBUG: Max in b: 98
+DEBUG: Rotating stack to top. Target: 98, Position: 96
+DEBUG: Pushed to a
+DEBUG: Max in b: 97
+DEBUG: Rotating stack to top. Target: 97, Position: 90
+DEBUG: Pushed to a
+DEBUG: Max in b: 96
+DEBUG: Rotating stack to top. Target: 96, Position: 5
+DEBUG: Pushed to a
+DEBUG: Max in b: 95
+DEBUG: Rotating stack to top. Target: 95, Position: 3
+DEBUG: Pushed to a
+DEBUG: Max in b: 94
+DEBUG: Rotating stack to top. Target: 94, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 93
+DEBUG: Rotating stack to top. Target: 93, Position: 88
+DEBUG: Pushed to a
+DEBUG: Max in b: 92
+DEBUG: Rotating stack to top. Target: 92, Position: 90
+DEBUG: Pushed to a
+DEBUG: Max in b: 91
+DEBUG: Rotating stack to top. Target: 91, Position: 6
+DEBUG: Pushed to a
+DEBUG: Max in b: 90
+DEBUG: Rotating stack to top. Target: 90, Position: 82
+DEBUG: Pushed to a
+DEBUG: Max in b: 89
+DEBUG: Rotating stack to top. Target: 89, Position: 3
+DEBUG: Pushed to a
+DEBUG: Max in b: 88
+DEBUG: Rotating stack to top. Target: 88, Position: 81
+DEBUG: Pushed to a
+DEBUG: Max in b: 87
+DEBUG: Rotating stack to top. Target: 87, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 86
+DEBUG: Rotating stack to top. Target: 86, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 85
+DEBUG: Rotating stack to top. Target: 85, Position: 6
+DEBUG: Pushed to a
+DEBUG: Max in b: 84
+DEBUG: Rotating stack to top. Target: 84, Position: 82
+DEBUG: Pushed to a
+DEBUG: Max in b: 83
+DEBUG: Rotating stack to top. Target: 83, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 82
+DEBUG: Rotating stack to top. Target: 82, Position: 78
+DEBUG: Pushed to a
+DEBUG: Max in b: 81
+DEBUG: Rotating stack to top. Target: 81, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 80
+DEBUG: Rotating stack to top. Target: 80, Position: 80
+DEBUG: Pushed to a
+DEBUG: Max in b: 79
+DEBUG: Rotating stack to top. Target: 79, Position: 0
+DEBUG: Pushed to a
+DEBUG: Max in b: 78
+DEBUG: Rotating stack to top. Target: 78, Position: 77
+DEBUG: Pushed to a
+DEBUG: Max in b: 77
+DEBUG: Rotating stack to top. Target: 77, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 76
+DEBUG: Rotating stack to top. Target: 76, Position: 0
+DEBUG: Pushed to a
+DEBUG: Max in b: 75
+DEBUG: Rotating stack to top. Target: 75, Position: 75
+DEBUG: Pushed to a
+DEBUG: Max in b: 74
+DEBUG: Rotating stack to top. Target: 74, Position: 21
+DEBUG: Pushed to a
+DEBUG: Max in b: 73
+DEBUG: Rotating stack to top. Target: 73, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 72
+DEBUG: Rotating stack to top. Target: 72, Position: 72
+DEBUG: Pushed to a
+DEBUG: Max in b: 71
+DEBUG: Rotating stack to top. Target: 71, Position: 58
+DEBUG: Pushed to a
+DEBUG: Max in b: 70
+DEBUG: Rotating stack to top. Target: 70, Position: 66
+DEBUG: Pushed to a
+DEBUG: Max in b: 69
+DEBUG: Rotating stack to top. Target: 69, Position: 5
+DEBUG: Pushed to a
+DEBUG: Max in b: 68
+DEBUG: Rotating stack to top. Target: 68, Position: 8
+DEBUG: Pushed to a
+DEBUG: Max in b: 67
+DEBUG: Rotating stack to top. Target: 67, Position: 67
+DEBUG: Pushed to a
+DEBUG: Max in b: 66
+DEBUG: Rotating stack to top. Target: 66, Position: 54
+DEBUG: Pushed to a
+DEBUG: Max in b: 65
+DEBUG: Rotating stack to top. Target: 65, Position: 9
+DEBUG: Pushed to a
+DEBUG: Max in b: 64
+DEBUG: Rotating stack to top. Target: 64, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 63
+DEBUG: Rotating stack to top. Target: 63, Position: 60
+DEBUG: Pushed to a
+DEBUG: Max in b: 62
+DEBUG: Rotating stack to top. Target: 62, Position: 2
+DEBUG: Pushed to a
+DEBUG: Max in b: 61
+DEBUG: Rotating stack to top. Target: 61, Position: 61
+DEBUG: Pushed to a
+DEBUG: Max in b: 60
+DEBUG: Rotating stack to top. Target: 60, Position: 58
+DEBUG: Pushed to a
+DEBUG: Max in b: 59
+DEBUG: Rotating stack to top. Target: 59, Position: 58
+DEBUG: Pushed to a
+DEBUG: Max in b: 58
+DEBUG: Rotating stack to top. Target: 58, Position: 57
+DEBUG: Pushed to a
+DEBUG: Max in b: 57
+DEBUG: Rotating stack to top. Target: 57, Position: 4
+DEBUG: Pushed to a
+DEBUG: Max in b: 56
+DEBUG: Rotating stack to top. Target: 56, Position: 55
+DEBUG: Pushed to a
+DEBUG: Max in b: 55
+DEBUG: Rotating stack to top. Target: 55, Position: 55
+DEBUG: Pushed to a
+DEBUG: Max in b: 54
+DEBUG: Rotating stack to top. Target: 54, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 53
+DEBUG: Rotating stack to top. Target: 53, Position: 0
+DEBUG: Pushed to a
+DEBUG: Max in b: 52
+DEBUG: Rotating stack to top. Target: 52, Position: 52
+DEBUG: Pushed to a
+DEBUG: Max in b: 51
+DEBUG: Rotating stack to top. Target: 51, Position: 51
+DEBUG: Pushed to a
+DEBUG: Max in b: 50
+DEBUG: Rotating stack to top. Target: 50, Position: 50
+DEBUG: Pushed to a
+DEBUG: Max in b: 49
+DEBUG: Rotating stack to top. Target: 49, Position: 12
+DEBUG: Pushed to a
+DEBUG: Max in b: 48
+DEBUG: Rotating stack to top. Target: 48, Position: 3
+DEBUG: Pushed to a
+DEBUG: Max in b: 47
+DEBUG: Rotating stack to top. Target: 47, Position: 7
+DEBUG: Pushed to a
+DEBUG: Max in b: 46
+DEBUG: Rotating stack to top. Target: 46, Position: 26
+DEBUG: Pushed to a
+DEBUG: Max in b: 45
+DEBUG: Rotating stack to top. Target: 45, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 44
+DEBUG: Rotating stack to top. Target: 44, Position: 13
+DEBUG: Pushed to a
+DEBUG: Max in b: 43
+DEBUG: Rotating stack to top. Target: 43, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 42
+DEBUG: Rotating stack to top. Target: 42, Position: 41
+DEBUG: Pushed to a
+DEBUG: Max in b: 41
+DEBUG: Rotating stack to top. Target: 41, Position: 36
+DEBUG: Pushed to a
+DEBUG: Max in b: 40
+DEBUG: Rotating stack to top. Target: 40, Position: 39
+DEBUG: Pushed to a
+DEBUG: Max in b: 39
+DEBUG: Rotating stack to top. Target: 39, Position: 39
+DEBUG: Pushed to a
+DEBUG: Max in b: 38
+DEBUG: Rotating stack to top. Target: 38, Position: 4
+DEBUG: Pushed to a
+DEBUG: Max in b: 37
+DEBUG: Rotating stack to top. Target: 37, Position: 33
+DEBUG: Pushed to a
+DEBUG: Max in b: 36
+DEBUG: Rotating stack to top. Target: 36, Position: 36
+DEBUG: Pushed to a
+DEBUG: Max in b: 35
+DEBUG: Rotating stack to top. Target: 35, Position: 5
+DEBUG: Pushed to a
+DEBUG: Max in b: 34
+DEBUG: Rotating stack to top. Target: 34, Position: 28
+DEBUG: Pushed to a
+DEBUG: Max in b: 33
+DEBUG: Rotating stack to top. Target: 33, Position: 5
+DEBUG: Pushed to a
+DEBUG: Max in b: 32
+DEBUG: Rotating stack to top. Target: 32, Position: 31
+DEBUG: Pushed to a
+DEBUG: Max in b: 31
+DEBUG: Rotating stack to top. Target: 31, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 30
+DEBUG: Rotating stack to top. Target: 30, Position: 27
+DEBUG: Pushed to a
+DEBUG: Max in b: 29
+DEBUG: Rotating stack to top. Target: 29, Position: 3
+DEBUG: Pushed to a
+DEBUG: Max in b: 28
+DEBUG: Rotating stack to top. Target: 28, Position: 25
+DEBUG: Pushed to a
+DEBUG: Max in b: 27
+DEBUG: Rotating stack to top. Target: 27, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 26
+DEBUG: Rotating stack to top. Target: 26, Position: 0
+DEBUG: Pushed to a
+DEBUG: Max in b: 25
+DEBUG: Rotating stack to top. Target: 25, Position: 25
+DEBUG: Pushed to a
+DEBUG: Max in b: 24
+DEBUG: Rotating stack to top. Target: 24, Position: 13
+DEBUG: Pushed to a
+DEBUG: Max in b: 23
+DEBUG: Rotating stack to top. Target: 23, Position: 18
+DEBUG: Pushed to a
+DEBUG: Max in b: 22
+DEBUG: Rotating stack to top. Target: 22, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 21
+DEBUG: Rotating stack to top. Target: 21, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 20
+DEBUG: Rotating stack to top. Target: 20, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 19
+DEBUG: Rotating stack to top. Target: 19, Position: 17
+DEBUG: Pushed to a
+DEBUG: Max in b: 18
+DEBUG: Rotating stack to top. Target: 18, Position: 2
+DEBUG: Pushed to a
+DEBUG: Max in b: 17
+DEBUG: Rotating stack to top. Target: 17, Position: 16
+DEBUG: Pushed to a
+DEBUG: Max in b: 16
+DEBUG: Rotating stack to top. Target: 16, Position: 15
+DEBUG: Pushed to a
+DEBUG: Max in b: 15
+DEBUG: Rotating stack to top. Target: 15, Position: 15
+DEBUG: Pushed to a
+DEBUG: Max in b: 14
+DEBUG: Rotating stack to top. Target: 14, Position: 5
+DEBUG: Pushed to a
+DEBUG: Max in b: 13
+DEBUG: Rotating stack to top. Target: 13, Position: 13
+DEBUG: Pushed to a
+DEBUG: Max in b: 12
+DEBUG: Rotating stack to top. Target: 12, Position: 10
+DEBUG: Pushed to a
+DEBUG: Max in b: 11
+DEBUG: Rotating stack to top. Target: 11, Position: 10
+DEBUG: Pushed to a
+DEBUG: Max in b: 10
+DEBUG: Rotating stack to top. Target: 10, Position: 4
+DEBUG: Pushed to a
+DEBUG: Max in b: 9
+DEBUG: Rotating stack to top. Target: 9, Position: 2
+DEBUG: Pushed to a
+DEBUG: Max in b: 8
+DEBUG: Rotating stack to top. Target: 8, Position: 2
+DEBUG: Pushed to a
+DEBUG: Max in b: 7
+DEBUG: Rotating stack to top. Target: 7, Position: 3
+DEBUG: Pushed to a
+DEBUG: Max in b: 6
+DEBUG: Rotating stack to top. Target: 6, Position: 6
+DEBUG: Pushed to a
+DEBUG: Max in b: 5
+DEBUG: Rotating stack to top. Target: 5, Position: 0
+DEBUG: Pushed to a
+DEBUG: Max in b: 4
+DEBUG: Rotating stack to top. Target: 4, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 3
+DEBUG: Rotating stack to top. Target: 3, Position: 3
+DEBUG: Pushed to a
+DEBUG: Max in b: 2
+DEBUG: Rotating stack to top. Target: 2, Position: 0
+DEBUG: Pushed to a
+DEBUG: Max in b: 1
+DEBUG: Rotating stack to top. Target: 1, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 0
+DEBUG: Rotating stack to top. Target: 0, Position: 0
+DEBUG: Pushed to a
+DEBUG: Finished chunk_sort
+DEBUG: Validation passed - Stack A is sorted, and Stack B is empty
+DEBUG: Done!
+DEBUG: Starting push_swap
+DEBUG: parse_args start
+DEBUG: arg line: 30
+DEBUG: parsing line: 30
+DEBUG: token: 30
+DEBUG: arg line: 74
+DEBUG: parsing line: 74
+DEBUG: token: 74
+DEBUG: arg line: 10
+DEBUG: parsing line: 10
+DEBUG: token: 10
+DEBUG: arg line: 4
+DEBUG: parsing line: 4
+DEBUG: token: 4
+DEBUG: arg line: 73
+DEBUG: parsing line: 73
+DEBUG: token: 73
+DEBUG: arg line: 6
+DEBUG: parsing line: 6
+DEBUG: token: 6
+DEBUG: arg line: 32
+DEBUG: parsing line: 32
+DEBUG: token: 32
+DEBUG: arg line: 75
+DEBUG: parsing line: 75
+DEBUG: token: 75
+DEBUG: arg line: 44
+DEBUG: parsing line: 44
+DEBUG: token: 44
+DEBUG: arg line: 55
+DEBUG: parsing line: 55
+DEBUG: token: 55
+DEBUG: arg line: 58
+DEBUG: parsing line: 58
+DEBUG: token: 58
+DEBUG: arg line: 92
+DEBUG: parsing line: 92
+DEBUG: token: 92
+DEBUG: arg line: 96
+DEBUG: parsing line: 96
+DEBUG: token: 96
+DEBUG: arg line: 100
+DEBUG: parsing line: 100
+DEBUG: token: 100
+DEBUG: arg line: 36
+DEBUG: parsing line: 36
+DEBUG: token: 36
+DEBUG: arg line: 86
+DEBUG: parsing line: 86
+DEBUG: token: 86
+DEBUG: arg line: 11
+DEBUG: parsing line: 11
+DEBUG: token: 11
+DEBUG: arg line: 45
+DEBUG: parsing line: 45
+DEBUG: token: 45
+DEBUG: arg line: 84
+DEBUG: parsing line: 84
+DEBUG: token: 84
+DEBUG: arg line: 8
+DEBUG: parsing line: 8
+DEBUG: token: 8
+DEBUG: arg line: 69
+DEBUG: parsing line: 69
+DEBUG: token: 69
+DEBUG: arg line: 43
+DEBUG: parsing line: 43
+DEBUG: token: 43
+DEBUG: arg line: 34
+DEBUG: parsing line: 34
+DEBUG: token: 34
+DEBUG: arg line: 68
+DEBUG: parsing line: 68
+DEBUG: token: 68
+DEBUG: arg line: 49
+DEBUG: parsing line: 49
+DEBUG: token: 49
+DEBUG: arg line: 65
+DEBUG: parsing line: 65
+DEBUG: token: 65
+DEBUG: arg line: 15
+DEBUG: parsing line: 15
+DEBUG: token: 15
+DEBUG: arg line: 99
+DEBUG: parsing line: 99
+DEBUG: token: 99
+DEBUG: arg line: 14
+DEBUG: parsing line: 14
+DEBUG: token: 14
+DEBUG: arg line: 7
+DEBUG: parsing line: 7
+DEBUG: token: 7
+DEBUG: arg line: 39
+DEBUG: parsing line: 39
+DEBUG: token: 39
+DEBUG: arg line: 63
+DEBUG: parsing line: 63
+DEBUG: token: 63
+DEBUG: arg line: 78
+DEBUG: parsing line: 78
+DEBUG: token: 78
+DEBUG: arg line: 66
+DEBUG: parsing line: 66
+DEBUG: token: 66
+DEBUG: arg line: 27
+DEBUG: parsing line: 27
+DEBUG: token: 27
+DEBUG: arg line: 33
+DEBUG: parsing line: 33
+DEBUG: token: 33
+DEBUG: arg line: 50
+DEBUG: parsing line: 50
+DEBUG: token: 50
+DEBUG: arg line: 2
+DEBUG: parsing line: 2
+DEBUG: token: 2
+DEBUG: arg line: 62
+DEBUG: parsing line: 62
+DEBUG: token: 62
+DEBUG: arg line: 97
+DEBUG: parsing line: 97
+DEBUG: token: 97
+DEBUG: arg line: 28
+DEBUG: parsing line: 28
+DEBUG: token: 28
+DEBUG: arg line: 42
+DEBUG: parsing line: 42
+DEBUG: token: 42
+DEBUG: arg line: 53
+DEBUG: parsing line: 53
+DEBUG: token: 53
+DEBUG: arg line: 26
+DEBUG: parsing line: 26
+DEBUG: token: 26
+DEBUG: arg line: 19
+DEBUG: parsing line: 19
+DEBUG: token: 19
+DEBUG: arg line: 41
+DEBUG: parsing line: 41
+DEBUG: token: 41
+DEBUG: arg line: 40
+DEBUG: parsing line: 40
+DEBUG: token: 40
+DEBUG: arg line: 64
+DEBUG: parsing line: 64
+DEBUG: token: 64
+DEBUG: arg line: 21
+DEBUG: parsing line: 21
+DEBUG: token: 21
+DEBUG: arg line: 25
+DEBUG: parsing line: 25
+DEBUG: token: 25
+DEBUG: arg line: 13
+DEBUG: parsing line: 13
+DEBUG: token: 13
+DEBUG: arg line: 57
+DEBUG: parsing line: 57
+DEBUG: token: 57
+DEBUG: arg line: 38
+DEBUG: parsing line: 38
+DEBUG: token: 38
+DEBUG: arg line: 70
+DEBUG: parsing line: 70
+DEBUG: token: 70
+DEBUG: arg line: 85
+DEBUG: parsing line: 85
+DEBUG: token: 85
+DEBUG: arg line: 61
+DEBUG: parsing line: 61
+DEBUG: token: 61
+DEBUG: arg line: 22
+DEBUG: parsing line: 22
+DEBUG: token: 22
+DEBUG: arg line: 94
+DEBUG: parsing line: 94
+DEBUG: token: 94
+DEBUG: arg line: 90
+DEBUG: parsing line: 90
+DEBUG: token: 90
+DEBUG: arg line: 72
+DEBUG: parsing line: 72
+DEBUG: token: 72
+DEBUG: arg line: 56
+DEBUG: parsing line: 56
+DEBUG: token: 56
+DEBUG: arg line: 18
+DEBUG: parsing line: 18
+DEBUG: token: 18
+DEBUG: arg line: 60
+DEBUG: parsing line: 60
+DEBUG: token: 60
+DEBUG: arg line: 23
+DEBUG: parsing line: 23
+DEBUG: token: 23
+DEBUG: arg line: 80
+DEBUG: parsing line: 80
+DEBUG: token: 80
+DEBUG: arg line: 93
+DEBUG: parsing line: 93
+DEBUG: token: 93
+DEBUG: arg line: 52
+DEBUG: parsing line: 52
+DEBUG: token: 52
+DEBUG: arg line: 98
+DEBUG: parsing line: 98
+DEBUG: token: 98
+DEBUG: arg line: 59
+DEBUG: parsing line: 59
+DEBUG: token: 59
+DEBUG: arg line: 20
+DEBUG: parsing line: 20
+DEBUG: token: 20
+DEBUG: arg line: 37
+DEBUG: parsing line: 37
+DEBUG: token: 37
+DEBUG: arg line: 31
+DEBUG: parsing line: 31
+DEBUG: token: 31
+DEBUG: arg line: 24
+DEBUG: parsing line: 24
+DEBUG: token: 24
+DEBUG: arg line: 71
+DEBUG: parsing line: 71
+DEBUG: token: 71
+DEBUG: arg line: 82
+DEBUG: parsing line: 82
+DEBUG: token: 82
+DEBUG: arg line: 81
+DEBUG: parsing line: 81
+DEBUG: token: 81
+DEBUG: arg line: 46
+DEBUG: parsing line: 46
+DEBUG: token: 46
+DEBUG: arg line: 1
+DEBUG: parsing line: 1
+DEBUG: token: 1
+DEBUG: arg line: 67
+DEBUG: parsing line: 67
+DEBUG: token: 67
+DEBUG: arg line: 35
+DEBUG: parsing line: 35
+DEBUG: token: 35
+DEBUG: arg line: 17
+DEBUG: parsing line: 17
+DEBUG: token: 17
+DEBUG: arg line: 16
+DEBUG: parsing line: 16
+DEBUG: token: 16
+DEBUG: arg line: 91
+DEBUG: parsing line: 91
+DEBUG: token: 91
+DEBUG: arg line: 87
+DEBUG: parsing line: 87
+DEBUG: token: 87
+DEBUG: arg line: 83
+DEBUG: parsing line: 83
+DEBUG: token: 83
+DEBUG: arg line: 88
+DEBUG: parsing line: 88
+DEBUG: token: 88
+DEBUG: arg line: 76
+DEBUG: parsing line: 76
+DEBUG: token: 76
+DEBUG: arg line: 89
+DEBUG: parsing line: 89
+DEBUG: token: 89
+DEBUG: arg line: 12
+DEBUG: parsing line: 12
+DEBUG: token: 12
+DEBUG: arg line: 79
+DEBUG: parsing line: 79
+DEBUG: token: 79
+DEBUG: arg line: 47
+DEBUG: parsing line: 47
+DEBUG: token: 47
+DEBUG: arg line: 51
+DEBUG: parsing line: 51
+DEBUG: token: 51
+DEBUG: arg line: 9
+DEBUG: parsing line: 9
+DEBUG: token: 9
+DEBUG: arg line: 77
+DEBUG: parsing line: 77
+DEBUG: token: 77
+DEBUG: arg line: 29
+DEBUG: parsing line: 29
+DEBUG: token: 29
+DEBUG: arg line: 3
+DEBUG: parsing line: 3
+DEBUG: token: 3
+DEBUG: arg line: 5
+DEBUG: parsing line: 5
+DEBUG: token: 5
+DEBUG: arg line: 48
+DEBUG: parsing line: 48
+DEBUG: token: 48
+DEBUG: arg line: 54
+DEBUG: parsing line: 54
+DEBUG: token: 54
+DEBUG: arg line: 95
+DEBUG: parsing line: 95
+DEBUG: token: 95
+DEBUG: rank_values complete. Stack A (ranks): 29 73 9 3 72 5 31 74 43 54 57 91 95 99 35 85 10 44 83 7 68 42 33 67 48 64 14 98 13 6 38 62 77 65 26 32 49 1 61 96 27 41 52 25 18 40 39 63 20 24 12 56 37 69 84 60 21 93 89 71 55 17 59 22 79 92 51 97 58 19 36 30 23 70 81 80 45 0 66 34 16 15 90 86 82 87 75 88 11 78 46 50 8 76 28 2 4 47 53 94 
+DEBUG: No duplicates found
+DEBUG: parse_args complete
+DEBUG: Finished parsing and ranking
+DEBUG: sort_small called
+DEBUG: Starting chunk_sort
+DEBUG: Processing chunk. Range: 0 to 24
+DEBUG: Checking value: 29
+DEBUG: Rotated a
+DEBUG: Checking value: 73
+DEBUG: Rotated a
+DEBUG: Checking value: 9
+DEBUG: Pushed to b
+DEBUG: Checking value: 3
+DEBUG: Pushed to b
+DEBUG: Checking value: 72
+DEBUG: Rotated a
+DEBUG: Checking value: 5
+DEBUG: Pushed to b
+DEBUG: Checking value: 31
+DEBUG: Rotated a
+DEBUG: Checking value: 74
+DEBUG: Rotated a
+DEBUG: Checking value: 43
+DEBUG: Rotated a
+DEBUG: Checking value: 54
+DEBUG: Rotated a
+DEBUG: Checking value: 57
+DEBUG: Rotated a
+DEBUG: Checking value: 91
+DEBUG: Rotated a
+DEBUG: Checking value: 95
+DEBUG: Rotated a
+DEBUG: Checking value: 99
+DEBUG: Rotated a
+DEBUG: Checking value: 35
+DEBUG: Rotated a
+DEBUG: Checking value: 85
+DEBUG: Rotated a
+DEBUG: Checking value: 10
+DEBUG: Pushed to b
+DEBUG: Checking value: 44
+DEBUG: Rotated a
+DEBUG: Checking value: 83
+DEBUG: Rotated a
+DEBUG: Checking value: 7
+DEBUG: Pushed to b
+DEBUG: Checking value: 68
+DEBUG: Rotated a
+DEBUG: Checking value: 42
+DEBUG: Rotated a
+DEBUG: Checking value: 33
+DEBUG: Rotated a
+DEBUG: Checking value: 67
+DEBUG: Rotated a
+DEBUG: Checking value: 48
+DEBUG: Rotated a
+DEBUG: Checking value: 64
+DEBUG: Rotated a
+DEBUG: Checking value: 14
+DEBUG: Pushed to b
+DEBUG: Checking value: 98
+DEBUG: Rotated a
+DEBUG: Checking value: 13
+DEBUG: Pushed to b
+DEBUG: Checking value: 6
+DEBUG: Pushed to b
+DEBUG: Checking value: 38
+DEBUG: Rotated a
+DEBUG: Checking value: 62
+DEBUG: Rotated a
+DEBUG: Checking value: 77
+DEBUG: Rotated a
+DEBUG: Checking value: 65
+DEBUG: Rotated a
+DEBUG: Checking value: 26
+DEBUG: Rotated a
+DEBUG: Checking value: 32
+DEBUG: Rotated a
+DEBUG: Checking value: 49
+DEBUG: Rotated a
+DEBUG: Checking value: 1
+DEBUG: Pushed to b
+DEBUG: Checking value: 61
+DEBUG: Rotated a
+DEBUG: Checking value: 96
+DEBUG: Rotated a
+DEBUG: Checking value: 27
+DEBUG: Rotated a
+DEBUG: Checking value: 41
+DEBUG: Rotated a
+DEBUG: Checking value: 52
+DEBUG: Rotated a
+DEBUG: Checking value: 25
+DEBUG: Rotated a
+DEBUG: Checking value: 18
+DEBUG: Pushed to b
+DEBUG: Checking value: 40
+DEBUG: Rotated a
+DEBUG: Checking value: 39
+DEBUG: Rotated a
+DEBUG: Checking value: 63
+DEBUG: Rotated a
+DEBUG: Checking value: 20
+DEBUG: Pushed to b
+DEBUG: Checking value: 24
+DEBUG: Pushed to b
+DEBUG: Checking value: 12
+DEBUG: Pushed to b
+DEBUG: Checking value: 56
+DEBUG: Rotated a
+DEBUG: Checking value: 37
+DEBUG: Rotated a
+DEBUG: Checking value: 69
+DEBUG: Rotated a
+DEBUG: Checking value: 84
+DEBUG: Rotated a
+DEBUG: Checking value: 60
+DEBUG: Rotated a
+DEBUG: Checking value: 21
+DEBUG: Pushed to b
+DEBUG: Checking value: 93
+DEBUG: Rotated a
+DEBUG: Checking value: 89
+DEBUG: Rotated a
+DEBUG: Checking value: 71
+DEBUG: Rotated a
+DEBUG: Checking value: 55
+DEBUG: Rotated a
+DEBUG: Checking value: 17
+DEBUG: Pushed to b
+DEBUG: Checking value: 59
+DEBUG: Rotated a
+DEBUG: Checking value: 22
+DEBUG: Pushed to b
+DEBUG: Checking value: 79
+DEBUG: Rotated a
+DEBUG: Checking value: 92
+DEBUG: Rotated a
+DEBUG: Checking value: 51
+DEBUG: Rotated a
+DEBUG: Checking value: 97
+DEBUG: Rotated a
+DEBUG: Checking value: 58
+DEBUG: Rotated a
+DEBUG: Checking value: 19
+DEBUG: Pushed to b
+DEBUG: Checking value: 36
+DEBUG: Rotated a
+DEBUG: Checking value: 30
+DEBUG: Rotated a
+DEBUG: Checking value: 23
+DEBUG: Pushed to b
+DEBUG: Checking value: 70
+DEBUG: Rotated a
+DEBUG: Checking value: 81
+DEBUG: Rotated a
+DEBUG: Checking value: 80
+DEBUG: Rotated a
+DEBUG: Checking value: 45
+DEBUG: Rotated a
+DEBUG: Checking value: 0
+DEBUG: Pushed to b
+DEBUG: Checking value: 66
+DEBUG: Rotated a
+DEBUG: Checking value: 34
+DEBUG: Rotated a
+DEBUG: Checking value: 16
+DEBUG: Pushed to b
+DEBUG: Checking value: 15
+DEBUG: Pushed to b
+DEBUG: Checking value: 90
+DEBUG: Rotated a
+DEBUG: Checking value: 86
+DEBUG: Rotated a
+DEBUG: Checking value: 82
+DEBUG: Rotated a
+DEBUG: Checking value: 87
+DEBUG: Rotated a
+DEBUG: Checking value: 75
+DEBUG: Rotated a
+DEBUG: Checking value: 88
+DEBUG: Rotated a
+DEBUG: Checking value: 11
+DEBUG: Pushed to b
+DEBUG: Checking value: 78
+DEBUG: Rotated a
+DEBUG: Checking value: 46
+DEBUG: Rotated a
+DEBUG: Checking value: 50
+DEBUG: Rotated a
+DEBUG: Checking value: 8
+DEBUG: Pushed to b
+DEBUG: Checking value: 76
+DEBUG: Rotated a
+DEBUG: Checking value: 28
+DEBUG: Rotated a
+DEBUG: Checking value: 2
+DEBUG: Pushed to b
+DEBUG: Checking value: 4
+DEBUG: Pushed to b
+DEBUG: Chunk processing finished
+DEBUG: Processing chunk. Range: 25 to 49
+DEBUG: Checking value: 47
+DEBUG: Pushed to b
+DEBUG: Checking value: 53
+DEBUG: Rotated a
+DEBUG: Checking value: 94
+DEBUG: Rotated a
+DEBUG: Checking value: 29
+DEBUG: Pushed to b
+DEBUG: Checking value: 73
+DEBUG: Rotated a
+DEBUG: Checking value: 72
+DEBUG: Rotated a
+DEBUG: Checking value: 31
+DEBUG: Pushed to b
+DEBUG: Checking value: 74
+DEBUG: Rotated a
+DEBUG: Checking value: 43
+DEBUG: Pushed to b
+DEBUG: Checking value: 54
+DEBUG: Rotated a
+DEBUG: Checking value: 57
+DEBUG: Rotated a
+DEBUG: Checking value: 91
+DEBUG: Rotated a
+DEBUG: Checking value: 95
+DEBUG: Rotated a
+DEBUG: Checking value: 99
+DEBUG: Rotated a
+DEBUG: Checking value: 35
+DEBUG: Pushed to b
+DEBUG: Checking value: 85
+DEBUG: Rotated a
+DEBUG: Checking value: 44
+DEBUG: Pushed to b
+DEBUG: Checking value: 83
+DEBUG: Rotated a
+DEBUG: Checking value: 68
+DEBUG: Rotated a
+DEBUG: Checking value: 42
+DEBUG: Pushed to b
+DEBUG: Checking value: 33
+DEBUG: Pushed to b
+DEBUG: Checking value: 67
+DEBUG: Rotated a
+DEBUG: Checking value: 48
+DEBUG: Pushed to b
+DEBUG: Checking value: 64
+DEBUG: Rotated a
+DEBUG: Checking value: 98
+DEBUG: Rotated a
+DEBUG: Checking value: 38
+DEBUG: Pushed to b
+DEBUG: Checking value: 62
+DEBUG: Rotated a
+DEBUG: Checking value: 77
+DEBUG: Rotated a
+DEBUG: Checking value: 65
+DEBUG: Rotated a
+DEBUG: Checking value: 26
+DEBUG: Pushed to b
+DEBUG: Checking value: 32
+DEBUG: Pushed to b
+DEBUG: Checking value: 49
+DEBUG: Pushed to b
+DEBUG: Checking value: 61
+DEBUG: Rotated a
+DEBUG: Checking value: 96
+DEBUG: Rotated a
+DEBUG: Checking value: 27
+DEBUG: Pushed to b
+DEBUG: Checking value: 41
+DEBUG: Pushed to b
+DEBUG: Checking value: 52
+DEBUG: Rotated a
+DEBUG: Checking value: 25
+DEBUG: Pushed to b
+DEBUG: Checking value: 40
+DEBUG: Pushed to b
+DEBUG: Checking value: 39
+DEBUG: Pushed to b
+DEBUG: Checking value: 63
+DEBUG: Rotated a
+DEBUG: Checking value: 56
+DEBUG: Rotated a
+DEBUG: Checking value: 37
+DEBUG: Pushed to b
+DEBUG: Checking value: 69
+DEBUG: Rotated a
+DEBUG: Checking value: 84
+DEBUG: Rotated a
+DEBUG: Checking value: 60
+DEBUG: Rotated a
+DEBUG: Checking value: 93
+DEBUG: Rotated a
+DEBUG: Checking value: 89
+DEBUG: Rotated a
+DEBUG: Checking value: 71
+DEBUG: Rotated a
+DEBUG: Checking value: 55
+DEBUG: Rotated a
+DEBUG: Checking value: 59
+DEBUG: Rotated a
+DEBUG: Checking value: 79
+DEBUG: Rotated a
+DEBUG: Checking value: 92
+DEBUG: Rotated a
+DEBUG: Checking value: 51
+DEBUG: Rotated a
+DEBUG: Checking value: 97
+DEBUG: Rotated a
+DEBUG: Checking value: 58
+DEBUG: Rotated a
+DEBUG: Checking value: 36
+DEBUG: Pushed to b
+DEBUG: Checking value: 30
+DEBUG: Pushed to b
+DEBUG: Checking value: 70
+DEBUG: Rotated a
+DEBUG: Checking value: 81
+DEBUG: Rotated a
+DEBUG: Checking value: 80
+DEBUG: Rotated a
+DEBUG: Checking value: 45
+DEBUG: Pushed to b
+DEBUG: Checking value: 66
+DEBUG: Rotated a
+DEBUG: Checking value: 34
+DEBUG: Pushed to b
+DEBUG: Checking value: 90
+DEBUG: Rotated a
+DEBUG: Checking value: 86
+DEBUG: Rotated a
+DEBUG: Checking value: 82
+DEBUG: Rotated a
+DEBUG: Checking value: 87
+DEBUG: Rotated a
+DEBUG: Checking value: 75
+DEBUG: Rotated a
+DEBUG: Checking value: 88
+DEBUG: Rotated a
+DEBUG: Checking value: 78
+DEBUG: Rotated a
+DEBUG: Checking value: 46
+DEBUG: Pushed to b
+DEBUG: Checking value: 50
+DEBUG: Rotated a
+DEBUG: Checking value: 76
+DEBUG: Rotated a
+DEBUG: Checking value: 28
+DEBUG: Pushed to b
+DEBUG: Chunk processing finished
+DEBUG: Processing chunk. Range: 50 to 74
+DEBUG: Checking value: 53
+DEBUG: Pushed to b
+DEBUG: Checking value: 94
+DEBUG: Rotated a
+DEBUG: Checking value: 73
+DEBUG: Pushed to b
+DEBUG: Checking value: 72
+DEBUG: Pushed to b
+DEBUG: Checking value: 74
+DEBUG: Pushed to b
+DEBUG: Checking value: 54
+DEBUG: Pushed to b
+DEBUG: Checking value: 57
+DEBUG: Pushed to b
+DEBUG: Checking value: 91
+DEBUG: Rotated a
+DEBUG: Checking value: 95
+DEBUG: Rotated a
+DEBUG: Checking value: 99
+DEBUG: Rotated a
+DEBUG: Checking value: 85
+DEBUG: Rotated a
+DEBUG: Checking value: 83
+DEBUG: Rotated a
+DEBUG: Checking value: 68
+DEBUG: Pushed to b
+DEBUG: Checking value: 67
+DEBUG: Pushed to b
+DEBUG: Checking value: 64
+DEBUG: Pushed to b
+DEBUG: Checking value: 98
+DEBUG: Rotated a
+DEBUG: Checking value: 62
+DEBUG: Pushed to b
+DEBUG: Checking value: 77
+DEBUG: Rotated a
+DEBUG: Checking value: 65
+DEBUG: Pushed to b
+DEBUG: Checking value: 61
+DEBUG: Pushed to b
+DEBUG: Checking value: 96
+DEBUG: Rotated a
+DEBUG: Checking value: 52
+DEBUG: Pushed to b
+DEBUG: Checking value: 63
+DEBUG: Pushed to b
+DEBUG: Checking value: 56
+DEBUG: Pushed to b
+DEBUG: Checking value: 69
+DEBUG: Pushed to b
+DEBUG: Checking value: 84
+DEBUG: Rotated a
+DEBUG: Checking value: 60
+DEBUG: Pushed to b
+DEBUG: Checking value: 93
+DEBUG: Rotated a
+DEBUG: Checking value: 89
+DEBUG: Rotated a
+DEBUG: Checking value: 71
+DEBUG: Pushed to b
+DEBUG: Checking value: 55
+DEBUG: Pushed to b
+DEBUG: Checking value: 59
+DEBUG: Pushed to b
+DEBUG: Checking value: 79
+DEBUG: Rotated a
+DEBUG: Checking value: 92
+DEBUG: Rotated a
+DEBUG: Checking value: 51
+DEBUG: Pushed to b
+DEBUG: Checking value: 97
+DEBUG: Rotated a
+DEBUG: Checking value: 58
+DEBUG: Pushed to b
+DEBUG: Checking value: 70
+DEBUG: Pushed to b
+DEBUG: Checking value: 81
+DEBUG: Rotated a
+DEBUG: Checking value: 80
+DEBUG: Rotated a
+DEBUG: Checking value: 66
+DEBUG: Pushed to b
+DEBUG: Checking value: 90
+DEBUG: Rotated a
+DEBUG: Checking value: 86
+DEBUG: Rotated a
+DEBUG: Checking value: 82
+DEBUG: Rotated a
+DEBUG: Checking value: 87
+DEBUG: Rotated a
+DEBUG: Checking value: 75
+DEBUG: Rotated a
+DEBUG: Checking value: 88
+DEBUG: Rotated a
+DEBUG: Checking value: 78
+DEBUG: Rotated a
+DEBUG: Checking value: 50
+DEBUG: Pushed to b
+DEBUG: Chunk processing finished
+DEBUG: Processing chunk. Range: 75 to 99
+DEBUG: Checking value: 76
+DEBUG: Pushed to b
+DEBUG: Checking value: 94
+DEBUG: Pushed to b
+DEBUG: Checking value: 91
+DEBUG: Pushed to b
+DEBUG: Checking value: 95
+DEBUG: Pushed to b
+DEBUG: Checking value: 99
+DEBUG: Pushed to b
+DEBUG: Checking value: 85
+DEBUG: Pushed to b
+DEBUG: Checking value: 83
+DEBUG: Pushed to b
+DEBUG: Checking value: 98
+DEBUG: Pushed to b
+DEBUG: Checking value: 77
+DEBUG: Pushed to b
+DEBUG: Checking value: 96
+DEBUG: Pushed to b
+DEBUG: Checking value: 84
+DEBUG: Pushed to b
+DEBUG: Checking value: 93
+DEBUG: Pushed to b
+DEBUG: Checking value: 89
+DEBUG: Pushed to b
+DEBUG: Checking value: 79
+DEBUG: Pushed to b
+DEBUG: Checking value: 92
+DEBUG: Pushed to b
+DEBUG: Checking value: 97
+DEBUG: Pushed to b
+DEBUG: Checking value: 81
+DEBUG: Pushed to b
+DEBUG: Checking value: 80
+DEBUG: Pushed to b
+DEBUG: Checking value: 90
+DEBUG: Pushed to b
+DEBUG: Checking value: 86
+DEBUG: Pushed to b
+DEBUG: Checking value: 82
+DEBUG: Pushed to b
+DEBUG: Checking value: 87
+DEBUG: Pushed to b
+DEBUG: Checking value: 75
+DEBUG: Pushed to b
+DEBUG: Checking value: 88
+DEBUG: Pushed to b
+DEBUG: Checking value: 78
+DEBUG: Pushed to b
+DEBUG: Chunk processing finished
+DEBUG: Moving back from b to a
+DEBUG: Max in b: 99
+DEBUG: Rotating stack to top. Target: 99, Position: 20
+DEBUG: Pushed to a
+DEBUG: Max in b: 98
+DEBUG: Rotating stack to top. Target: 98, Position: 96
+DEBUG: Pushed to a
+DEBUG: Max in b: 97
+DEBUG: Rotating stack to top. Target: 97, Position: 90
+DEBUG: Pushed to a
+DEBUG: Max in b: 96
+DEBUG: Rotating stack to top. Target: 96, Position: 5
+DEBUG: Pushed to a
+DEBUG: Max in b: 95
+DEBUG: Rotating stack to top. Target: 95, Position: 3
+DEBUG: Pushed to a
+DEBUG: Max in b: 94
+DEBUG: Rotating stack to top. Target: 94, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 93
+DEBUG: Rotating stack to top. Target: 93, Position: 88
+DEBUG: Pushed to a
+DEBUG: Max in b: 92
+DEBUG: Rotating stack to top. Target: 92, Position: 90
+DEBUG: Pushed to a
+DEBUG: Max in b: 91
+DEBUG: Rotating stack to top. Target: 91, Position: 6
+DEBUG: Pushed to a
+DEBUG: Max in b: 90
+DEBUG: Rotating stack to top. Target: 90, Position: 82
+DEBUG: Pushed to a
+DEBUG: Max in b: 89
+DEBUG: Rotating stack to top. Target: 89, Position: 3
+DEBUG: Pushed to a
+DEBUG: Max in b: 88
+DEBUG: Rotating stack to top. Target: 88, Position: 81
+DEBUG: Pushed to a
+DEBUG: Max in b: 87
+DEBUG: Rotating stack to top. Target: 87, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 86
+DEBUG: Rotating stack to top. Target: 86, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 85
+DEBUG: Rotating stack to top. Target: 85, Position: 6
+DEBUG: Pushed to a
+DEBUG: Max in b: 84
+DEBUG: Rotating stack to top. Target: 84, Position: 82
+DEBUG: Pushed to a
+DEBUG: Max in b: 83
+DEBUG: Rotating stack to top. Target: 83, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 82
+DEBUG: Rotating stack to top. Target: 82, Position: 78
+DEBUG: Pushed to a
+DEBUG: Max in b: 81
+DEBUG: Rotating stack to top. Target: 81, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 80
+DEBUG: Rotating stack to top. Target: 80, Position: 80
+DEBUG: Pushed to a
+DEBUG: Max in b: 79
+DEBUG: Rotating stack to top. Target: 79, Position: 0
+DEBUG: Pushed to a
+DEBUG: Max in b: 78
+DEBUG: Rotating stack to top. Target: 78, Position: 77
+DEBUG: Pushed to a
+DEBUG: Max in b: 77
+DEBUG: Rotating stack to top. Target: 77, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 76
+DEBUG: Rotating stack to top. Target: 76, Position: 0
+DEBUG: Pushed to a
+DEBUG: Max in b: 75
+DEBUG: Rotating stack to top. Target: 75, Position: 75
+DEBUG: Pushed to a
+DEBUG: Max in b: 74
+DEBUG: Rotating stack to top. Target: 74, Position: 21
+DEBUG: Pushed to a
+DEBUG: Max in b: 73
+DEBUG: Rotating stack to top. Target: 73, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 72
+DEBUG: Rotating stack to top. Target: 72, Position: 72
+DEBUG: Pushed to a
+DEBUG: Max in b: 71
+DEBUG: Rotating stack to top. Target: 71, Position: 58
+DEBUG: Pushed to a
+DEBUG: Max in b: 70
+DEBUG: Rotating stack to top. Target: 70, Position: 66
+DEBUG: Pushed to a
+DEBUG: Max in b: 69
+DEBUG: Rotating stack to top. Target: 69, Position: 5
+DEBUG: Pushed to a
+DEBUG: Max in b: 68
+DEBUG: Rotating stack to top. Target: 68, Position: 8
+DEBUG: Pushed to a
+DEBUG: Max in b: 67
+DEBUG: Rotating stack to top. Target: 67, Position: 67
+DEBUG: Pushed to a
+DEBUG: Max in b: 66
+DEBUG: Rotating stack to top. Target: 66, Position: 54
+DEBUG: Pushed to a
+DEBUG: Max in b: 65
+DEBUG: Rotating stack to top. Target: 65, Position: 9
+DEBUG: Pushed to a
+DEBUG: Max in b: 64
+DEBUG: Rotating stack to top. Target: 64, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 63
+DEBUG: Rotating stack to top. Target: 63, Position: 60
+DEBUG: Pushed to a
+DEBUG: Max in b: 62
+DEBUG: Rotating stack to top. Target: 62, Position: 2
+DEBUG: Pushed to a
+DEBUG: Max in b: 61
+DEBUG: Rotating stack to top. Target: 61, Position: 61
+DEBUG: Pushed to a
+DEBUG: Max in b: 60
+DEBUG: Rotating stack to top. Target: 60, Position: 58
+DEBUG: Pushed to a
+DEBUG: Max in b: 59
+DEBUG: Rotating stack to top. Target: 59, Position: 58
+DEBUG: Pushed to a
+DEBUG: Max in b: 58
+DEBUG: Rotating stack to top. Target: 58, Position: 57
+DEBUG: Pushed to a
+DEBUG: Max in b: 57
+DEBUG: Rotating stack to top. Target: 57, Position: 4
+DEBUG: Pushed to a
+DEBUG: Max in b: 56
+DEBUG: Rotating stack to top. Target: 56, Position: 55
+DEBUG: Pushed to a
+DEBUG: Max in b: 55
+DEBUG: Rotating stack to top. Target: 55, Position: 55
+DEBUG: Pushed to a
+DEBUG: Max in b: 54
+DEBUG: Rotating stack to top. Target: 54, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 53
+DEBUG: Rotating stack to top. Target: 53, Position: 0
+DEBUG: Pushed to a
+DEBUG: Max in b: 52
+DEBUG: Rotating stack to top. Target: 52, Position: 52
+DEBUG: Pushed to a
+DEBUG: Max in b: 51
+DEBUG: Rotating stack to top. Target: 51, Position: 51
+DEBUG: Pushed to a
+DEBUG: Max in b: 50
+DEBUG: Rotating stack to top. Target: 50, Position: 50
+DEBUG: Pushed to a
+DEBUG: Max in b: 49
+DEBUG: Rotating stack to top. Target: 49, Position: 12
+DEBUG: Pushed to a
+DEBUG: Max in b: 48
+DEBUG: Rotating stack to top. Target: 48, Position: 3
+DEBUG: Pushed to a
+DEBUG: Max in b: 47
+DEBUG: Rotating stack to top. Target: 47, Position: 7
+DEBUG: Pushed to a
+DEBUG: Max in b: 46
+DEBUG: Rotating stack to top. Target: 46, Position: 26
+DEBUG: Pushed to a
+DEBUG: Max in b: 45
+DEBUG: Rotating stack to top. Target: 45, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 44
+DEBUG: Rotating stack to top. Target: 44, Position: 13
+DEBUG: Pushed to a
+DEBUG: Max in b: 43
+DEBUG: Rotating stack to top. Target: 43, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 42
+DEBUG: Rotating stack to top. Target: 42, Position: 41
+DEBUG: Pushed to a
+DEBUG: Max in b: 41
+DEBUG: Rotating stack to top. Target: 41, Position: 36
+DEBUG: Pushed to a
+DEBUG: Max in b: 40
+DEBUG: Rotating stack to top. Target: 40, Position: 39
+DEBUG: Pushed to a
+DEBUG: Max in b: 39
+DEBUG: Rotating stack to top. Target: 39, Position: 39
+DEBUG: Pushed to a
+DEBUG: Max in b: 38
+DEBUG: Rotating stack to top. Target: 38, Position: 4
+DEBUG: Pushed to a
+DEBUG: Max in b: 37
+DEBUG: Rotating stack to top. Target: 37, Position: 33
+DEBUG: Pushed to a
+DEBUG: Max in b: 36
+DEBUG: Rotating stack to top. Target: 36, Position: 36
+DEBUG: Pushed to a
+DEBUG: Max in b: 35
+DEBUG: Rotating stack to top. Target: 35, Position: 5
+DEBUG: Pushed to a
+DEBUG: Max in b: 34
+DEBUG: Rotating stack to top. Target: 34, Position: 28
+DEBUG: Pushed to a
+DEBUG: Max in b: 33
+DEBUG: Rotating stack to top. Target: 33, Position: 5
+DEBUG: Pushed to a
+DEBUG: Max in b: 32
+DEBUG: Rotating stack to top. Target: 32, Position: 31
+DEBUG: Pushed to a
+DEBUG: Max in b: 31
+DEBUG: Rotating stack to top. Target: 31, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 30
+DEBUG: Rotating stack to top. Target: 30, Position: 27
+DEBUG: Pushed to a
+DEBUG: Max in b: 29
+DEBUG: Rotating stack to top. Target: 29, Position: 3
+DEBUG: Pushed to a
+DEBUG: Max in b: 28
+DEBUG: Rotating stack to top. Target: 28, Position: 25
+DEBUG: Pushed to a
+DEBUG: Max in b: 27
+DEBUG: Rotating stack to top. Target: 27, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 26
+DEBUG: Rotating stack to top. Target: 26, Position: 0
+DEBUG: Pushed to a
+DEBUG: Max in b: 25
+DEBUG: Rotating stack to top. Target: 25, Position: 25
+DEBUG: Pushed to a
+DEBUG: Max in b: 24
+DEBUG: Rotating stack to top. Target: 24, Position: 13
+DEBUG: Pushed to a
+DEBUG: Max in b: 23
+DEBUG: Rotating stack to top. Target: 23, Position: 18
+DEBUG: Pushed to a
+DEBUG: Max in b: 22
+DEBUG: Rotating stack to top. Target: 22, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 21
+DEBUG: Rotating stack to top. Target: 21, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 20
+DEBUG: Rotating stack to top. Target: 20, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 19
+DEBUG: Rotating stack to top. Target: 19, Position: 17
+DEBUG: Pushed to a
+DEBUG: Max in b: 18
+DEBUG: Rotating stack to top. Target: 18, Position: 2
+DEBUG: Pushed to a
+DEBUG: Max in b: 17
+DEBUG: Rotating stack to top. Target: 17, Position: 16
+DEBUG: Pushed to a
+DEBUG: Max in b: 16
+DEBUG: Rotating stack to top. Target: 16, Position: 15
+DEBUG: Pushed to a
+DEBUG: Max in b: 15
+DEBUG: Rotating stack to top. Target: 15, Position: 15
+DEBUG: Pushed to a
+DEBUG: Max in b: 14
+DEBUG: Rotating stack to top. Target: 14, Position: 5
+DEBUG: Pushed to a
+DEBUG: Max in b: 13
+DEBUG: Rotating stack to top. Target: 13, Position: 13
+DEBUG: Pushed to a
+DEBUG: Max in b: 12
+DEBUG: Rotating stack to top. Target: 12, Position: 10
+DEBUG: Pushed to a
+DEBUG: Max in b: 11
+DEBUG: Rotating stack to top. Target: 11, Position: 10
+DEBUG: Pushed to a
+DEBUG: Max in b: 10
+DEBUG: Rotating stack to top. Target: 10, Position: 4
+DEBUG: Pushed to a
+DEBUG: Max in b: 9
+DEBUG: Rotating stack to top. Target: 9, Position: 2
+DEBUG: Pushed to a
+DEBUG: Max in b: 8
+DEBUG: Rotating stack to top. Target: 8, Position: 2
+DEBUG: Pushed to a
+DEBUG: Max in b: 7
+DEBUG: Rotating stack to top. Target: 7, Position: 3
+DEBUG: Pushed to a
+DEBUG: Max in b: 6
+DEBUG: Rotating stack to top. Target: 6, Position: 6
+DEBUG: Pushed to a
+DEBUG: Max in b: 5
+DEBUG: Rotating stack to top. Target: 5, Position: 0
+DEBUG: Pushed to a
+DEBUG: Max in b: 4
+DEBUG: Rotating stack to top. Target: 4, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 3
+DEBUG: Rotating stack to top. Target: 3, Position: 3
+DEBUG: Pushed to a
+DEBUG: Max in b: 2
+DEBUG: Rotating stack to top. Target: 2, Position: 0
+DEBUG: Pushed to a
+DEBUG: Max in b: 1
+DEBUG: Rotating stack to top. Target: 1, Position: 1
+DEBUG: Pushed to a
+DEBUG: Max in b: 0
+DEBUG: Rotating stack to top. Target: 0, Position: 0
+DEBUG: Pushed to a
+DEBUG: Finished chunk_sort
+DEBUG: Validation passed - Stack A is sorted, and Stack B is empty
+DEBUG: Done!
+OK

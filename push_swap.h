@@ -55,6 +55,10 @@ int     stack_len(t_node *stack);
 
 /* sorting_small.c */
 void    sort_small(t_data *data);
+int find_max_in_stack(t_node *stack);
+void rotate_stack_to_top(t_data *data, t_node **stack, int target, int size, int print);
+int is_closer_to_top(t_node *stack, int target);
+
 
 /* sorting_large.c */
 void    sort_large(t_data *data);
